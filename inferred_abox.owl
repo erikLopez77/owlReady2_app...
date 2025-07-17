@@ -1,0 +1,2465 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/abox"
+         xmlns="http://example.org/abox#"
+         xmlns:onto="http://dbpedia.org/ontology/"
+         xmlns:tbox="http://example.org/tbox#">
+
+<owl:Ontology rdf:about="http://example.org/abox">
+  <owl:imports rdf:resource="http://example.org/tbox"/>
+  <owl:imports rdf:resource="http://example.org/alignment"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="http://example.org/tbox#hasDirector"/>
+
+<owl:ObjectProperty rdf:about="http://example.org/tbox#isPrequel"/>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/releaseDate"/>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/runtime"/>
+
+<owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/director"/>
+
+<owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/genre"/>
+
+<owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/starring"/>
+
+<owl:Class rdf:about="http://example.org/tbox#Actor">
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://example.org/tbox#Director">
+  <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://dbpedia.org/ontology/Film">
+  <rdfs:subClassOf rdf:resource="http://example.org/tbox#Media"/>
+  <rdfs:subClassOf rdf:resource="http://example.org/tbox#CreativeWork"/>
+  <owl:equivalentClass rdf:resource="http://example.org/tbox#Movie"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+  <owl:equivalentClass rdf:resource="http://example.org/tbox#Person"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://schema.org/Genre"/>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/A_Beautiful_Mind">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Ron_Howard"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Biography"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Jennifer_Connelly"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Biography"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Jennifer_Connelly"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Ron_Howard"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-21</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</onto:runtime>
+  <rdfs:label xml:lang="en">A Beautiful Mind</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">135</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2001-12-21</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Action">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">Action</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Adventure">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">Adventure</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Andrew_Garfield">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Social_Network"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/David_Fincher"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jesse_Eisenberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Andrew_Garfield"/>
+  <rdfs:label xml:lang="en">Andrew Garfield</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Anne_Hathaway">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Interstellar"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
+  <rdfs:label xml:lang="en">Anne Hathaway</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Avatar">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Sam_Worthington"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Zoe_Saldana"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Sam_Worthington"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Zoe_Saldana"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-18</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">162</onto:runtime>
+  <rdfs:label xml:lang="en">Avatar</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">162</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-12-18</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Biography">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">Biography</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Blade_Runner_2049">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Harrison_Ford"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Ryan_Gosling"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Harrison_Ford"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Ryan_Gosling"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</onto:runtime>
+  <rdfs:label xml:lang="en">Blade Runner 2049</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Brad_Pitt">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Inglourious_Basterds"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Quentin_Tarantino"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christoph_Waltz"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+  <rdfs:label xml:lang="en">Brad Pitt</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Carrie-Anne_Moss">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Matrix_Reloaded"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Lilly_Wachowski"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Lana_Wachowski"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Catch_Me_If_You_Can">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-12-25</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">141</onto:runtime>
+  <rdfs:label xml:lang="en">Catch Me If You Can</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">141</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-12-25</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Catherine_Zeta_Jones">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Terminal"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Catherine_Zeta_Jones"/>
+  <rdfs:label xml:lang="en">Catherine Zeta-Jones</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Charlize_Theron">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Mad_Max_Fury_Road"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/George_Miller"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Charlize_Theron"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdfs:label xml:lang="en">Charlize Theron</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christian_Bale">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Prestige"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Scarlett_Johansson"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Hugh_Jackman"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Heath_Ledger"/>
+  <rdfs:label xml:lang="en">Christian Bale</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christoph_Waltz">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Inglourious_Basterds"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Quentin_Tarantino"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christoph_Waltz"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+  <rdfs:label xml:lang="en">Christoph Waltz</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Christopher_Nolan">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Interstellar"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Inception"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Dunkirk"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Prestige"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kenneth_Branagh"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Elliot_Page"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Scarlett_Johansson"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Hugh_Jackman"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Mark_Rylance"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Heath_Ledger"/>
+  <rdfs:label xml:lang="en">Christopher Nolan</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Comedy">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/David_Fincher">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Social_Network"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jesse_Eisenberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Andrew_Garfield"/>
+  <rdfs:label xml:lang="en">David Fincher</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Denis_Villeneuve">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Harrison_Ford"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ryan_Gosling"/>
+  <rdfs:label xml:lang="en">Denis Villeneuve</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Drama">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">Drama</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Dunkirk">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/War"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Kenneth_Branagh"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Mark_Rylance"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/War"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Kenneth_Branagh"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Mark_Rylance"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</onto:runtime>
+  <rdfs:label xml:lang="en">Dunkirk</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Elliot_Page">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Inception"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Elliot_Page"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <rdfs:label xml:lang="en">Elliot Page</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Forrest_Gump">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Robert_Zemeckis"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Romance"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Gary_Sinise"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Robin_Wright"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Romance"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Robin_Wright"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Gary_Sinise"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Robert_Zemeckis"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-07-06</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">142</onto:runtime>
+  <rdfs:label xml:lang="en">Forrest Gump</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">142</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-07-06</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Gary_Sinise">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Forrest_Gump"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robin_Wright"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Gary_Sinise"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robert_Zemeckis"/>
+  <rdfs:label xml:lang="en">Gary Sinise</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/George_Miller">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Mad_Max_Fury_Road"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Charlize_Theron"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdfs:label xml:lang="en">George Miller</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Gladiator">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Ridley_Scott"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Joaquin_Phoenix"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Joaquin_Phoenix"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Ridley_Scott"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-05-05</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</onto:runtime>
+  <rdfs:label xml:lang="en">Gladiator</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-05-05</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Harrison_Ford">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Harrison_Ford"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ryan_Gosling"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+  <rdfs:label xml:lang="en">Harrison Ford</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Heath_Ledger">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Dark_Knight"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Heath_Ledger"/>
+  <rdfs:label xml:lang="en">Heath Ledger</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Hugh_Jackman">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Prestige"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Scarlett_Johansson"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Hugh_Jackman"/>
+  <rdfs:label xml:lang="en">Hugh Jackman</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Inception">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Elliot_Page"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Elliot_Page"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-16</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</onto:runtime>
+  <rdfs:label xml:lang="en">Inception</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-07-16</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Inglourious_Basterds">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Quentin_Tarantino"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/War"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Christoph_Waltz"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/War"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Christoph_Waltz"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Quentin_Tarantino"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-21</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">153</onto:runtime>
+  <rdfs:label xml:lang="en">Inglourious Basterds</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">153</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-21</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Interstellar">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-07</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">169</onto:runtime>
+  <rdfs:label xml:lang="en">Interstellar</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">169</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-07</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/James_Cameron">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Avatar"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Titanic"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Worthington"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Zoe_Saldana"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kate_Winslet"/>
+  <rdfs:label xml:lang="en">James Cameron</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jeff_Goldblum">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Jurassic_Park"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jeff_Goldblum"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Neill"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laura_Dern"/>
+  <rdfs:label xml:lang="en">Jeff Goldblum</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jennifer_Connelly">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/A_Beautiful_Mind"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ron_Howard"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jennifer_Connelly"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdfs:label xml:lang="en">Jennifer Connelly</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jesse_Eisenberg">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Social_Network"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/David_Fincher"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jesse_Eisenberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Andrew_Garfield"/>
+  <rdfs:label xml:lang="en">Jesse Eisenberg</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Joaquin_Phoenix">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Gladiator"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ridley_Scott"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Joaquin_Phoenix"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdfs:label xml:lang="en">Joaquin Phoenix</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jonah_Hill">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Wolf_of_Wall_Street"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Martin_Scorsese"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jonah_Hill"/>
+  <rdfs:label xml:lang="en">Jonah Hill</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Jurassic_Park">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Jeff_Goldblum"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Laura_Dern"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Sam_Neill"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Jeff_Goldblum"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Sam_Neill"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Laura_Dern"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-06-11</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</onto:runtime>
+  <rdfs:label xml:lang="en">Jurassic Park</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-06-11</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kate_Winslet">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Titanic"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kate_Winslet"/>
+  <rdfs:label xml:lang="en">Kate Winslet</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Keanu_Reeves">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Matrix_Reloaded"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Lilly_Wachowski"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Lana_Wachowski"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Kenneth_Branagh">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Dunkirk"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kenneth_Branagh"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Mark_Rylance"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdfs:label xml:lang="en">Kenneth Branagh</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lana_Wachowski">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Matrix_Reloaded"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Laura_Dern">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Jurassic_Park"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jeff_Goldblum"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Neill"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laura_Dern"/>
+  <rdfs:label xml:lang="en">Laura Dern</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Laurence_Fishburne">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Matrix_Reloaded"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Lilly_Wachowski"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Lana_Wachowski"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Leonardo_DiCaprio">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Star"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Catch_Me_If_You_Can"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Inception"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Titanic"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Wolf_of_Wall_Street"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Elliot_Page"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Martin_Scorsese"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jonah_Hill"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kate_Winslet"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <rdfs:label xml:lang="en">Leonardo DiCaprio</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Lilly_Wachowski">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Matrix_Reloaded"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mad_Max_Fury_Road">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/George_Miller"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Charlize_Theron"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Adventure"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Charlize_Theron"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/George_Miller"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-15</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</onto:runtime>
+  <rdfs:label xml:lang="en">Mad Max: Fury Road</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-15</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Mark_Rylance">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Dunkirk"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kenneth_Branagh"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Mark_Rylance"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdfs:label xml:lang="en">Mark Rylance</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Martin_Scorsese">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Wolf_of_Wall_Street"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jonah_Hill"/>
+  <rdfs:label xml:lang="en">Martin Scorsese</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Matt_Damon">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Saving_Private_Ryan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Matt_Damon"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <rdfs:label xml:lang="en">Matt Damon</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Matthew_McConaughey">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Interstellar"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Matthew_McConaughey"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Anne_Hathaway"/>
+  <rdfs:label xml:lang="en">Matthew McConaughey</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Quentin_Tarantino">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Inglourious_Basterds"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christoph_Waltz"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Brad_Pitt"/>
+  <rdfs:label xml:lang="en">Quentin Tarantino</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ridley_Scott">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Gladiator"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Joaquin_Phoenix"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdfs:label xml:lang="en">Ridley Scott</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Robert_Zemeckis">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Forrest_Gump"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robin_Wright"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Gary_Sinise"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <rdfs:label xml:lang="en">Robert Zemeckis</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Robin_Wright">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Forrest_Gump"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robin_Wright"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Gary_Sinise"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robert_Zemeckis"/>
+  <rdfs:label xml:lang="en">Robin Wright</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Romance">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">Romance</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ron_Howard">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/A_Beautiful_Mind"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jennifer_Connelly"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdfs:label xml:lang="en">Ron Howard</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Russell_Crowe">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/A_Beautiful_Mind"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Gladiator"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ridley_Scott"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ron_Howard"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Joaquin_Phoenix"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jennifer_Connelly"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Russell_Crowe"/>
+  <rdfs:label xml:lang="en">Russell Crowe</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Ryan_Gosling">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Blade_Runner_2049"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Harrison_Ford"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Ryan_Gosling"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Denis_Villeneuve"/>
+  <rdfs:label xml:lang="en">Ryan Gosling</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sam_Neill">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Jurassic_Park"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jeff_Goldblum"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Neill"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laura_Dern"/>
+  <rdfs:label xml:lang="en">Sam Neill</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Sam_Worthington">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Avatar"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Worthington"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Zoe_Saldana"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <rdfs:label xml:lang="en">Sam Worthington</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Saving_Private_Ryan">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/War"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Matt_Damon"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/War"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Matt_Damon"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-07-24</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">169</onto:runtime>
+  <rdfs:label xml:lang="en">Saving Private Ryan</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">169</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-07-24</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Scarlett_Johansson">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Prestige"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Scarlett_Johansson"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Hugh_Jackman"/>
+  <rdfs:label xml:lang="en">Scarlett Johansson</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Science_Fiction">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Steven_Spielberg">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Saving_Private_Ryan"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Jurassic_Park"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/The_Terminal"/>
+  <tbox:directs rdf:resource="http://dbpedia.org/resource/Catch_Me_If_You_Can"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Matt_Damon"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Jeff_Goldblum"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Neill"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Catherine_Zeta_Jones"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Laura_Dern"/>
+  <rdfs:label xml:lang="en">Steven Spielberg</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Dark_Knight">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Heath_Ledger"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Heath_Ledger"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-07-18</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">152</onto:runtime>
+  <rdfs:label xml:lang="en">The Dark Knight</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">152</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-07-18</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Matrix_Reloaded">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Lana_Wachowski"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Lilly_Wachowski"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Action"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Science_Fiction"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Carrie-Anne_Moss"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Laurence_Fishburne"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Keanu_Reeves"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Lilly_Wachowski"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Lana_Wachowski"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-05-15</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</onto:runtime>
+  <rdfs:label xml:lang="en">The Matrix Reloaded</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2003-05-15</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Prestige">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Hugh_Jackman"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Scarlett_Johansson"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Thriller"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Christian_Bale"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Scarlett_Johansson"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Hugh_Jackman"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-20</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</onto:runtime>
+  <rdfs:label xml:lang="en">The Prestige</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-10-20</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Social_Network">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/David_Fincher"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Biography"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Andrew_Garfield"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Jesse_Eisenberg"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Biography"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Jesse_Eisenberg"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Andrew_Garfield"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/David_Fincher"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-01</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</onto:runtime>
+  <rdfs:label xml:lang="en">The Social Network</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-10-01</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Terminal">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Comedy"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Catherine_Zeta_Jones"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Comedy"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Catherine_Zeta_Jones"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-18</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</onto:runtime>
+  <rdfs:label xml:lang="en">The Terminal</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-06-18</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/The_Wolf_of_Wall_Street">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/Martin_Scorsese"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Biography"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Comedy"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Jonah_Hill"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Comedy"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Biography"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Jonah_Hill"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/Martin_Scorsese"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-25</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</onto:runtime>
+  <rdfs:label xml:lang="en">The Wolf of Wall Street</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-25</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Thriller">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">Thriller</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Titanic">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <onto:genre rdf:resource="http://dbpedia.org/resource/Romance"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Kate_Winslet"/>
+  <onto:starring rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Romance"/>
+  <tbox:hasGenre rdf:resource="http://dbpedia.org/resource/Drama"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasActor rdf:resource="http://dbpedia.org/resource/Kate_Winslet"/>
+  <tbox:hasDirector rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-12-19</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195</onto:runtime>
+  <rdfs:label xml:lang="en">Titanic</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">195</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1997-12-19</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tom_Hanks">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Star"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Saving_Private_Ryan"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Forrest_Gump"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/The_Terminal"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Catch_Me_If_You_Can"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Matt_Damon"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robin_Wright"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Steven_Spielberg"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Gary_Sinise"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Robert_Zemeckis"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hanks"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Catherine_Zeta_Jones"/>
+  <rdfs:label xml:lang="en">Tom Hanks</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Tom_Hardy">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Mad_Max_Fury_Road"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Dunkirk"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/George_Miller"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Kenneth_Branagh"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Christopher_Nolan"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Charlize_Theron"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Mark_Rylance"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Tom_Hardy"/>
+  <rdfs:label xml:lang="en">Tom Hardy</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/War">
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdfs:label xml:lang="en">War</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Zoe_Saldana">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Person"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="http://dbpedia.org/resource/Avatar"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Sam_Worthington"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/Zoe_Saldana"/>
+  <tbox:hasCollaboratedWith rdf:resource="http://dbpedia.org/resource/James_Cameron"/>
+  <rdfs:label xml:lang="en">Zoe Saldana</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Adam_McKay">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Big_Short"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Steve_Carell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alejandro_G._Inarritu">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Birdman"/>
+  <tbox:directs rdf:resource="#The_Revenant"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_Hardy"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Edward_Norton"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Keaton"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alex_Garland">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Ex_Machina"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Domhnall_Gleeson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alicia_Vikander"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alfonso_Cuaron">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Gravity"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sandra_Bullock"/>
+  <tbox:hasCollaboratedWith rdf:resource="#George_Clooney"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Alicia_Vikander">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Ex_Machina"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Domhnall_Gleeson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alex_Garland"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alicia_Vikander"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Allison_Williams">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Get_Out"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jordan_Peele"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Daniel_Kaluuya"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Allison_Williams"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amy_Adams">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Arrival"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Amy_Adams"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Denis_Villeneuve"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jeremy_Renner"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Amy_Poehler">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Inside_Out"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Amy_Poehler"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Phyllis_Smith"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Pete_Docter"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Argo">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <tbox:hasDirector rdf:resource="#Ben_Affleck"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <onto:director rdf:resource="#Ben_Affleck"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Arrival">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Denis_Villeneuve"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Mystery"/>
+  <onto:genre rdf:resource="https://schema.org/Sci-Fi"/>
+  <onto:starring rdf:resource="#Amy_Adams"/>
+  <onto:starring rdf:resource="#Jeremy_Renner"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Mystery"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Sci-Fi"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Amy_Adams"/>
+  <tbox:hasActor rdf:resource="#Jeremy_Renner"/>
+  <tbox:hasDirector rdf:resource="#Denis_Villeneuve"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-11</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</onto:runtime>
+  <rdfs:label xml:lang="en">Arrival</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">116</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-11</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Barry_Jenkins">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Moonlight"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Mahershala_Ali"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Naomie_Harris"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Barry_Keoghan">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Dunkirk"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Barry_Keoghan"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Fionn_Whitehead"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Christopher_Nolan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Batman_Begins">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <tbox:isPrequel rdf:resource="#The_Dark_Knight"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:isPrequel rdf:resource="#The_Dark_Knight_Rises"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ben_Affleck">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Actor_Director"/>
+  <tbox:actsIn rdf:resource="#Gone_Girl"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Rosamund_Pike"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ben_Affleck"/>
+  <tbox:hasCollaboratedWith rdf:resource="#David_Fincher"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Benedict_Cumberbatch">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Imitation_Game"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Morten_Tyldum"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Benedict_Cumberbatch"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Keira_Knightley"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Birdman">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Alejandro_G._Inarritu"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Edward_Norton"/>
+  <onto:starring rdf:resource="#Michael_Keaton"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Edward_Norton"/>
+  <tbox:hasActor rdf:resource="#Michael_Keaton"/>
+  <tbox:hasDirector rdf:resource="#Alejandro_G._Inarritu"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-17</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</onto:runtime>
+  <rdfs:label xml:lang="en">Birdman</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-17</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Blade_Runner_2049">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Denis_Villeneuve"/>
+  <onto:genre rdf:resource="https://schema.org/Action"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Mystery"/>
+  <onto:starring rdf:resource="#Harrison_Ford"/>
+  <onto:starring rdf:resource="#Ryan_Gosling"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Action"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Mystery"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Harrison_Ford"/>
+  <tbox:hasActor rdf:resource="#Ryan_Gosling"/>
+  <tbox:hasDirector rdf:resource="#Denis_Villeneuve"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</onto:runtime>
+  <rdfs:label xml:lang="en">Blade Runner 2049</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">164</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Bong_Joon-ho">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Parasite"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Lee_Sun-kyun"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Song_Kang-ho"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Boyhood">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Richard_Linklater"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Ellar_Coltrane"/>
+  <onto:starring rdf:resource="#Patricia_Arquette"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Patricia_Arquette"/>
+  <tbox:hasActor rdf:resource="#Ellar_Coltrane"/>
+  <tbox:hasDirector rdf:resource="#Richard_Linklater"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-11</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">165</onto:runtime>
+  <rdfs:label xml:lang="en">Boyhood</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">165</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-07-11</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brie_Larson">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Room"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Lenny_Abrahamson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Brie_Larson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jacob_Tremblay"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Brooklynn_Prince">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Florida_Project"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sean_Baker"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Willem_Dafoe"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Brooklynn_Prince"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Charlize_Theron">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Mad_Max_Fury_Road"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_Hardy"/>
+  <tbox:hasCollaboratedWith rdf:resource="#George_Miller"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Charlize_Theron"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Chiwetel_Ejiofor">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#12_Years_a_Slave"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Steve_McQueen"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Fassbender"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Chiwetel_Ejiofor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Christian_Bale">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Big_Short"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Adam_McKay"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Steve_Carell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Christopher_Nolan">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Dunkirk"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Barry_Keoghan"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Fionn_Whitehead"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Colin_Farrell">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Lobster"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Yorgos_Lanthimos"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Colin_Farrell"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Rachel_Weisz"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dallas_Buyers_Club">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Jean-Marc_Vallee"/>
+  <onto:genre rdf:resource="https://schema.org/Biography"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Jennifer_Garner"/>
+  <onto:starring rdf:resource="#Matthew_McConaughey"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Biography"/>
+  <tbox:hasActor rdf:resource="#Matthew_McConaughey"/>
+  <tbox:hasActor rdf:resource="#Jennifer_Garner"/>
+  <tbox:hasDirector rdf:resource="#Jean-Marc_Vallee"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-01</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</onto:runtime>
+  <rdfs:label xml:lang="en">Dallas Buyers Club</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-01</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Damien_Chazelle">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#La_La_Land"/>
+  <tbox:directs rdf:resource="#Whiplash"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Miles_Teller"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Emma_Stone"/>
+  <tbox:hasCollaboratedWith rdf:resource="#J.K._Simmons"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ryan_Gosling"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Daniel_Kaluuya">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Get_Out"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jordan_Peele"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Daniel_Kaluuya"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Allison_Williams"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#David_Fincher">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Gone_Girl"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Rosamund_Pike"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ben_Affleck"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Denis_Villeneuve">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Blade_Runner_2049"/>
+  <tbox:directs rdf:resource="#Arrival"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Amy_Adams"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Harrison_Ford"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ryan_Gosling"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jeremy_Renner"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Domhnall_Gleeson">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Ex_Machina"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Domhnall_Gleeson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alex_Garland"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alicia_Vikander"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Dunkirk">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Christopher_Nolan"/>
+  <onto:genre rdf:resource="https://schema.org/Action"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/History"/>
+  <onto:starring rdf:resource="#Barry_Keoghan"/>
+  <onto:starring rdf:resource="#Fionn_Whitehead"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Action"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/History"/>
+  <tbox:hasActor rdf:resource="#Barry_Keoghan"/>
+  <tbox:hasActor rdf:resource="#Fionn_Whitehead"/>
+  <tbox:hasDirector rdf:resource="#Christopher_Nolan"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</onto:runtime>
+  <rdfs:label xml:lang="en">Dunkirk</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-07-21</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Edward_Norton">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Birdman"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Edward_Norton"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Keaton"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alejandro_G._Inarritu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ellar_Coltrane">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Boyhood"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Patricia_Arquette"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ellar_Coltrane"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Richard_Linklater"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Emma_Stone">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#La_La_Land"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Emma_Stone"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Damien_Chazelle"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ryan_Gosling"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ex_Machina">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Alex_Garland"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Sci-Fi"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#Alicia_Vikander"/>
+  <onto:starring rdf:resource="#Domhnall_Gleeson"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Sci-Fi"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasActor rdf:resource="#Domhnall_Gleeson"/>
+  <tbox:hasActor rdf:resource="#Alicia_Vikander"/>
+  <tbox:hasDirector rdf:resource="#Alex_Garland"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-16</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</onto:runtime>
+  <rdfs:label xml:lang="en">Ex Machina</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-12-16</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fionn_Whitehead">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Dunkirk"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Barry_Keoghan"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Fionn_Whitehead"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Christopher_Nolan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Frances_McDormand">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Three_Billboards_Outside_Ebbing_Missouri"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Woody_Harrelson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Martin_McDonagh"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Frances_McDormand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#George_Clooney">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Gravity"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sandra_Bullock"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alfonso_Cuaron"/>
+  <tbox:hasCollaboratedWith rdf:resource="#George_Clooney"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#George_Miller">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Mad_Max_Fury_Road"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_Hardy"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Charlize_Theron"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Get_Out">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Jordan_Peele"/>
+  <onto:genre rdf:resource="https://schema.org/Horror"/>
+  <onto:genre rdf:resource="https://schema.org/Mystery"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#Allison_Williams"/>
+  <onto:starring rdf:resource="#Daniel_Kaluuya"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Mystery"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Horror"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasActor rdf:resource="#Daniel_Kaluuya"/>
+  <tbox:hasActor rdf:resource="#Allison_Williams"/>
+  <tbox:hasDirector rdf:resource="#Jordan_Peele"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-24</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">104</onto:runtime>
+  <rdfs:label xml:lang="en">Get Out</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">104</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-24</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gone_Girl">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#David_Fincher"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Mystery"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#Ben_Affleck"/>
+  <onto:starring rdf:resource="#Rosamund_Pike"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Mystery"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasActor rdf:resource="#Rosamund_Pike"/>
+  <tbox:hasActor rdf:resource="#Ben_Affleck"/>
+  <tbox:hasDirector rdf:resource="#David_Fincher"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-03</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</onto:runtime>
+  <rdfs:label xml:lang="en">Gone Girl</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">149</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-03</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Gravity">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Alfonso_Cuaron"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Sci-Fi"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#George_Clooney"/>
+  <onto:starring rdf:resource="#Sandra_Bullock"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Sci-Fi"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasActor rdf:resource="#Sandra_Bullock"/>
+  <tbox:hasActor rdf:resource="#George_Clooney"/>
+  <tbox:hasDirector rdf:resource="#Alfonso_Cuaron"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-04</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</onto:runtime>
+  <rdfs:label xml:lang="en">Gravity</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-04</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Greta_Gerwig">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Lady_Bird"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Laurie_Metcalf"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Saoirse_Ronan"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Guillermo_del_Toro">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Shape_of_Water"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Shannon"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sally_Hawkins"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Harrison_Ford">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Blade_Runner_2049"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Harrison_Ford"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Denis_Villeneuve"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ryan_Gosling"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Her">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Spike_Jonze"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Romance"/>
+  <onto:genre rdf:resource="https://schema.org/Sci-Fi"/>
+  <onto:starring rdf:resource="#Joaquin_Phoenix"/>
+  <onto:starring rdf:resource="#Scarlett_Johansson"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Sci-Fi"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Romance"/>
+  <tbox:hasActor rdf:resource="#Joaquin_Phoenix"/>
+  <tbox:hasActor rdf:resource="#Scarlett_Johansson"/>
+  <tbox:hasDirector rdf:resource="#Spike_Jonze"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-18</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</onto:runtime>
+  <rdfs:label xml:lang="en">Her</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-18</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Inside_Out">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Pete_Docter"/>
+  <onto:genre rdf:resource="https://schema.org/Adventure"/>
+  <onto:genre rdf:resource="https://schema.org/Animation"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:starring rdf:resource="#Amy_Poehler"/>
+  <onto:starring rdf:resource="#Phyllis_Smith"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Adventure"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Animation"/>
+  <tbox:hasActor rdf:resource="#Amy_Poehler"/>
+  <tbox:hasActor rdf:resource="#Phyllis_Smith"/>
+  <tbox:hasDirector rdf:resource="#Pete_Docter"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-19</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</onto:runtime>
+  <rdfs:label xml:lang="en">Inside Out</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-19</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#J.K._Simmons">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Whiplash"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Miles_Teller"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Damien_Chazelle"/>
+  <tbox:hasCollaboratedWith rdf:resource="#J.K._Simmons"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jacob_Tremblay">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Room"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Lenny_Abrahamson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Brie_Larson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jacob_Tremblay"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jean-Marc_Vallee">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Dallas_Buyers_Club"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Matthew_McConaughey"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jennifer_Garner"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jennifer_Garner">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Dallas_Buyers_Club"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Matthew_McConaughey"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jennifer_Garner"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jean-Marc_Vallee"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jeremy_Renner">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Arrival"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Amy_Adams"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Denis_Villeneuve"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jeremy_Renner"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Joaquin_Phoenix">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Her"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Joaquin_Phoenix"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Spike_Jonze"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Scarlett_Johansson"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jonah_Hill">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Wolf_of_Wall_Street"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jonah_Hill"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Martin_Scorsese"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Leonardo_DiCaprio"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Jordan_Peele">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Get_Out"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Daniel_Kaluuya"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Allison_Williams"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Keira_Knightley">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Imitation_Game"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Morten_Tyldum"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Benedict_Cumberbatch"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Keira_Knightley"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#La_La_Land">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Damien_Chazelle"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Music"/>
+  <onto:starring rdf:resource="#Emma_Stone"/>
+  <onto:starring rdf:resource="#Ryan_Gosling"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Music"/>
+  <tbox:hasActor rdf:resource="#Emma_Stone"/>
+  <tbox:hasActor rdf:resource="#Ryan_Gosling"/>
+  <tbox:hasDirector rdf:resource="#Damien_Chazelle"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-12-09</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</onto:runtime>
+  <rdfs:label xml:lang="en">La La Land</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-12-09</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lady_Bird">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Greta_Gerwig"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Laurie_Metcalf"/>
+  <onto:starring rdf:resource="#Saoirse_Ronan"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Laurie_Metcalf"/>
+  <tbox:hasActor rdf:resource="#Saoirse_Ronan"/>
+  <tbox:hasDirector rdf:resource="#Greta_Gerwig"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-03</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</onto:runtime>
+  <rdfs:label xml:lang="en">Lady Bird</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-03</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Laurie_Metcalf">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Lady_Bird"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Laurie_Metcalf"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Saoirse_Ronan"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Greta_Gerwig"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lee_Sun-kyun">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Parasite"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Bong_Joon-ho"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Lee_Sun-kyun"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Song_Kang-ho"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Lenny_Abrahamson">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Room"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Brie_Larson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jacob_Tremblay"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Leonardo_DiCaprio">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Wolf_of_Wall_Street"/>
+  <tbox:actsIn rdf:resource="#The_Revenant"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_Hardy"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jonah_Hill"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Martin_Scorsese"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alejandro_G._Inarritu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mad_Max_Fury_Road">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#George_Miller"/>
+  <onto:genre rdf:resource="https://schema.org/Action"/>
+  <onto:genre rdf:resource="https://schema.org/Adventure"/>
+  <onto:genre rdf:resource="https://schema.org/Sci-Fi"/>
+  <onto:starring rdf:resource="#Charlize_Theron"/>
+  <onto:starring rdf:resource="#Tom_Hardy"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Action"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Sci-Fi"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Adventure"/>
+  <tbox:hasActor rdf:resource="#Tom_Hardy"/>
+  <tbox:hasActor rdf:resource="#Charlize_Theron"/>
+  <tbox:hasDirector rdf:resource="#George_Miller"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-15</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</onto:runtime>
+  <rdfs:label xml:lang="en">Mad Max Fury Road</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-15</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mahershala_Ali">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Moonlight"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Mahershala_Ali"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Naomie_Harris"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Barry_Jenkins"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mark_Ruffalo">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Spotlight"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Mark_Ruffalo"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Keaton"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_McCarthy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Martin_McDonagh">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Three_Billboards_Outside_Ebbing_Missouri"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Woody_Harrelson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Frances_McDormand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Martin_Scorsese">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Wolf_of_Wall_Street"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jonah_Hill"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Leonardo_DiCaprio"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Matthew_McConaughey">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Dallas_Buyers_Club"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jennifer_Garner"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Matthew_McConaughey"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Jean-Marc_Vallee"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Michael_Fassbender">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#12_Years_a_Slave"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Steve_McQueen"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Fassbender"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Chiwetel_Ejiofor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Michael_Keaton">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Birdman"/>
+  <tbox:actsIn rdf:resource="#Spotlight"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Mark_Ruffalo"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Edward_Norton"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Keaton"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_McCarthy"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alejandro_G._Inarritu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Michael_Shannon">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Shape_of_Water"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Shannon"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sally_Hawkins"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Guillermo_del_Toro"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Miles_Teller">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Whiplash"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Miles_Teller"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Damien_Chazelle"/>
+  <tbox:hasCollaboratedWith rdf:resource="#J.K._Simmons"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Moonlight">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Barry_Jenkins"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Mahershala_Ali"/>
+  <onto:starring rdf:resource="#Naomie_Harris"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Mahershala_Ali"/>
+  <tbox:hasActor rdf:resource="#Naomie_Harris"/>
+  <tbox:hasDirector rdf:resource="#Barry_Jenkins"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-21</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</onto:runtime>
+  <rdfs:label xml:lang="en">Moonlight</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-21</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Morten_Tyldum">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Imitation_Game"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Benedict_Cumberbatch"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Keira_Knightley"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Naomie_Harris">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Moonlight"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Mahershala_Ali"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Naomie_Harris"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Barry_Jenkins"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Parasite">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Bong_Joon-ho"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#Lee_Sun-kyun"/>
+  <onto:starring rdf:resource="#Song_Kang-ho"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasActor rdf:resource="#Lee_Sun-kyun"/>
+  <tbox:hasActor rdf:resource="#Song_Kang-ho"/>
+  <tbox:hasDirector rdf:resource="#Bong_Joon-ho"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-30</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">132</onto:runtime>
+  <rdfs:label xml:lang="en">Parasite</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">132</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-30</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Patricia_Arquette">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Boyhood"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Patricia_Arquette"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ellar_Coltrane"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Richard_Linklater"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pete_Docter">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Inside_Out"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Amy_Poehler"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Phyllis_Smith"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Phyllis_Smith">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Inside_Out"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Amy_Poehler"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Phyllis_Smith"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Pete_Docter"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rachel_Weisz">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Lobster"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Colin_Farrell"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Yorgos_Lanthimos"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Rachel_Weisz"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ralph_Fiennes">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Grand_Budapest_Hotel"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Wes_Anderson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ralph_Fiennes"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tony_Revolori"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Richard_Linklater">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Boyhood"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Patricia_Arquette"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ellar_Coltrane"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Room">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Lenny_Abrahamson"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#Brie_Larson"/>
+  <onto:starring rdf:resource="#Jacob_Tremblay"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasActor rdf:resource="#Brie_Larson"/>
+  <tbox:hasActor rdf:resource="#Jacob_Tremblay"/>
+  <tbox:hasDirector rdf:resource="#Lenny_Abrahamson"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-16</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</onto:runtime>
+  <rdfs:label xml:lang="en">Room</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-16</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Rosamund_Pike">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Gone_Girl"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Rosamund_Pike"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ben_Affleck"/>
+  <tbox:hasCollaboratedWith rdf:resource="#David_Fincher"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ryan_Gosling">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Blade_Runner_2049"/>
+  <tbox:actsIn rdf:resource="#La_La_Land"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Emma_Stone"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Damien_Chazelle"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Harrison_Ford"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Denis_Villeneuve"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ryan_Gosling"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sally_Hawkins">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Shape_of_Water"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Shannon"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sally_Hawkins"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Guillermo_del_Toro"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sandra_Bullock">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Gravity"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sandra_Bullock"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alfonso_Cuaron"/>
+  <tbox:hasCollaboratedWith rdf:resource="#George_Clooney"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Saoirse_Ronan">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Lady_Bird"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Laurie_Metcalf"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Saoirse_Ronan"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Greta_Gerwig"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Scarlett_Johansson">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Her"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Joaquin_Phoenix"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Spike_Jonze"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Scarlett_Johansson"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sean_Baker">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Florida_Project"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Willem_Dafoe"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Brooklynn_Prince"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Song_Kang-ho">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Parasite"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Bong_Joon-ho"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Lee_Sun-kyun"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Song_Kang-ho"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Spike_Jonze">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Her"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Joaquin_Phoenix"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Scarlett_Johansson"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Spotlight">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Tom_McCarthy"/>
+  <onto:genre rdf:resource="https://schema.org/Biography"/>
+  <onto:genre rdf:resource="https://schema.org/Crime"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Mark_Ruffalo"/>
+  <onto:starring rdf:resource="#Michael_Keaton"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Crime"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Biography"/>
+  <tbox:hasActor rdf:resource="#Mark_Ruffalo"/>
+  <tbox:hasActor rdf:resource="#Michael_Keaton"/>
+  <tbox:hasDirector rdf:resource="#Tom_McCarthy"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-06</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</onto:runtime>
+  <rdfs:label xml:lang="en">Spotlight</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-06</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Steve_Carell">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Big_Short"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Christian_Bale"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Adam_McKay"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Steve_Carell"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Steve_McQueen">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#12_Years_a_Slave"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Fassbender"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Chiwetel_Ejiofor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Big_Short">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Adam_McKay"/>
+  <onto:genre rdf:resource="https://schema.org/Biography"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Christian_Bale"/>
+  <onto:starring rdf:resource="#Steve_Carell"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Biography"/>
+  <tbox:hasActor rdf:resource="#Christian_Bale"/>
+  <tbox:hasActor rdf:resource="#Steve_Carell"/>
+  <tbox:hasDirector rdf:resource="#Adam_McKay"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-11</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</onto:runtime>
+  <rdfs:label xml:lang="en">The Big Short</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-11</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Dark_Knight">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <tbox:isPrequel rdf:resource="#The_Dark_Knight_Rises"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Dark_Knight_Rises">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:isSequel rdf:resource="#Batman_Begins"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Florida_Project">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Sean_Baker"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Brooklynn_Prince"/>
+  <onto:starring rdf:resource="#Willem_Dafoe"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasActor rdf:resource="#Willem_Dafoe"/>
+  <tbox:hasActor rdf:resource="#Brooklynn_Prince"/>
+  <tbox:hasDirector rdf:resource="#Sean_Baker"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</onto:runtime>
+  <rdfs:label xml:lang="en">The Florida Project</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">111</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-10-06</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Grand_Budapest_Hotel">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Wes_Anderson"/>
+  <onto:genre rdf:resource="https://schema.org/Adventure"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Crime"/>
+  <onto:starring rdf:resource="#Ralph_Fiennes"/>
+  <onto:starring rdf:resource="#Tony_Revolori"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Crime"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Adventure"/>
+  <tbox:hasActor rdf:resource="#Ralph_Fiennes"/>
+  <tbox:hasActor rdf:resource="#Tony_Revolori"/>
+  <tbox:hasDirector rdf:resource="#Wes_Anderson"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-07</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</onto:runtime>
+  <rdfs:label xml:lang="en">The Grand Budapest Hotel</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-03-07</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Imitation_Game">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Morten_Tyldum"/>
+  <onto:genre rdf:resource="https://schema.org/Biography"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Thriller"/>
+  <onto:starring rdf:resource="#Benedict_Cumberbatch"/>
+  <onto:starring rdf:resource="#Keira_Knightley"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Thriller"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Biography"/>
+  <tbox:hasActor rdf:resource="#Benedict_Cumberbatch"/>
+  <tbox:hasActor rdf:resource="#Keira_Knightley"/>
+  <tbox:hasDirector rdf:resource="#Morten_Tyldum"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-28</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</onto:runtime>
+  <rdfs:label xml:lang="en">The Imitation Game</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-11-28</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Lobster">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Yorgos_Lanthimos"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Romance"/>
+  <onto:starring rdf:resource="#Colin_Farrell"/>
+  <onto:starring rdf:resource="#Rachel_Weisz"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Romance"/>
+  <tbox:hasActor rdf:resource="#Colin_Farrell"/>
+  <tbox:hasActor rdf:resource="#Rachel_Weisz"/>
+  <tbox:hasDirector rdf:resource="#Yorgos_Lanthimos"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-16</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</onto:runtime>
+  <rdfs:label xml:lang="en">The Lobster</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">119</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-10-16</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Revenant">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Alejandro_G._Inarritu"/>
+  <onto:genre rdf:resource="https://schema.org/Action"/>
+  <onto:genre rdf:resource="https://schema.org/Adventure"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Leonardo_DiCaprio"/>
+  <onto:starring rdf:resource="#Tom_Hardy"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Action"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Adventure"/>
+  <tbox:hasActor rdf:resource="#Tom_Hardy"/>
+  <tbox:hasActor rdf:resource="#Leonardo_DiCaprio"/>
+  <tbox:hasDirector rdf:resource="#Alejandro_G._Inarritu"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-25</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</onto:runtime>
+  <rdfs:label xml:lang="en">The Revenant</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-12-25</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Shape_of_Water">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Guillermo_del_Toro"/>
+  <onto:genre rdf:resource="https://schema.org/Adventure"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Fantasy"/>
+  <onto:starring rdf:resource="#Michael_Shannon"/>
+  <onto:starring rdf:resource="#Sally_Hawkins"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Adventure"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Fantasy"/>
+  <tbox:hasActor rdf:resource="#Michael_Shannon"/>
+  <tbox:hasActor rdf:resource="#Sally_Hawkins"/>
+  <tbox:hasDirector rdf:resource="#Guillermo_del_Toro"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-01</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</onto:runtime>
+  <rdfs:label xml:lang="en">The Shape of Water</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-01</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#The_Wolf_of_Wall_Street">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Martin_Scorsese"/>
+  <onto:genre rdf:resource="https://schema.org/Biography"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Crime"/>
+  <onto:starring rdf:resource="#Jonah_Hill"/>
+  <onto:starring rdf:resource="#Leonardo_DiCaprio"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Crime"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Biography"/>
+  <tbox:hasActor rdf:resource="#Jonah_Hill"/>
+  <tbox:hasActor rdf:resource="#Leonardo_DiCaprio"/>
+  <tbox:hasDirector rdf:resource="#Martin_Scorsese"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-25</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</onto:runtime>
+  <rdfs:label xml:lang="en">The Wolf of Wall Street</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-12-25</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Three_Billboards_Outside_Ebbing_Missouri">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Martin_McDonagh"/>
+  <onto:genre rdf:resource="https://schema.org/Comedy"/>
+  <onto:genre rdf:resource="https://schema.org/Crime"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:starring rdf:resource="#Frances_McDormand"/>
+  <onto:starring rdf:resource="#Woody_Harrelson"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Comedy"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Crime"/>
+  <tbox:hasActor rdf:resource="#Woody_Harrelson"/>
+  <tbox:hasActor rdf:resource="#Frances_McDormand"/>
+  <tbox:hasDirector rdf:resource="#Martin_McDonagh"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-10</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</onto:runtime>
+  <rdfs:label xml:lang="en">Three Billboards Outside Ebbing Missouri</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">115</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-11-10</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tom_Hardy">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Mad_Max_Fury_Road"/>
+  <tbox:actsIn rdf:resource="#The_Revenant"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tom_Hardy"/>
+  <tbox:hasCollaboratedWith rdf:resource="#George_Miller"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Charlize_Theron"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Leonardo_DiCaprio"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Alejandro_G._Inarritu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tom_McCarthy">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#Spotlight"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Mark_Ruffalo"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Michael_Keaton"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Tony_Revolori">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Grand_Budapest_Hotel"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ralph_Fiennes"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Wes_Anderson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tony_Revolori"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wes_Anderson">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Grand_Budapest_Hotel"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Ralph_Fiennes"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Tony_Revolori"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Whiplash">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Damien_Chazelle"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/Music"/>
+  <onto:starring rdf:resource="#J.K._Simmons"/>
+  <onto:starring rdf:resource="#Miles_Teller"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Music"/>
+  <tbox:hasActor rdf:resource="#Miles_Teller"/>
+  <tbox:hasActor rdf:resource="#J.K._Simmons"/>
+  <tbox:hasDirector rdf:resource="#Damien_Chazelle"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</onto:runtime>
+  <rdfs:label xml:lang="en">Whiplash</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-10</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Willem_Dafoe">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#The_Florida_Project"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Sean_Baker"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Willem_Dafoe"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Brooklynn_Prince"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Woody_Harrelson">
+  <rdf:type rdf:resource="http://example.org/tbox#Actor"/>
+  <tbox:actsIn rdf:resource="#Three_Billboards_Outside_Ebbing_Missouri"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Woody_Harrelson"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Martin_McDonagh"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Frances_McDormand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Yorgos_Lanthimos">
+  <rdf:type rdf:resource="http://example.org/tbox#Director"/>
+  <tbox:directs rdf:resource="#The_Lobster"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Colin_Farrell"/>
+  <tbox:hasCollaboratedWith rdf:resource="#Rachel_Weisz"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#12_Years_a_Slave">
+  <rdf:type rdf:resource="http://dbpedia.org/ontology/Film"/>
+  <onto:director rdf:resource="#Steve_McQueen"/>
+  <onto:genre rdf:resource="https://schema.org/Biography"/>
+  <onto:genre rdf:resource="https://schema.org/Drama"/>
+  <onto:genre rdf:resource="https://schema.org/History"/>
+  <onto:starring rdf:resource="#Chiwetel_Ejiofor"/>
+  <onto:starring rdf:resource="#Michael_Fassbender"/>
+  <rdf:type rdf:resource="http://example.org/tbox#Movie"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Drama"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/History"/>
+  <tbox:hasGenre rdf:resource="https://schema.org/Biography"/>
+  <tbox:hasActor rdf:resource="#Michael_Fassbender"/>
+  <tbox:hasActor rdf:resource="#Chiwetel_Ejiofor"/>
+  <tbox:hasDirector rdf:resource="#Steve_McQueen"/>
+  <onto:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-18</onto:releaseDate>
+  <onto:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</onto:runtime>
+  <rdfs:label xml:lang="en">12 Years a Slave</rdfs:label>
+  <tbox:runtime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</tbox:runtime>
+  <tbox:releaseDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-18</tbox:releaseDate>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Action">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Adventure">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Animation">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Biography">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Comedy">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Crime">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Drama">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Fantasy">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/History">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Horror">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Music">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Mystery">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Romance">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Sci-Fi">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="https://schema.org/Thriller">
+  <rdf:type rdf:resource="http://example.org/tbox#Genre"/>
+  <rdf:type rdf:resource="http://schema.org/Genre"/>
+</owl:NamedIndividual>
+
+<rdf:Description rdf:about="http://example.org/tbox#Genre">
+  <owl:equivalentClass rdf:resource="http://schema.org/Genre"/>
+</rdf:Description>
+
+
+</rdf:RDF>

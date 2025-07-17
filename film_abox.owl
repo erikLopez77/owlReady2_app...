@@ -1,0 +1,3871 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://example.org/abox"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://example.org/abox">
+    <Prefix name="" IRI="http://example.org/abox#"/>
+    <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
+    <Prefix name="dbr" IRI="http://dbpedia.org/resource/"/>
+    <Prefix name="exa" IRI="http://example.org/abox#"/>
+    <Prefix name="ext" IRI="http://example.org/tbox#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Adventure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Andrew_Garfield"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Anne_Hathaway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Biography"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Brad_Pitt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Carrie-Anne_Moss"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Catherine_Zeta_Jones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Charlize_Theron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Christian_Bale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Christoph_Waltz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Comedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:David_Fincher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Denis_Villeneuve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Elliot_Page"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Gary_Sinise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:George_Miller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Harrison_Ford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Heath_Ledger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Hugh_Jackman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:James_Cameron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Jeff_Goldblum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Jennifer_Connelly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Jesse_Eisenberg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Joaquin_Phoenix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Jonah_Hill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Kate_Winslet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Keanu_Reeves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Kenneth_Branagh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Lana_Wachowski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Laura_Dern"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Laurence_Fishburne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Leonardo_DiCaprio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Lilly_Wachowski"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Mark_Rylance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Martin_Scorsese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Matt_Damon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Matthew_McConaughey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Quentin_Tarantino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Ridley_Scott"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Robert_Zemeckis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Robin_Wright"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Romance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Ron_Howard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Russell_Crowe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Ryan_Gosling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Sam_Neill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Sam_Worthington"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Scarlett_Johansson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Steven_Spielberg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Thriller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hanks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hardy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:War"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dbr:Zoe_Saldana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Adam_McKay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alejandro_G._Inarritu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alex_Garland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alfonso_Cuaron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alicia_Vikander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Allison_Williams"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amy_Adams"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amy_Poehler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arrival"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barry_Jenkins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barry_Keoghan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Batman_Begins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ben_Affleck"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Benedict_Cumberbatch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Birdman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bong_Joon-ho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boyhood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brie_Larson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brooklynn_Prince"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Charlize_Theron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chiwetel_Ejiofor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Christian_Bale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Christopher_Nolan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colin_Farrell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Damien_Chazelle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daniel_Kaluuya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#David_Fincher"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denis_Villeneuve"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Domhnall_Gleeson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dunkirk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edward_Norton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ellar_Coltrane"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emma_Stone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ex_Machina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fionn_Whitehead"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frances_McDormand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#George_Clooney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#George_Miller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Get_Out"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gone_Girl"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gravity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greta_Gerwig"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guillermo_del_Toro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harrison_Ford"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Her"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inside_Out"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#J.K._Simmons"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jacob_Tremblay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jean-Marc_Vallee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jennifer_Garner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jeremy_Renner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joaquin_Phoenix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jonah_Hill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jordan_Peele"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Keira_Knightley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#La_La_Land"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lady_Bird"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Laurie_Metcalf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lee_Sun-kyun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lenny_Abrahamson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leonardo_DiCaprio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mahershala_Ali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mark_Ruffalo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Martin_McDonagh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Martin_Scorsese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matthew_McConaughey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michael_Fassbender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michael_Keaton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michael_Shannon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Miles_Teller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Moonlight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morten_Tyldum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naomie_Harris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parasite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patricia_Arquette"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pete_Docter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phyllis_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rachel_Weisz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ralph_Fiennes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Richard_Linklater"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rosamund_Pike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ryan_Gosling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sally_Hawkins"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sandra_Bullock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saoirse_Ronan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scarlett_Johansson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sean_Baker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Song_Kang-ho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spike_Jonze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spotlight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steve_Carell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Steve_McQueen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Big_Short"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Dark_Knight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Dark_Knight_Rises"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Lobster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Revenant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom_Hardy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom_McCarthy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tony_Revolori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wes_Anderson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Whiplash"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Willem_Dafoe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Woody_Harrelson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yorgos_Lanthimos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Adventure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Animation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Crime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/History"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Horror"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Mystery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Romance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Sci-Fi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dbo:director"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dbo:genre"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dbo:starring"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Genre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ext:hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbo:Film"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="dbo:Person"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ext:Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ext:Director"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="ext:isPrequel"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Adventure"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Andrew_Garfield"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Anne_Hathaway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Biography"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Brad_Pitt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catherine_Zeta_Jones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Charlize_Theron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christian_Bale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christoph_Waltz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:David_Fincher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Denis_Villeneuve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Elliot_Page"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gary_Sinise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:George_Miller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Harrison_Ford"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Heath_Ledger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Hugh_Jackman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:James_Cameron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jeff_Goldblum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jennifer_Connelly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jesse_Eisenberg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Joaquin_Phoenix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jonah_Hill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Kate_Winslet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Kenneth_Branagh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Laura_Dern"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Leonardo_DiCaprio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mark_Rylance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Martin_Scorsese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Matt_Damon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Matthew_McConaughey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Quentin_Tarantino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Ridley_Scott"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Robert_Zemeckis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Robin_Wright"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Romance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Ron_Howard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Russell_Crowe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Ryan_Gosling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Sam_Neill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Sam_Worthington"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Scarlett_Johansson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Steven_Spielberg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Thriller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hanks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hardy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:War"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Person"/>
+        <NamedIndividual abbreviatedIRI="dbr:Zoe_Saldana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Adam_McKay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Alejandro_G._Inarritu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Alex_Garland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Alfonso_Cuaron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Alicia_Vikander"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Allison_Williams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Amy_Adams"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Amy_Poehler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Argo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Arrival"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Barry_Jenkins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Barry_Keoghan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Batman_Begins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Ben_Affleck"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Benedict_Cumberbatch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Birdman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Bong_Joon-ho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Boyhood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Brie_Larson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Brooklynn_Prince"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Charlize_Theron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Chiwetel_Ejiofor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Christian_Bale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Christopher_Nolan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Colin_Farrell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Damien_Chazelle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Daniel_Kaluuya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#David_Fincher"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Denis_Villeneuve"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Domhnall_Gleeson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Edward_Norton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Ellar_Coltrane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Emma_Stone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Fionn_Whitehead"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Frances_McDormand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#George_Clooney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#George_Miller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Get_Out"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Gravity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Greta_Gerwig"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Guillermo_del_Toro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Harrison_Ford"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Her"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#J.K._Simmons"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Jacob_Tremblay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Jean-Marc_Vallee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Jennifer_Garner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Jeremy_Renner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Joaquin_Phoenix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Jonah_Hill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Jordan_Peele"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Keira_Knightley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Laurie_Metcalf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Lee_Sun-kyun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Lenny_Abrahamson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Leonardo_DiCaprio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Mahershala_Ali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Mark_Ruffalo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Martin_McDonagh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Martin_Scorsese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Matthew_McConaughey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Michael_Fassbender"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Michael_Keaton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Michael_Shannon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Miles_Teller"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Moonlight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Morten_Tyldum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Naomie_Harris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Parasite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Patricia_Arquette"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Pete_Docter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Phyllis_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Rachel_Weisz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Ralph_Fiennes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Richard_Linklater"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Room"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Rosamund_Pike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Ryan_Gosling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Sally_Hawkins"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Sandra_Bullock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Saoirse_Ronan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Scarlett_Johansson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Sean_Baker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Song_Kang-ho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Spike_Jonze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Spotlight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Steve_Carell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Steve_McQueen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Dark_Knight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Dark_Knight_Rises"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Tom_Hardy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Tom_McCarthy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Tony_Revolori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Wes_Anderson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#Whiplash"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Willem_Dafoe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Actor"/>
+        <NamedIndividual IRI="#Woody_Harrelson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ext:Director"/>
+        <NamedIndividual IRI="#Yorgos_Lanthimos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Film"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <NamedIndividual abbreviatedIRI="dbr:Ron_Howard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <NamedIndividual abbreviatedIRI="dbr:Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jennifer_Connelly"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <NamedIndividual abbreviatedIRI="dbr:Russell_Crowe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <NamedIndividual abbreviatedIRI="dbr:James_Cameron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Sam_Worthington"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Zoe_Saldana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <NamedIndividual abbreviatedIRI="dbr:Denis_Villeneuve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <NamedIndividual abbreviatedIRI="dbr:Harrison_Ford"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <NamedIndividual abbreviatedIRI="dbr:Ryan_Gosling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <NamedIndividual abbreviatedIRI="dbr:Steven_Spielberg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <NamedIndividual abbreviatedIRI="dbr:Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <NamedIndividual abbreviatedIRI="dbr:Leonardo_DiCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hanks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:War"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:Kenneth_Branagh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mark_Rylance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hardy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <NamedIndividual abbreviatedIRI="dbr:Robert_Zemeckis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <NamedIndividual abbreviatedIRI="dbr:Romance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gary_Sinise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <NamedIndividual abbreviatedIRI="dbr:Robin_Wright"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hanks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <NamedIndividual abbreviatedIRI="dbr:Ridley_Scott"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <NamedIndividual abbreviatedIRI="dbr:Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <NamedIndividual abbreviatedIRI="dbr:Joaquin_Phoenix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <NamedIndividual abbreviatedIRI="dbr:Russell_Crowe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <NamedIndividual abbreviatedIRI="dbr:Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <NamedIndividual abbreviatedIRI="dbr:Elliot_Page"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <NamedIndividual abbreviatedIRI="dbr:Leonardo_DiCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <NamedIndividual abbreviatedIRI="dbr:Quentin_Tarantino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <NamedIndividual abbreviatedIRI="dbr:War"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <NamedIndividual abbreviatedIRI="dbr:Brad_Pitt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christoph_Waltz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Anne_Hathaway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <NamedIndividual abbreviatedIRI="dbr:Matthew_McConaughey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <NamedIndividual abbreviatedIRI="dbr:Steven_Spielberg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <NamedIndividual abbreviatedIRI="dbr:Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jeff_Goldblum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <NamedIndividual abbreviatedIRI="dbr:Laura_Dern"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <NamedIndividual abbreviatedIRI="dbr:Sam_Neill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <NamedIndividual abbreviatedIRI="dbr:George_Miller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <NamedIndividual abbreviatedIRI="dbr:Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <NamedIndividual abbreviatedIRI="dbr:Charlize_Theron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hardy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <NamedIndividual abbreviatedIRI="dbr:Steven_Spielberg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <NamedIndividual abbreviatedIRI="dbr:War"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <NamedIndividual abbreviatedIRI="dbr:Matt_Damon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hanks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <NamedIndividual abbreviatedIRI="dbr:Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christian_Bale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <NamedIndividual abbreviatedIRI="dbr:Heath_Ledger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Lana_Wachowski"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Lilly_Wachowski"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Science_Fiction"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Carrie-Anne_Moss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Keanu_Reeves"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <NamedIndividual abbreviatedIRI="dbr:Laurence_Fishburne"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christopher_Nolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <NamedIndividual abbreviatedIRI="dbr:Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <NamedIndividual abbreviatedIRI="dbr:Christian_Bale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <NamedIndividual abbreviatedIRI="dbr:Hugh_Jackman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <NamedIndividual abbreviatedIRI="dbr:Scarlett_Johansson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <NamedIndividual abbreviatedIRI="dbr:David_Fincher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <NamedIndividual abbreviatedIRI="dbr:Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <NamedIndividual abbreviatedIRI="dbr:Andrew_Garfield"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jesse_Eisenberg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <NamedIndividual abbreviatedIRI="dbr:Steven_Spielberg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <NamedIndividual abbreviatedIRI="dbr:Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catherine_Zeta_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <NamedIndividual abbreviatedIRI="dbr:Tom_Hanks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <NamedIndividual abbreviatedIRI="dbr:Martin_Scorsese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <NamedIndividual abbreviatedIRI="dbr:Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <NamedIndividual abbreviatedIRI="dbr:Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jonah_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <NamedIndividual abbreviatedIRI="dbr:Leonardo_DiCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <NamedIndividual abbreviatedIRI="dbr:James_Cameron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <NamedIndividual abbreviatedIRI="dbr:Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <NamedIndividual abbreviatedIRI="dbr:Romance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <NamedIndividual abbreviatedIRI="dbr:Kate_Winslet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <NamedIndividual abbreviatedIRI="dbr:Leonardo_DiCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ext:hasDirector"/>
+        <NamedIndividual IRI="#Argo"/>
+        <NamedIndividual IRI="#Ben_Affleck"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <NamedIndividual IRI="#Denis_Villeneuve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <NamedIndividual IRI="https://schema.org/Mystery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <NamedIndividual IRI="https://schema.org/Sci-Fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <NamedIndividual IRI="#Amy_Adams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <NamedIndividual IRI="#Jeremy_Renner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ext:isPrequel"/>
+        <NamedIndividual IRI="#Batman_Begins"/>
+        <NamedIndividual IRI="#The_Dark_Knight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <NamedIndividual IRI="#Alejandro_G._Inarritu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <NamedIndividual IRI="#Edward_Norton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <NamedIndividual IRI="#Michael_Keaton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <NamedIndividual IRI="#Denis_Villeneuve"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <NamedIndividual IRI="https://schema.org/Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <NamedIndividual IRI="https://schema.org/Mystery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <NamedIndividual IRI="#Harrison_Ford"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <NamedIndividual IRI="#Ryan_Gosling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Boyhood"/>
+        <NamedIndividual IRI="#Richard_Linklater"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Boyhood"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Boyhood"/>
+        <NamedIndividual IRI="#Ellar_Coltrane"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Boyhood"/>
+        <NamedIndividual IRI="#Patricia_Arquette"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <NamedIndividual IRI="#Jean-Marc_Vallee"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <NamedIndividual IRI="#Jennifer_Garner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <NamedIndividual IRI="#Matthew_McConaughey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <NamedIndividual IRI="#Christopher_Nolan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <NamedIndividual IRI="https://schema.org/Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <NamedIndividual IRI="https://schema.org/History"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <NamedIndividual IRI="#Barry_Keoghan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <NamedIndividual IRI="#Fionn_Whitehead"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <NamedIndividual IRI="#Alex_Garland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <NamedIndividual IRI="https://schema.org/Sci-Fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <NamedIndividual IRI="#Alicia_Vikander"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <NamedIndividual IRI="#Domhnall_Gleeson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <NamedIndividual IRI="#Jordan_Peele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <NamedIndividual IRI="https://schema.org/Horror"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <NamedIndividual IRI="https://schema.org/Mystery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <NamedIndividual IRI="#Allison_Williams"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <NamedIndividual IRI="#Daniel_Kaluuya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <NamedIndividual IRI="#David_Fincher"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <NamedIndividual IRI="https://schema.org/Mystery"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <NamedIndividual IRI="#Ben_Affleck"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <NamedIndividual IRI="#Rosamund_Pike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <NamedIndividual IRI="#Alfonso_Cuaron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <NamedIndividual IRI="https://schema.org/Sci-Fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <NamedIndividual IRI="#George_Clooney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <NamedIndividual IRI="#Sandra_Bullock"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Her"/>
+        <NamedIndividual IRI="#Spike_Jonze"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Her"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Her"/>
+        <NamedIndividual IRI="https://schema.org/Romance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Her"/>
+        <NamedIndividual IRI="https://schema.org/Sci-Fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Her"/>
+        <NamedIndividual IRI="#Joaquin_Phoenix"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Her"/>
+        <NamedIndividual IRI="#Scarlett_Johansson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <NamedIndividual IRI="#Pete_Docter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <NamedIndividual IRI="https://schema.org/Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <NamedIndividual IRI="https://schema.org/Animation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <NamedIndividual IRI="#Amy_Poehler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <NamedIndividual IRI="#Phyllis_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <NamedIndividual IRI="#Damien_Chazelle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <NamedIndividual IRI="https://schema.org/Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <NamedIndividual IRI="#Emma_Stone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <NamedIndividual IRI="#Ryan_Gosling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <NamedIndividual IRI="#Greta_Gerwig"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <NamedIndividual IRI="#Laurie_Metcalf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <NamedIndividual IRI="#Saoirse_Ronan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <NamedIndividual IRI="#George_Miller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <NamedIndividual IRI="https://schema.org/Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <NamedIndividual IRI="https://schema.org/Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <NamedIndividual IRI="https://schema.org/Sci-Fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <NamedIndividual IRI="#Charlize_Theron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <NamedIndividual IRI="#Tom_Hardy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Moonlight"/>
+        <NamedIndividual IRI="#Barry_Jenkins"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Moonlight"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Moonlight"/>
+        <NamedIndividual IRI="#Mahershala_Ali"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Moonlight"/>
+        <NamedIndividual IRI="#Naomie_Harris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="#Bong_Joon-ho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="#Lee_Sun-kyun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <NamedIndividual IRI="#Song_Kang-ho"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Room"/>
+        <NamedIndividual IRI="#Lenny_Abrahamson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Room"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Room"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Room"/>
+        <NamedIndividual IRI="#Brie_Larson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Room"/>
+        <NamedIndividual IRI="#Jacob_Tremblay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <NamedIndividual IRI="#Tom_McCarthy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <NamedIndividual IRI="https://schema.org/Crime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <NamedIndividual IRI="#Mark_Ruffalo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <NamedIndividual IRI="#Michael_Keaton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <NamedIndividual IRI="#Adam_McKay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <NamedIndividual IRI="#Christian_Bale"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <NamedIndividual IRI="#Steve_Carell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="ext:isPrequel"/>
+        <NamedIndividual IRI="#The_Dark_Knight"/>
+        <NamedIndividual IRI="#The_Dark_Knight_Rises"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+        <NamedIndividual IRI="#Sean_Baker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+        <NamedIndividual IRI="#Brooklynn_Prince"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+        <NamedIndividual IRI="#Willem_Dafoe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <NamedIndividual IRI="#Wes_Anderson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <NamedIndividual IRI="https://schema.org/Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <NamedIndividual IRI="https://schema.org/Crime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <NamedIndividual IRI="#Ralph_Fiennes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <NamedIndividual IRI="#Tony_Revolori"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <NamedIndividual IRI="#Morten_Tyldum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <NamedIndividual IRI="https://schema.org/Thriller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <NamedIndividual IRI="#Benedict_Cumberbatch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <NamedIndividual IRI="#Keira_Knightley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <NamedIndividual IRI="#Yorgos_Lanthimos"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <NamedIndividual IRI="https://schema.org/Romance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <NamedIndividual IRI="#Colin_Farrell"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <NamedIndividual IRI="#Rachel_Weisz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <NamedIndividual IRI="#Alejandro_G._Inarritu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <NamedIndividual IRI="https://schema.org/Action"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <NamedIndividual IRI="https://schema.org/Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <NamedIndividual IRI="#Leonardo_DiCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <NamedIndividual IRI="#Tom_Hardy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <NamedIndividual IRI="#Guillermo_del_Toro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <NamedIndividual IRI="https://schema.org/Adventure"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <NamedIndividual IRI="https://schema.org/Fantasy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <NamedIndividual IRI="#Michael_Shannon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <NamedIndividual IRI="#Sally_Hawkins"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <NamedIndividual IRI="#Martin_Scorsese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <NamedIndividual IRI="https://schema.org/Crime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <NamedIndividual IRI="#Jonah_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <NamedIndividual IRI="#Leonardo_DiCaprio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <NamedIndividual IRI="#Martin_McDonagh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <NamedIndividual IRI="https://schema.org/Comedy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <NamedIndividual IRI="https://schema.org/Crime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <NamedIndividual IRI="#Frances_McDormand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <NamedIndividual IRI="#Woody_Harrelson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <NamedIndividual IRI="#Damien_Chazelle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <NamedIndividual IRI="https://schema.org/Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <NamedIndividual IRI="#J.K._Simmons"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <NamedIndividual IRI="#Miles_Teller"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:director"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <NamedIndividual IRI="#Steve_McQueen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <NamedIndividual IRI="https://schema.org/Biography"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <NamedIndividual IRI="https://schema.org/Drama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:genre"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <NamedIndividual IRI="https://schema.org/History"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <NamedIndividual IRI="#Chiwetel_Ejiofor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="dbo:starring"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <NamedIndividual IRI="#Michael_Fassbender"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2001-12-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:A_Beautiful_Mind"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-12-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Avatar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">162</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-10-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Blade_Runner_2049"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">164</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2002-12-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Catch_Me_If_You_Can"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">141</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-07-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Dunkirk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1994-07-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Forrest_Gump"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">142</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2000-05-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Gladiator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">155</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2010-07-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inception"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">148</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2009-08-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Inglourious_Basterds"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">153</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-11-07</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Interstellar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">169</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1993-06-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Jurassic_Park"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">127</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-05-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Mad_Max_Fury_Road"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1998-07-24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Saving_Private_Ryan"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">169</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2008-07-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Dark_Knight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">152</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2003-05-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Matrix_Reloaded"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">138</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2006-10-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Prestige"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">130</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2010-10-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Social_Network"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2004-06-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Terminal"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">128</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2013-12-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:The_Wolf_of_Wall_Street"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">180</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">1997-12-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual abbreviatedIRI="dbr:Titanic"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">195</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2016-11-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Arrival"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">116</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-10-17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Birdman"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">119</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-10-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Blade_Runner_2049"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">164</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Boyhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-07-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Boyhood"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">165</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2013-11-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Dallas_Buyers_Club"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">117</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-07-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Dunkirk"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-12-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Ex_Machina"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">108</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-02-24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Get_Out"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-10-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Gone_Girl"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">149</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2013-10-04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Gravity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">91</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Her"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2013-12-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Her"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">126</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-06-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Inside_Out"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">95</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2016-12-09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#La_La_Land"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">128</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-11-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Lady_Bird"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">94</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-05-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Mad_Max_Fury_Road"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Moonlight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2016-10-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Moonlight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-05-30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Parasite"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">132</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Room"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-10-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Room"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">118</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-11-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Spotlight"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">129</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-12-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Big_Short"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">130</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-10-06</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Florida_Project"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-03-07</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Grand_Budapest_Hotel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-11-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Imitation_Game"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">114</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-10-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Lobster"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">119</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2015-12-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Revenant"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">156</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-12-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Shape_of_Water"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2013-12-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#The_Wolf_of_Wall_Street"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">180</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-11-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Three_Billboards_Outside_Ebbing_Missouri"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">115</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2014-10-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#Whiplash"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:releaseDate"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2013-10-18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="dbo:runtime"/>
+        <NamedIndividual IRI="#12_Years_a_Slave"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">136</Literal>
+    </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:A_Beautiful_Mind</AbbreviatedIRI>
+        <Literal xml:lang="en">A Beautiful Mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Action</AbbreviatedIRI>
+        <Literal xml:lang="en">Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Adventure</AbbreviatedIRI>
+        <Literal xml:lang="en">Adventure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Andrew_Garfield</AbbreviatedIRI>
+        <Literal xml:lang="en">Andrew Garfield</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Anne_Hathaway</AbbreviatedIRI>
+        <Literal xml:lang="en">Anne Hathaway</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Avatar</AbbreviatedIRI>
+        <Literal xml:lang="en">Avatar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Biography</AbbreviatedIRI>
+        <Literal xml:lang="en">Biography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Blade_Runner_2049</AbbreviatedIRI>
+        <Literal xml:lang="en">Blade Runner 2049</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Brad_Pitt</AbbreviatedIRI>
+        <Literal xml:lang="en">Brad Pitt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Catch_Me_If_You_Can</AbbreviatedIRI>
+        <Literal xml:lang="en">Catch Me If You Can</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Catherine_Zeta_Jones</AbbreviatedIRI>
+        <Literal xml:lang="en">Catherine Zeta-Jones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Charlize_Theron</AbbreviatedIRI>
+        <Literal xml:lang="en">Charlize Theron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Christian_Bale</AbbreviatedIRI>
+        <Literal xml:lang="en">Christian Bale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Christoph_Waltz</AbbreviatedIRI>
+        <Literal xml:lang="en">Christoph Waltz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Christopher_Nolan</AbbreviatedIRI>
+        <Literal xml:lang="en">Christopher Nolan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:David_Fincher</AbbreviatedIRI>
+        <Literal xml:lang="en">David Fincher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Denis_Villeneuve</AbbreviatedIRI>
+        <Literal xml:lang="en">Denis Villeneuve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Drama</AbbreviatedIRI>
+        <Literal xml:lang="en">Drama</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Dunkirk</AbbreviatedIRI>
+        <Literal xml:lang="en">Dunkirk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Elliot_Page</AbbreviatedIRI>
+        <Literal xml:lang="en">Elliot Page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Forrest_Gump</AbbreviatedIRI>
+        <Literal xml:lang="en">Forrest Gump</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Gary_Sinise</AbbreviatedIRI>
+        <Literal xml:lang="en">Gary Sinise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:George_Miller</AbbreviatedIRI>
+        <Literal xml:lang="en">George Miller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Gladiator</AbbreviatedIRI>
+        <Literal xml:lang="en">Gladiator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Harrison_Ford</AbbreviatedIRI>
+        <Literal xml:lang="en">Harrison Ford</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Heath_Ledger</AbbreviatedIRI>
+        <Literal xml:lang="en">Heath Ledger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Hugh_Jackman</AbbreviatedIRI>
+        <Literal xml:lang="en">Hugh Jackman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Inception</AbbreviatedIRI>
+        <Literal xml:lang="en">Inception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Inglourious_Basterds</AbbreviatedIRI>
+        <Literal xml:lang="en">Inglourious Basterds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Interstellar</AbbreviatedIRI>
+        <Literal xml:lang="en">Interstellar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:James_Cameron</AbbreviatedIRI>
+        <Literal xml:lang="en">James Cameron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Jeff_Goldblum</AbbreviatedIRI>
+        <Literal xml:lang="en">Jeff Goldblum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Jennifer_Connelly</AbbreviatedIRI>
+        <Literal xml:lang="en">Jennifer Connelly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Jesse_Eisenberg</AbbreviatedIRI>
+        <Literal xml:lang="en">Jesse Eisenberg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Joaquin_Phoenix</AbbreviatedIRI>
+        <Literal xml:lang="en">Joaquin Phoenix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Jonah_Hill</AbbreviatedIRI>
+        <Literal xml:lang="en">Jonah Hill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Jurassic_Park</AbbreviatedIRI>
+        <Literal xml:lang="en">Jurassic Park</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Kate_Winslet</AbbreviatedIRI>
+        <Literal xml:lang="en">Kate Winslet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Kenneth_Branagh</AbbreviatedIRI>
+        <Literal xml:lang="en">Kenneth Branagh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Laura_Dern</AbbreviatedIRI>
+        <Literal xml:lang="en">Laura Dern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Leonardo_DiCaprio</AbbreviatedIRI>
+        <Literal xml:lang="en">Leonardo DiCaprio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Mad_Max_Fury_Road</AbbreviatedIRI>
+        <Literal xml:lang="en">Mad Max: Fury Road</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Mark_Rylance</AbbreviatedIRI>
+        <Literal xml:lang="en">Mark Rylance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Martin_Scorsese</AbbreviatedIRI>
+        <Literal xml:lang="en">Martin Scorsese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Matt_Damon</AbbreviatedIRI>
+        <Literal xml:lang="en">Matt Damon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Matthew_McConaughey</AbbreviatedIRI>
+        <Literal xml:lang="en">Matthew McConaughey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Quentin_Tarantino</AbbreviatedIRI>
+        <Literal xml:lang="en">Quentin Tarantino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Ridley_Scott</AbbreviatedIRI>
+        <Literal xml:lang="en">Ridley Scott</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Robert_Zemeckis</AbbreviatedIRI>
+        <Literal xml:lang="en">Robert Zemeckis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Robin_Wright</AbbreviatedIRI>
+        <Literal xml:lang="en">Robin Wright</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Romance</AbbreviatedIRI>
+        <Literal xml:lang="en">Romance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Ron_Howard</AbbreviatedIRI>
+        <Literal xml:lang="en">Ron Howard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Russell_Crowe</AbbreviatedIRI>
+        <Literal xml:lang="en">Russell Crowe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Ryan_Gosling</AbbreviatedIRI>
+        <Literal xml:lang="en">Ryan Gosling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Sam_Neill</AbbreviatedIRI>
+        <Literal xml:lang="en">Sam Neill</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Sam_Worthington</AbbreviatedIRI>
+        <Literal xml:lang="en">Sam Worthington</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Saving_Private_Ryan</AbbreviatedIRI>
+        <Literal xml:lang="en">Saving Private Ryan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Scarlett_Johansson</AbbreviatedIRI>
+        <Literal xml:lang="en">Scarlett Johansson</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Steven_Spielberg</AbbreviatedIRI>
+        <Literal xml:lang="en">Steven Spielberg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:The_Dark_Knight</AbbreviatedIRI>
+        <Literal xml:lang="en">The Dark Knight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:The_Matrix_Reloaded</AbbreviatedIRI>
+        <Literal xml:lang="en">The Matrix Reloaded</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:The_Prestige</AbbreviatedIRI>
+        <Literal xml:lang="en">The Prestige</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:The_Social_Network</AbbreviatedIRI>
+        <Literal xml:lang="en">The Social Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:The_Terminal</AbbreviatedIRI>
+        <Literal xml:lang="en">The Terminal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:The_Wolf_of_Wall_Street</AbbreviatedIRI>
+        <Literal xml:lang="en">The Wolf of Wall Street</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Thriller</AbbreviatedIRI>
+        <Literal xml:lang="en">Thriller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Titanic</AbbreviatedIRI>
+        <Literal xml:lang="en">Titanic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Tom_Hanks</AbbreviatedIRI>
+        <Literal xml:lang="en">Tom Hanks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Tom_Hardy</AbbreviatedIRI>
+        <Literal xml:lang="en">Tom Hardy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:War</AbbreviatedIRI>
+        <Literal xml:lang="en">War</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbr:Zoe_Saldana</AbbreviatedIRI>
+        <Literal xml:lang="en">Zoe Saldana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Arrival</IRI>
+        <Literal xml:lang="en">Arrival</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Birdman</IRI>
+        <Literal xml:lang="en">Birdman</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Blade_Runner_2049</IRI>
+        <Literal xml:lang="en">Blade Runner 2049</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Boyhood</IRI>
+        <Literal xml:lang="en">Boyhood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dallas_Buyers_Club</IRI>
+        <Literal xml:lang="en">Dallas Buyers Club</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dunkirk</IRI>
+        <Literal xml:lang="en">Dunkirk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ex_Machina</IRI>
+        <Literal xml:lang="en">Ex Machina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Get_Out</IRI>
+        <Literal xml:lang="en">Get Out</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gone_Girl</IRI>
+        <Literal xml:lang="en">Gone Girl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gravity</IRI>
+        <Literal xml:lang="en">Gravity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Her</IRI>
+        <Literal xml:lang="en">Her</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Inside_Out</IRI>
+        <Literal xml:lang="en">Inside Out</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#La_La_Land</IRI>
+        <Literal xml:lang="en">La La Land</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Lady_Bird</IRI>
+        <Literal xml:lang="en">Lady Bird</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mad_Max_Fury_Road</IRI>
+        <Literal xml:lang="en">Mad Max Fury Road</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Moonlight</IRI>
+        <Literal xml:lang="en">Moonlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Parasite</IRI>
+        <Literal xml:lang="en">Parasite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Room</IRI>
+        <Literal xml:lang="en">Room</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Spotlight</IRI>
+        <Literal xml:lang="en">Spotlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Big_Short</IRI>
+        <Literal xml:lang="en">The Big Short</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Florida_Project</IRI>
+        <Literal xml:lang="en">The Florida Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Grand_Budapest_Hotel</IRI>
+        <Literal xml:lang="en">The Grand Budapest Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Imitation_Game</IRI>
+        <Literal xml:lang="en">The Imitation Game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Lobster</IRI>
+        <Literal xml:lang="en">The Lobster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Revenant</IRI>
+        <Literal xml:lang="en">The Revenant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Shape_of_Water</IRI>
+        <Literal xml:lang="en">The Shape of Water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#The_Wolf_of_Wall_Street</IRI>
+        <Literal xml:lang="en">The Wolf of Wall Street</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Three_Billboards_Outside_Ebbing_Missouri</IRI>
+        <Literal xml:lang="en">Three Billboards Outside Ebbing Missouri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Whiplash</IRI>
+        <Literal xml:lang="en">Whiplash</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#12_Years_a_Slave</IRI>
+        <Literal xml:lang="en">12 Years a Slave</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
