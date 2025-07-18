@@ -39,7 +39,41 @@ she:FilmShape
             ];
         ];
         sh:severity sh:Info;
-        sh:deactivated false;
-    ]
+        sh:deactivated true;
+    ];
+    sh:or(
+        [
+            sh:and(
+                [
+                    sh:path ext:hasGenre;
+                    sh:qualifiedMinCount 1;
+                    sh:qualifiedValueShape[
+                        sh:targetClass ext:Genre;
+                        sh:pattern "Drama"
+                    ];
+                ]
+                [
+                    sh:path ext:runtime;
+                    sh:minInclusive 120;
+                ]
+            );
+        ]
+        [
+            sh:and(
+                [
+                    sh:path ext:hasGenre;
+                    sh:qualifiedMinCount 1;
+                    sh:qualifiedValueShape[
+                        sh:targetClass ext:Genre;
+                        sh:pattern "Comedy"
+                    ];
+                ]
+                [
+                    sh:path ext:runtime;
+                    sh:maxInclusive 119;
+                ]
+            );
+        ]
+    )
 
 .
