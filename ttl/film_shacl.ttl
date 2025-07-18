@@ -1,0 +1,45 @@
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix ext: <http://example.org/tbox#>.
+@prefix she: <http://example.org/shacl#>.
+
+she:FilmShape 
+    a sh:NodeShape;
+    sh:targetClass ext:Movie;
+    #sh:property she:HasDirectorShape;
+    sh:property[
+        sh:path ext:hasDirector;
+        sh:minCount 1;
+        she:message "A film must have at least one director.";
+        sh:severity sh:Violation;
+        sh:deactivated true;
+    ];
+    sh:property [
+        sh:path ext:runtime;
+        sh:maxExclusive 150;
+        she:message "A film should not be longer than 150 (min).";
+        sh:severity sh:Warning;
+        sh:deactivated true;
+    ];
+    #she:HasDirectorShape
+#    a sh:PropertyShape;
+#    sh:path ext:hasDirector;
+#    sh:minCount 1;
+#    she:message "A film must have at least one director.";
+#    sh:severity sh:Violation;
+#    sh:deactivated false;
+#.
+    sh:property[
+        sh:path ext:hasActor;
+        sh:qualifiedMinCount 1;
+        sh:qualifiedValueShape [
+            sh:property[
+                sh:path ext:actsIn;
+                sh:minCount 2;
+            ];
+        ];
+        sh:severity sh:Info;
+        sh:deactivated false;
+    ]
+
+.

@@ -1,0 +1,2713 @@
+@prefix : <http://example.org/abox#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix onto: <http://dbpedia.org/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tbox: <http://example.org/tbox#> .
+@base <http://example.org/abox#> .
+
+<http://example.org/abox> rdf:type owl:Ontology ;
+                           owl:imports <http://example.org/alignment> ,
+                                       <http://example.org/tbox> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://dbpedia.org/ontology/director
+onto:director rdf:type owl:AnnotationProperty .
+
+
+###  http://dbpedia.org/ontology/genre
+onto:genre rdf:type owl:AnnotationProperty .
+
+
+###  http://dbpedia.org/ontology/starring
+onto:starring rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/tbox#hasDirector
+tbox:hasDirector rdf:type owl:ObjectProperty .
+
+
+###  http://example.org/tbox#isPrequel
+tbox:isPrequel rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://dbpedia.org/ontology/releaseDate
+onto:releaseDate rdf:type owl:DatatypeProperty .
+
+
+###  http://dbpedia.org/ontology/runtime
+onto:runtime rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Film
+onto:Film rdf:type owl:Class ;
+          owl:equivalentClass tbox:Movie ;
+          rdfs:subClassOf tbox:CreativeWork ,
+                          tbox:Media .
+
+
+###  http://dbpedia.org/ontology/Person
+onto:Person rdf:type owl:Class ;
+            owl:equivalentClass tbox:Person .
+
+
+###  http://example.org/tbox#Actor
+tbox:Actor rdf:type owl:Class ;
+           rdfs:subClassOf onto:Person .
+
+
+###  http://example.org/tbox#Director
+tbox:Director rdf:type owl:Class ;
+              rdfs:subClassOf onto:Person .
+
+
+###  http://example.org/tbox#Genre
+tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
+
+
+###  http://schema.org/Genre
+<http://schema.org/Genre> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dbpedia.org/resource/A_Beautiful_Mind
+<http://dbpedia.org/resource/A_Beautiful_Mind> rdf:type owl:NamedIndividual ,
+                                                        onto:Film ,
+                                                        tbox:Movie ;
+                                               onto:director <http://dbpedia.org/resource/Ron_Howard> ;
+                                               onto:genre <http://dbpedia.org/resource/Biography> ,
+                                                          <http://dbpedia.org/resource/Drama> ;
+                                               onto:starring <http://dbpedia.org/resource/Jennifer_Connelly> ,
+                                                             <http://dbpedia.org/resource/Russell_Crowe> ;
+                                               tbox:hasActor <http://dbpedia.org/resource/Jennifer_Connelly> ,
+                                                             <http://dbpedia.org/resource/Russell_Crowe> ;
+                                               tbox:hasDirector <http://dbpedia.org/resource/Ron_Howard> ;
+                                               tbox:hasGenre <http://dbpedia.org/resource/Biography> ,
+                                                             <http://dbpedia.org/resource/Drama> ;
+                                               onto:releaseDate "2001-12-21"^^xsd:date ;
+                                               onto:runtime 135 ;
+                                               tbox:releaseDate "2001-12-21"^^xsd:date ;
+                                               tbox:runtime 135 ;
+                                               rdfs:label "A Beautiful Mind"@en .
+
+
+###  http://dbpedia.org/resource/Action
+<http://dbpedia.org/resource/Action> rdf:type owl:NamedIndividual ,
+                                              tbox:Genre ,
+                                              <http://schema.org/Genre> ;
+                                     rdfs:label "Action"@en .
+
+
+###  http://dbpedia.org/resource/Adventure
+<http://dbpedia.org/resource/Adventure> rdf:type owl:NamedIndividual ,
+                                                 tbox:Genre ,
+                                                 <http://schema.org/Genre> ;
+                                        rdfs:label "Adventure"@en .
+
+
+###  http://dbpedia.org/resource/Andrew_Garfield
+<http://dbpedia.org/resource/Andrew_Garfield> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/The_Social_Network> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Andrew_Garfield> ,
+                                                                       <http://dbpedia.org/resource/David_Fincher> ,
+                                                                       <http://dbpedia.org/resource/Jesse_Eisenberg> ;
+                                              rdfs:label "Andrew Garfield"@en .
+
+
+###  http://dbpedia.org/resource/Anne_Hathaway
+<http://dbpedia.org/resource/Anne_Hathaway> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Actor ;
+                                            tbox:actsIn <http://dbpedia.org/resource/Interstellar> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Anne_Hathaway> ,
+                                                                     <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                     <http://dbpedia.org/resource/Matthew_McConaughey> ;
+                                            rdfs:label "Anne Hathaway"@en .
+
+
+###  http://dbpedia.org/resource/Avatar
+<http://dbpedia.org/resource/Avatar> rdf:type owl:NamedIndividual ,
+                                              onto:Film ,
+                                              tbox:Movie ;
+                                     onto:director <http://dbpedia.org/resource/James_Cameron> ;
+                                     onto:genre <http://dbpedia.org/resource/Action> ,
+                                                <http://dbpedia.org/resource/Adventure> ,
+                                                <http://dbpedia.org/resource/Science_Fiction> ;
+                                     onto:starring <http://dbpedia.org/resource/Sam_Worthington> ,
+                                                   <http://dbpedia.org/resource/Zoe_Saldana> ;
+                                     tbox:hasActor <http://dbpedia.org/resource/Sam_Worthington> ,
+                                                   <http://dbpedia.org/resource/Zoe_Saldana> ;
+                                     tbox:hasDirector <http://dbpedia.org/resource/James_Cameron> ;
+                                     tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                   <http://dbpedia.org/resource/Adventure> ,
+                                                   <http://dbpedia.org/resource/Science_Fiction> ;
+                                     onto:releaseDate "2009-12-18"^^xsd:date ;
+                                     onto:runtime 162 ;
+                                     tbox:releaseDate "2009-12-18"^^xsd:date ;
+                                     tbox:runtime 162 ;
+                                     rdfs:label "Avatar"@en .
+
+
+###  http://dbpedia.org/resource/Biography
+<http://dbpedia.org/resource/Biography> rdf:type owl:NamedIndividual ,
+                                                 tbox:Genre ,
+                                                 <http://schema.org/Genre> ;
+                                        rdfs:label "Biography"@en .
+
+
+###  http://dbpedia.org/resource/Blade_Runner_2049
+<http://dbpedia.org/resource/Blade_Runner_2049> rdf:type owl:NamedIndividual ,
+                                                         onto:Film ,
+                                                         tbox:Movie ;
+                                                onto:director <http://dbpedia.org/resource/Denis_Villeneuve> ;
+                                                onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                           <http://dbpedia.org/resource/Science_Fiction> ;
+                                                onto:starring <http://dbpedia.org/resource/Harrison_Ford> ,
+                                                              <http://dbpedia.org/resource/Ryan_Gosling> ;
+                                                tbox:hasActor <http://dbpedia.org/resource/Harrison_Ford> ,
+                                                              <http://dbpedia.org/resource/Ryan_Gosling> ;
+                                                tbox:hasDirector <http://dbpedia.org/resource/Denis_Villeneuve> ;
+                                                tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                              <http://dbpedia.org/resource/Science_Fiction> ;
+                                                onto:releaseDate "2017-10-06"^^xsd:date ;
+                                                onto:runtime 164 ;
+                                                tbox:releaseDate "2017-10-06"^^xsd:date ;
+                                                tbox:runtime 164 ;
+                                                rdfs:label "Blade Runner 2049"@en .
+
+
+###  http://dbpedia.org/resource/Brad_Pitt
+<http://dbpedia.org/resource/Brad_Pitt> rdf:type owl:NamedIndividual ,
+                                                 onto:Person ,
+                                                 tbox:Actor ;
+                                        tbox:actsIn <http://dbpedia.org/resource/Inglourious_Basterds> ;
+                                        tbox:hasCollaboratedWith <http://dbpedia.org/resource/Brad_Pitt> ,
+                                                                 <http://dbpedia.org/resource/Christoph_Waltz> ,
+                                                                 <http://dbpedia.org/resource/Quentin_Tarantino> ;
+                                        rdfs:label "Brad Pitt"@en .
+
+
+###  http://dbpedia.org/resource/Carrie-Anne_Moss
+<http://dbpedia.org/resource/Carrie-Anne_Moss> rdf:type owl:NamedIndividual ,
+                                                        tbox:Actor ;
+                                               tbox:actsIn <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                                               tbox:hasCollaboratedWith <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                        <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                        <http://dbpedia.org/resource/Lana_Wachowski> ,
+                                                                        <http://dbpedia.org/resource/Laurence_Fishburne> ,
+                                                                        <http://dbpedia.org/resource/Lilly_Wachowski> .
+
+
+###  http://dbpedia.org/resource/Catch_Me_If_You_Can
+<http://dbpedia.org/resource/Catch_Me_If_You_Can> rdf:type owl:NamedIndividual ,
+                                                           onto:Film ,
+                                                           tbox:Movie ;
+                                                  onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                                  onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                             <http://dbpedia.org/resource/Thriller> ;
+                                                  onto:starring <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                <http://dbpedia.org/resource/Tom_Hanks> ;
+                                                  tbox:hasActor <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                <http://dbpedia.org/resource/Tom_Hanks> ;
+                                                  tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                                  tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                                <http://dbpedia.org/resource/Thriller> ;
+                                                  onto:releaseDate "2002-12-25"^^xsd:date ;
+                                                  onto:runtime 141 ;
+                                                  tbox:releaseDate "2002-12-25"^^xsd:date ;
+                                                  tbox:runtime 141 ;
+                                                  rdfs:label "Catch Me If You Can"@en .
+
+
+###  http://dbpedia.org/resource/Catherine_Zeta_Jones
+<http://dbpedia.org/resource/Catherine_Zeta_Jones> rdf:type owl:NamedIndividual ,
+                                                            onto:Person ,
+                                                            tbox:Actor ;
+                                                   tbox:actsIn <http://dbpedia.org/resource/The_Terminal> ;
+                                                   tbox:hasCollaboratedWith <http://dbpedia.org/resource/Catherine_Zeta_Jones> ,
+                                                                            <http://dbpedia.org/resource/Steven_Spielberg> ,
+                                                                            <http://dbpedia.org/resource/Tom_Hanks> ;
+                                                   rdfs:label "Catherine Zeta-Jones"@en .
+
+
+###  http://dbpedia.org/resource/Charlize_Theron
+<http://dbpedia.org/resource/Charlize_Theron> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/Mad_Max_Fury_Road> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Charlize_Theron> ,
+                                                                       <http://dbpedia.org/resource/George_Miller> ,
+                                                                       <http://dbpedia.org/resource/Tom_Hardy> ;
+                                              rdfs:label "Charlize Theron"@en .
+
+
+###  http://dbpedia.org/resource/Christian_Bale
+<http://dbpedia.org/resource/Christian_Bale> rdf:type owl:NamedIndividual ,
+                                                      onto:Person ,
+                                                      tbox:Actor ;
+                                             tbox:actsIn <http://dbpedia.org/resource/The_Dark_Knight> ,
+                                                         <http://dbpedia.org/resource/The_Prestige> ;
+                                             tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christian_Bale> ,
+                                                                      <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                      <http://dbpedia.org/resource/Heath_Ledger> ,
+                                                                      <http://dbpedia.org/resource/Hugh_Jackman> ,
+                                                                      <http://dbpedia.org/resource/Scarlett_Johansson> ;
+                                             rdfs:label "Christian Bale"@en .
+
+
+###  http://dbpedia.org/resource/Christoph_Waltz
+<http://dbpedia.org/resource/Christoph_Waltz> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/Inglourious_Basterds> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Brad_Pitt> ,
+                                                                       <http://dbpedia.org/resource/Christoph_Waltz> ,
+                                                                       <http://dbpedia.org/resource/Quentin_Tarantino> ;
+                                              rdfs:label "Christoph Waltz"@en .
+
+
+###  http://dbpedia.org/resource/Christopher_Nolan
+<http://dbpedia.org/resource/Christopher_Nolan> rdf:type owl:NamedIndividual ,
+                                                         onto:Person ,
+                                                         tbox:Director ;
+                                                tbox:directs <http://dbpedia.org/resource/Dunkirk> ,
+                                                             <http://dbpedia.org/resource/Inception> ,
+                                                             <http://dbpedia.org/resource/Interstellar> ,
+                                                             <http://dbpedia.org/resource/The_Dark_Knight> ,
+                                                             <http://dbpedia.org/resource/The_Prestige> ;
+                                                tbox:hasCollaboratedWith <http://dbpedia.org/resource/Anne_Hathaway> ,
+                                                                         <http://dbpedia.org/resource/Christian_Bale> ,
+                                                                         <http://dbpedia.org/resource/Elliot_Page> ,
+                                                                         <http://dbpedia.org/resource/Heath_Ledger> ,
+                                                                         <http://dbpedia.org/resource/Hugh_Jackman> ,
+                                                                         <http://dbpedia.org/resource/Kenneth_Branagh> ,
+                                                                         <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                         <http://dbpedia.org/resource/Mark_Rylance> ,
+                                                                         <http://dbpedia.org/resource/Matthew_McConaughey> ,
+                                                                         <http://dbpedia.org/resource/Scarlett_Johansson> ,
+                                                                         <http://dbpedia.org/resource/Tom_Hardy> ;
+                                                rdfs:label "Christopher Nolan"@en .
+
+
+###  http://dbpedia.org/resource/Comedy
+<http://dbpedia.org/resource/Comedy> rdf:type owl:NamedIndividual ,
+                                              tbox:Genre ,
+                                              <http://schema.org/Genre> .
+
+
+###  http://dbpedia.org/resource/David_Fincher
+<http://dbpedia.org/resource/David_Fincher> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Director ;
+                                            tbox:directs <http://dbpedia.org/resource/The_Social_Network> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Andrew_Garfield> ,
+                                                                     <http://dbpedia.org/resource/Jesse_Eisenberg> ;
+                                            rdfs:label "David Fincher"@en .
+
+
+###  http://dbpedia.org/resource/Denis_Villeneuve
+<http://dbpedia.org/resource/Denis_Villeneuve> rdf:type owl:NamedIndividual ,
+                                                        onto:Person ,
+                                                        tbox:Director ;
+                                               tbox:directs <http://dbpedia.org/resource/Blade_Runner_2049> ;
+                                               tbox:hasCollaboratedWith <http://dbpedia.org/resource/Harrison_Ford> ,
+                                                                        <http://dbpedia.org/resource/Ryan_Gosling> ;
+                                               rdfs:label "Denis Villeneuve"@en .
+
+
+###  http://dbpedia.org/resource/Drama
+<http://dbpedia.org/resource/Drama> rdf:type owl:NamedIndividual ,
+                                             tbox:Genre ,
+                                             <http://schema.org/Genre> ;
+                                    rdfs:label "Drama"@en .
+
+
+###  http://dbpedia.org/resource/Dunkirk
+<http://dbpedia.org/resource/Dunkirk> rdf:type owl:NamedIndividual ,
+                                               onto:Film ,
+                                               tbox:Movie ;
+                                      onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                      onto:genre <http://dbpedia.org/resource/Action> ,
+                                                 <http://dbpedia.org/resource/Drama> ,
+                                                 <http://dbpedia.org/resource/War> ;
+                                      onto:starring <http://dbpedia.org/resource/Kenneth_Branagh> ,
+                                                    <http://dbpedia.org/resource/Mark_Rylance> ,
+                                                    <http://dbpedia.org/resource/Tom_Hardy> ;
+                                      tbox:hasActor <http://dbpedia.org/resource/Kenneth_Branagh> ,
+                                                    <http://dbpedia.org/resource/Mark_Rylance> ,
+                                                    <http://dbpedia.org/resource/Tom_Hardy> ;
+                                      tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                      tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                    <http://dbpedia.org/resource/Drama> ,
+                                                    <http://dbpedia.org/resource/War> ;
+                                      onto:releaseDate "2017-07-21"^^xsd:date ;
+                                      onto:runtime 106 ;
+                                      tbox:releaseDate "2017-07-21"^^xsd:date ;
+                                      tbox:runtime 106 ;
+                                      rdfs:label "Dunkirk"@en .
+
+
+###  http://dbpedia.org/resource/Elliot_Page
+<http://dbpedia.org/resource/Elliot_Page> rdf:type owl:NamedIndividual ,
+                                                   onto:Person ,
+                                                   tbox:Actor ;
+                                          tbox:actsIn <http://dbpedia.org/resource/Inception> ;
+                                          tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                   <http://dbpedia.org/resource/Elliot_Page> ,
+                                                                   <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                          rdfs:label "Elliot Page"@en .
+
+
+###  http://dbpedia.org/resource/Forrest_Gump
+<http://dbpedia.org/resource/Forrest_Gump> rdf:type owl:NamedIndividual ,
+                                                    onto:Film ,
+                                                    tbox:Movie ;
+                                           onto:director <http://dbpedia.org/resource/Robert_Zemeckis> ;
+                                           onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                      <http://dbpedia.org/resource/Romance> ;
+                                           onto:starring <http://dbpedia.org/resource/Gary_Sinise> ,
+                                                         <http://dbpedia.org/resource/Robin_Wright> ,
+                                                         <http://dbpedia.org/resource/Tom_Hanks> ;
+                                           tbox:hasActor <http://dbpedia.org/resource/Gary_Sinise> ,
+                                                         <http://dbpedia.org/resource/Robin_Wright> ,
+                                                         <http://dbpedia.org/resource/Tom_Hanks> ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Robert_Zemeckis> ;
+                                           tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                         <http://dbpedia.org/resource/Romance> ;
+                                           onto:releaseDate "1994-07-06"^^xsd:date ;
+                                           onto:runtime 142 ;
+                                           tbox:releaseDate "1994-07-06"^^xsd:date ;
+                                           tbox:runtime 142 ;
+                                           rdfs:label "Forrest Gump"@en .
+
+
+###  http://dbpedia.org/resource/Gary_Sinise
+<http://dbpedia.org/resource/Gary_Sinise> rdf:type owl:NamedIndividual ,
+                                                   onto:Person ,
+                                                   tbox:Actor ;
+                                          tbox:actsIn <http://dbpedia.org/resource/Forrest_Gump> ;
+                                          tbox:hasCollaboratedWith <http://dbpedia.org/resource/Gary_Sinise> ,
+                                                                   <http://dbpedia.org/resource/Robert_Zemeckis> ,
+                                                                   <http://dbpedia.org/resource/Robin_Wright> ,
+                                                                   <http://dbpedia.org/resource/Tom_Hanks> ;
+                                          rdfs:label "Gary Sinise"@en .
+
+
+###  http://dbpedia.org/resource/George_Miller
+<http://dbpedia.org/resource/George_Miller> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Director ;
+                                            tbox:directs <http://dbpedia.org/resource/Mad_Max_Fury_Road> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Charlize_Theron> ,
+                                                                     <http://dbpedia.org/resource/Tom_Hardy> ;
+                                            rdfs:label "George Miller"@en .
+
+
+###  http://dbpedia.org/resource/Gladiator
+<http://dbpedia.org/resource/Gladiator> rdf:type owl:NamedIndividual ,
+                                                 onto:Film ,
+                                                 tbox:Movie ;
+                                        onto:director <http://dbpedia.org/resource/Ridley_Scott> ;
+                                        onto:genre <http://dbpedia.org/resource/Action> ,
+                                                   <http://dbpedia.org/resource/Adventure> ,
+                                                   <http://dbpedia.org/resource/Drama> ;
+                                        onto:starring <http://dbpedia.org/resource/Joaquin_Phoenix> ,
+                                                      <http://dbpedia.org/resource/Russell_Crowe> ;
+                                        tbox:hasActor <http://dbpedia.org/resource/Joaquin_Phoenix> ,
+                                                      <http://dbpedia.org/resource/Russell_Crowe> ;
+                                        tbox:hasDirector <http://dbpedia.org/resource/Ridley_Scott> ;
+                                        tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                      <http://dbpedia.org/resource/Adventure> ,
+                                                      <http://dbpedia.org/resource/Drama> ;
+                                        onto:releaseDate "2000-05-05"^^xsd:date ;
+                                        onto:runtime 155 ;
+                                        tbox:releaseDate "2000-05-05"^^xsd:date ;
+                                        tbox:runtime 155 ;
+                                        rdfs:label "Gladiator"@en .
+
+
+###  http://dbpedia.org/resource/Harrison_Ford
+<http://dbpedia.org/resource/Harrison_Ford> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Actor ;
+                                            tbox:actsIn <http://dbpedia.org/resource/Blade_Runner_2049> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Denis_Villeneuve> ,
+                                                                     <http://dbpedia.org/resource/Harrison_Ford> ,
+                                                                     <http://dbpedia.org/resource/Ryan_Gosling> ;
+                                            rdfs:label "Harrison Ford"@en .
+
+
+###  http://dbpedia.org/resource/Heath_Ledger
+<http://dbpedia.org/resource/Heath_Ledger> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/The_Dark_Knight> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christian_Bale> ,
+                                                                    <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                    <http://dbpedia.org/resource/Heath_Ledger> ;
+                                           rdfs:label "Heath Ledger"@en .
+
+
+###  http://dbpedia.org/resource/Hugh_Jackman
+<http://dbpedia.org/resource/Hugh_Jackman> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/The_Prestige> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christian_Bale> ,
+                                                                    <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                    <http://dbpedia.org/resource/Hugh_Jackman> ,
+                                                                    <http://dbpedia.org/resource/Scarlett_Johansson> ;
+                                           rdfs:label "Hugh Jackman"@en .
+
+
+###  http://dbpedia.org/resource/Inception
+<http://dbpedia.org/resource/Inception> rdf:type owl:NamedIndividual ,
+                                                 onto:Film ,
+                                                 tbox:Movie ;
+                                        onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                        onto:genre <http://dbpedia.org/resource/Science_Fiction> ,
+                                                   <http://dbpedia.org/resource/Thriller> ;
+                                        onto:starring <http://dbpedia.org/resource/Elliot_Page> ,
+                                                      <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                        tbox:hasActor <http://dbpedia.org/resource/Elliot_Page> ,
+                                                      <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                        tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                        tbox:hasGenre <http://dbpedia.org/resource/Science_Fiction> ,
+                                                      <http://dbpedia.org/resource/Thriller> ;
+                                        onto:releaseDate "2010-07-16"^^xsd:date ;
+                                        onto:runtime 148 ;
+                                        tbox:releaseDate "2010-07-16"^^xsd:date ;
+                                        tbox:runtime 148 ;
+                                        rdfs:label "Inception"@en .
+
+
+###  http://dbpedia.org/resource/Inglourious_Basterds
+<http://dbpedia.org/resource/Inglourious_Basterds> rdf:type owl:NamedIndividual ,
+                                                            onto:Film ,
+                                                            tbox:Movie ;
+                                                   onto:director <http://dbpedia.org/resource/Quentin_Tarantino> ;
+                                                   onto:genre <http://dbpedia.org/resource/Action> ,
+                                                              <http://dbpedia.org/resource/Drama> ,
+                                                              <http://dbpedia.org/resource/War> ;
+                                                   onto:starring <http://dbpedia.org/resource/Brad_Pitt> ,
+                                                                 <http://dbpedia.org/resource/Christoph_Waltz> ;
+                                                   tbox:hasActor <http://dbpedia.org/resource/Brad_Pitt> ,
+                                                                 <http://dbpedia.org/resource/Christoph_Waltz> ;
+                                                   tbox:hasDirector <http://dbpedia.org/resource/Quentin_Tarantino> ;
+                                                   tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                                 <http://dbpedia.org/resource/Drama> ,
+                                                                 <http://dbpedia.org/resource/War> ;
+                                                   onto:releaseDate "2009-08-21"^^xsd:date ;
+                                                   onto:runtime 153 ;
+                                                   tbox:releaseDate "2009-08-21"^^xsd:date ;
+                                                   tbox:runtime 153 ;
+                                                   rdfs:label "Inglourious Basterds"@en .
+
+
+###  http://dbpedia.org/resource/Interstellar
+<http://dbpedia.org/resource/Interstellar> rdf:type owl:NamedIndividual ,
+                                                    onto:Film ,
+                                                    tbox:Movie ;
+                                           onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                           onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                      <http://dbpedia.org/resource/Science_Fiction> ;
+                                           onto:starring <http://dbpedia.org/resource/Anne_Hathaway> ,
+                                                         <http://dbpedia.org/resource/Matthew_McConaughey> ;
+                                           tbox:hasActor <http://dbpedia.org/resource/Anne_Hathaway> ,
+                                                         <http://dbpedia.org/resource/Matthew_McConaughey> ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                           tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                         <http://dbpedia.org/resource/Science_Fiction> ;
+                                           onto:releaseDate "2014-11-07"^^xsd:date ;
+                                           onto:runtime 169 ;
+                                           tbox:releaseDate "2014-11-07"^^xsd:date ;
+                                           tbox:runtime 169 ;
+                                           rdfs:label "Interstellar"@en .
+
+
+###  http://dbpedia.org/resource/James_Cameron
+<http://dbpedia.org/resource/James_Cameron> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Director ;
+                                            tbox:directs <http://dbpedia.org/resource/Avatar> ,
+                                                         <http://dbpedia.org/resource/Titanic> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Kate_Winslet> ,
+                                                                     <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                     <http://dbpedia.org/resource/Sam_Worthington> ,
+                                                                     <http://dbpedia.org/resource/Zoe_Saldana> ;
+                                            rdfs:label "James Cameron"@en .
+
+
+###  http://dbpedia.org/resource/Jeff_Goldblum
+<http://dbpedia.org/resource/Jeff_Goldblum> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Actor ;
+                                            tbox:actsIn <http://dbpedia.org/resource/Jurassic_Park> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jeff_Goldblum> ,
+                                                                     <http://dbpedia.org/resource/Laura_Dern> ,
+                                                                     <http://dbpedia.org/resource/Sam_Neill> ,
+                                                                     <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                            rdfs:label "Jeff Goldblum"@en .
+
+
+###  http://dbpedia.org/resource/Jennifer_Connelly
+<http://dbpedia.org/resource/Jennifer_Connelly> rdf:type owl:NamedIndividual ,
+                                                         onto:Person ,
+                                                         tbox:Actor ;
+                                                tbox:actsIn <http://dbpedia.org/resource/A_Beautiful_Mind> ;
+                                                tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jennifer_Connelly> ,
+                                                                         <http://dbpedia.org/resource/Ron_Howard> ,
+                                                                         <http://dbpedia.org/resource/Russell_Crowe> ;
+                                                rdfs:label "Jennifer Connelly"@en .
+
+
+###  http://dbpedia.org/resource/Jesse_Eisenberg
+<http://dbpedia.org/resource/Jesse_Eisenberg> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/The_Social_Network> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Andrew_Garfield> ,
+                                                                       <http://dbpedia.org/resource/David_Fincher> ,
+                                                                       <http://dbpedia.org/resource/Jesse_Eisenberg> ;
+                                              rdfs:label "Jesse Eisenberg"@en .
+
+
+###  http://dbpedia.org/resource/Joaquin_Phoenix
+<http://dbpedia.org/resource/Joaquin_Phoenix> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/Gladiator> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Joaquin_Phoenix> ,
+                                                                       <http://dbpedia.org/resource/Ridley_Scott> ,
+                                                                       <http://dbpedia.org/resource/Russell_Crowe> ;
+                                              rdfs:label "Joaquin Phoenix"@en .
+
+
+###  http://dbpedia.org/resource/Jonah_Hill
+<http://dbpedia.org/resource/Jonah_Hill> rdf:type owl:NamedIndividual ,
+                                                  onto:Person ,
+                                                  tbox:Actor ;
+                                         tbox:actsIn <http://dbpedia.org/resource/The_Wolf_of_Wall_Street> ;
+                                         tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jonah_Hill> ,
+                                                                  <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                  <http://dbpedia.org/resource/Martin_Scorsese> ;
+                                         rdfs:label "Jonah Hill"@en .
+
+
+###  http://dbpedia.org/resource/Jurassic_Park
+<http://dbpedia.org/resource/Jurassic_Park> rdf:type owl:NamedIndividual ,
+                                                     onto:Film ,
+                                                     tbox:Movie ;
+                                            onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                            onto:genre <http://dbpedia.org/resource/Adventure> ,
+                                                       <http://dbpedia.org/resource/Science_Fiction> ;
+                                            onto:starring <http://dbpedia.org/resource/Jeff_Goldblum> ,
+                                                          <http://dbpedia.org/resource/Laura_Dern> ,
+                                                          <http://dbpedia.org/resource/Sam_Neill> ;
+                                            tbox:hasActor <http://dbpedia.org/resource/Jeff_Goldblum> ,
+                                                          <http://dbpedia.org/resource/Laura_Dern> ,
+                                                          <http://dbpedia.org/resource/Sam_Neill> ;
+                                            tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                            tbox:hasGenre <http://dbpedia.org/resource/Adventure> ,
+                                                          <http://dbpedia.org/resource/Science_Fiction> ;
+                                            onto:releaseDate "1993-06-11"^^xsd:date ;
+                                            onto:runtime 127 ;
+                                            tbox:releaseDate "1993-06-11"^^xsd:date ;
+                                            tbox:runtime 127 ;
+                                            rdfs:label "Jurassic Park"@en .
+
+
+###  http://dbpedia.org/resource/Kate_Winslet
+<http://dbpedia.org/resource/Kate_Winslet> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/Titanic> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/James_Cameron> ,
+                                                                    <http://dbpedia.org/resource/Kate_Winslet> ,
+                                                                    <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                           rdfs:label "Kate Winslet"@en .
+
+
+###  http://dbpedia.org/resource/Keanu_Reeves
+<http://dbpedia.org/resource/Keanu_Reeves> rdf:type owl:NamedIndividual ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                    <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                    <http://dbpedia.org/resource/Lana_Wachowski> ,
+                                                                    <http://dbpedia.org/resource/Laurence_Fishburne> ,
+                                                                    <http://dbpedia.org/resource/Lilly_Wachowski> .
+
+
+###  http://dbpedia.org/resource/Kenneth_Branagh
+<http://dbpedia.org/resource/Kenneth_Branagh> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/Dunkirk> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                       <http://dbpedia.org/resource/Kenneth_Branagh> ,
+                                                                       <http://dbpedia.org/resource/Mark_Rylance> ,
+                                                                       <http://dbpedia.org/resource/Tom_Hardy> ;
+                                              rdfs:label "Kenneth Branagh"@en .
+
+
+###  http://dbpedia.org/resource/Lana_Wachowski
+<http://dbpedia.org/resource/Lana_Wachowski> rdf:type owl:NamedIndividual ,
+                                                      tbox:Director ;
+                                             tbox:directs <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                                             tbox:hasCollaboratedWith <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                      <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                      <http://dbpedia.org/resource/Laurence_Fishburne> .
+
+
+###  http://dbpedia.org/resource/Laura_Dern
+<http://dbpedia.org/resource/Laura_Dern> rdf:type owl:NamedIndividual ,
+                                                  onto:Person ,
+                                                  tbox:Actor ;
+                                         tbox:actsIn <http://dbpedia.org/resource/Jurassic_Park> ;
+                                         tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jeff_Goldblum> ,
+                                                                  <http://dbpedia.org/resource/Laura_Dern> ,
+                                                                  <http://dbpedia.org/resource/Sam_Neill> ,
+                                                                  <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                         rdfs:label "Laura Dern"@en .
+
+
+###  http://dbpedia.org/resource/Laurence_Fishburne
+<http://dbpedia.org/resource/Laurence_Fishburne> rdf:type owl:NamedIndividual ,
+                                                          tbox:Actor ;
+                                                 tbox:actsIn <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                                                 tbox:hasCollaboratedWith <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                          <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                          <http://dbpedia.org/resource/Lana_Wachowski> ,
+                                                                          <http://dbpedia.org/resource/Laurence_Fishburne> ,
+                                                                          <http://dbpedia.org/resource/Lilly_Wachowski> .
+
+
+###  http://dbpedia.org/resource/Leonardo_DiCaprio
+<http://dbpedia.org/resource/Leonardo_DiCaprio> rdf:type owl:NamedIndividual ,
+                                                         onto:Person ,
+                                                         tbox:Star ;
+                                                tbox:actsIn <http://dbpedia.org/resource/Catch_Me_If_You_Can> ,
+                                                            <http://dbpedia.org/resource/Inception> ,
+                                                            <http://dbpedia.org/resource/The_Wolf_of_Wall_Street> ,
+                                                            <http://dbpedia.org/resource/Titanic> ;
+                                                tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                         <http://dbpedia.org/resource/Elliot_Page> ,
+                                                                         <http://dbpedia.org/resource/James_Cameron> ,
+                                                                         <http://dbpedia.org/resource/Jonah_Hill> ,
+                                                                         <http://dbpedia.org/resource/Kate_Winslet> ,
+                                                                         <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                         <http://dbpedia.org/resource/Martin_Scorsese> ,
+                                                                         <http://dbpedia.org/resource/Steven_Spielberg> ,
+                                                                         <http://dbpedia.org/resource/Tom_Hanks> ;
+                                                rdfs:label "Leonardo DiCaprio"@en .
+
+
+###  http://dbpedia.org/resource/Lilly_Wachowski
+<http://dbpedia.org/resource/Lilly_Wachowski> rdf:type owl:NamedIndividual ,
+                                                       tbox:Director ;
+                                              tbox:directs <http://dbpedia.org/resource/The_Matrix_Reloaded> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                       <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                       <http://dbpedia.org/resource/Laurence_Fishburne> .
+
+
+###  http://dbpedia.org/resource/Mad_Max_Fury_Road
+<http://dbpedia.org/resource/Mad_Max_Fury_Road> rdf:type owl:NamedIndividual ,
+                                                         onto:Film ,
+                                                         tbox:Movie ;
+                                                onto:director <http://dbpedia.org/resource/George_Miller> ;
+                                                onto:genre <http://dbpedia.org/resource/Action> ,
+                                                           <http://dbpedia.org/resource/Adventure> ,
+                                                           <http://dbpedia.org/resource/Science_Fiction> ;
+                                                onto:starring <http://dbpedia.org/resource/Charlize_Theron> ,
+                                                              <http://dbpedia.org/resource/Tom_Hardy> ;
+                                                tbox:hasActor <http://dbpedia.org/resource/Charlize_Theron> ,
+                                                              <http://dbpedia.org/resource/Tom_Hardy> ;
+                                                tbox:hasDirector <http://dbpedia.org/resource/George_Miller> ;
+                                                tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                              <http://dbpedia.org/resource/Adventure> ,
+                                                              <http://dbpedia.org/resource/Science_Fiction> ;
+                                                onto:releaseDate "2015-05-15"^^xsd:date ;
+                                                onto:runtime 120 ;
+                                                tbox:releaseDate "2015-05-15"^^xsd:date ;
+                                                tbox:runtime 120 ;
+                                                rdfs:label "Mad Max: Fury Road"@en .
+
+
+###  http://dbpedia.org/resource/Mark_Rylance
+<http://dbpedia.org/resource/Mark_Rylance> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/Dunkirk> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                    <http://dbpedia.org/resource/Kenneth_Branagh> ,
+                                                                    <http://dbpedia.org/resource/Mark_Rylance> ,
+                                                                    <http://dbpedia.org/resource/Tom_Hardy> ;
+                                           rdfs:label "Mark Rylance"@en .
+
+
+###  http://dbpedia.org/resource/Martin_Scorsese
+<http://dbpedia.org/resource/Martin_Scorsese> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Director ;
+                                              tbox:directs <http://dbpedia.org/resource/The_Wolf_of_Wall_Street> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jonah_Hill> ,
+                                                                       <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                              rdfs:label "Martin Scorsese"@en .
+
+
+###  http://dbpedia.org/resource/Matt_Damon
+<http://dbpedia.org/resource/Matt_Damon> rdf:type owl:NamedIndividual ,
+                                                  onto:Person ,
+                                                  tbox:Actor ;
+                                         tbox:actsIn <http://dbpedia.org/resource/Saving_Private_Ryan> ;
+                                         tbox:hasCollaboratedWith <http://dbpedia.org/resource/Matt_Damon> ,
+                                                                  <http://dbpedia.org/resource/Steven_Spielberg> ,
+                                                                  <http://dbpedia.org/resource/Tom_Hanks> ;
+                                         rdfs:label "Matt Damon"@en .
+
+
+###  http://dbpedia.org/resource/Matthew_McConaughey
+<http://dbpedia.org/resource/Matthew_McConaughey> rdf:type owl:NamedIndividual ,
+                                                           onto:Person ,
+                                                           tbox:Actor ;
+                                                  tbox:actsIn <http://dbpedia.org/resource/Interstellar> ;
+                                                  tbox:hasCollaboratedWith <http://dbpedia.org/resource/Anne_Hathaway> ,
+                                                                           <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                           <http://dbpedia.org/resource/Matthew_McConaughey> ;
+                                                  rdfs:label "Matthew McConaughey"@en .
+
+
+###  http://dbpedia.org/resource/Quentin_Tarantino
+<http://dbpedia.org/resource/Quentin_Tarantino> rdf:type owl:NamedIndividual ,
+                                                         onto:Person ,
+                                                         tbox:Director ;
+                                                tbox:directs <http://dbpedia.org/resource/Inglourious_Basterds> ;
+                                                tbox:hasCollaboratedWith <http://dbpedia.org/resource/Brad_Pitt> ,
+                                                                         <http://dbpedia.org/resource/Christoph_Waltz> ;
+                                                rdfs:label "Quentin Tarantino"@en .
+
+
+###  http://dbpedia.org/resource/Ridley_Scott
+<http://dbpedia.org/resource/Ridley_Scott> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Director ;
+                                           tbox:directs <http://dbpedia.org/resource/Gladiator> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Joaquin_Phoenix> ,
+                                                                    <http://dbpedia.org/resource/Russell_Crowe> ;
+                                           rdfs:label "Ridley Scott"@en .
+
+
+###  http://dbpedia.org/resource/Robert_Zemeckis
+<http://dbpedia.org/resource/Robert_Zemeckis> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Director ;
+                                              tbox:directs <http://dbpedia.org/resource/Forrest_Gump> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/Gary_Sinise> ,
+                                                                       <http://dbpedia.org/resource/Robin_Wright> ,
+                                                                       <http://dbpedia.org/resource/Tom_Hanks> ;
+                                              rdfs:label "Robert Zemeckis"@en .
+
+
+###  http://dbpedia.org/resource/Robin_Wright
+<http://dbpedia.org/resource/Robin_Wright> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/Forrest_Gump> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Gary_Sinise> ,
+                                                                    <http://dbpedia.org/resource/Robert_Zemeckis> ,
+                                                                    <http://dbpedia.org/resource/Robin_Wright> ,
+                                                                    <http://dbpedia.org/resource/Tom_Hanks> ;
+                                           rdfs:label "Robin Wright"@en .
+
+
+###  http://dbpedia.org/resource/Romance
+<http://dbpedia.org/resource/Romance> rdf:type owl:NamedIndividual ,
+                                               tbox:Genre ,
+                                               <http://schema.org/Genre> ;
+                                      rdfs:label "Romance"@en .
+
+
+###  http://dbpedia.org/resource/Ron_Howard
+<http://dbpedia.org/resource/Ron_Howard> rdf:type owl:NamedIndividual ,
+                                                  onto:Person ,
+                                                  tbox:Director ;
+                                         tbox:directs <http://dbpedia.org/resource/A_Beautiful_Mind> ;
+                                         tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jennifer_Connelly> ,
+                                                                  <http://dbpedia.org/resource/Russell_Crowe> ;
+                                         rdfs:label "Ron Howard"@en .
+
+
+###  http://dbpedia.org/resource/Russell_Crowe
+<http://dbpedia.org/resource/Russell_Crowe> rdf:type owl:NamedIndividual ,
+                                                     onto:Person ,
+                                                     tbox:Actor ;
+                                            tbox:actsIn <http://dbpedia.org/resource/A_Beautiful_Mind> ,
+                                                        <http://dbpedia.org/resource/Gladiator> ;
+                                            tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jennifer_Connelly> ,
+                                                                     <http://dbpedia.org/resource/Joaquin_Phoenix> ,
+                                                                     <http://dbpedia.org/resource/Ridley_Scott> ,
+                                                                     <http://dbpedia.org/resource/Ron_Howard> ,
+                                                                     <http://dbpedia.org/resource/Russell_Crowe> ;
+                                            rdfs:label "Russell Crowe"@en .
+
+
+###  http://dbpedia.org/resource/Ryan_Gosling
+<http://dbpedia.org/resource/Ryan_Gosling> rdf:type owl:NamedIndividual ,
+                                                    onto:Person ,
+                                                    tbox:Actor ;
+                                           tbox:actsIn <http://dbpedia.org/resource/Blade_Runner_2049> ;
+                                           tbox:hasCollaboratedWith <http://dbpedia.org/resource/Denis_Villeneuve> ,
+                                                                    <http://dbpedia.org/resource/Harrison_Ford> ,
+                                                                    <http://dbpedia.org/resource/Ryan_Gosling> ;
+                                           rdfs:label "Ryan Gosling"@en .
+
+
+###  http://dbpedia.org/resource/Sam_Neill
+<http://dbpedia.org/resource/Sam_Neill> rdf:type owl:NamedIndividual ,
+                                                 onto:Person ,
+                                                 tbox:Actor ;
+                                        tbox:actsIn <http://dbpedia.org/resource/Jurassic_Park> ;
+                                        tbox:hasCollaboratedWith <http://dbpedia.org/resource/Jeff_Goldblum> ,
+                                                                 <http://dbpedia.org/resource/Laura_Dern> ,
+                                                                 <http://dbpedia.org/resource/Sam_Neill> ,
+                                                                 <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                        rdfs:label "Sam Neill"@en .
+
+
+###  http://dbpedia.org/resource/Sam_Worthington
+<http://dbpedia.org/resource/Sam_Worthington> rdf:type owl:NamedIndividual ,
+                                                       onto:Person ,
+                                                       tbox:Actor ;
+                                              tbox:actsIn <http://dbpedia.org/resource/Avatar> ;
+                                              tbox:hasCollaboratedWith <http://dbpedia.org/resource/James_Cameron> ,
+                                                                       <http://dbpedia.org/resource/Sam_Worthington> ,
+                                                                       <http://dbpedia.org/resource/Zoe_Saldana> ;
+                                              rdfs:label "Sam Worthington"@en .
+
+
+###  http://dbpedia.org/resource/Saving_Private_Ryan
+<http://dbpedia.org/resource/Saving_Private_Ryan> rdf:type owl:NamedIndividual ,
+                                                           onto:Film ,
+                                                           tbox:Movie ;
+                                                  onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                                  onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                             <http://dbpedia.org/resource/War> ;
+                                                  onto:starring <http://dbpedia.org/resource/Matt_Damon> ,
+                                                                <http://dbpedia.org/resource/Tom_Hanks> ;
+                                                  tbox:hasActor <http://dbpedia.org/resource/Matt_Damon> ,
+                                                                <http://dbpedia.org/resource/Tom_Hanks> ;
+                                                  tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                                  tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                                <http://dbpedia.org/resource/War> ;
+                                                  onto:releaseDate "1998-07-24"^^xsd:date ;
+                                                  onto:runtime 169 ;
+                                                  tbox:releaseDate "1998-07-24"^^xsd:date ;
+                                                  tbox:runtime 169 ;
+                                                  rdfs:label "Saving Private Ryan"@en .
+
+
+###  http://dbpedia.org/resource/Scarlett_Johansson
+<http://dbpedia.org/resource/Scarlett_Johansson> rdf:type owl:NamedIndividual ,
+                                                          onto:Person ,
+                                                          tbox:Actor ;
+                                                 tbox:actsIn <http://dbpedia.org/resource/The_Prestige> ;
+                                                 tbox:hasCollaboratedWith <http://dbpedia.org/resource/Christian_Bale> ,
+                                                                          <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                          <http://dbpedia.org/resource/Hugh_Jackman> ,
+                                                                          <http://dbpedia.org/resource/Scarlett_Johansson> ;
+                                                 rdfs:label "Scarlett Johansson"@en .
+
+
+###  http://dbpedia.org/resource/Science_Fiction
+<http://dbpedia.org/resource/Science_Fiction> rdf:type owl:NamedIndividual ,
+                                                       tbox:Genre ,
+                                                       <http://schema.org/Genre> .
+
+
+###  http://dbpedia.org/resource/Steven_Spielberg
+<http://dbpedia.org/resource/Steven_Spielberg> rdf:type owl:NamedIndividual ,
+                                                        onto:Person ,
+                                                        tbox:Director ;
+                                               tbox:directs <http://dbpedia.org/resource/Catch_Me_If_You_Can> ,
+                                                            <http://dbpedia.org/resource/Jurassic_Park> ,
+                                                            <http://dbpedia.org/resource/Saving_Private_Ryan> ,
+                                                            <http://dbpedia.org/resource/The_Terminal> ;
+                                               tbox:hasCollaboratedWith <http://dbpedia.org/resource/Catherine_Zeta_Jones> ,
+                                                                        <http://dbpedia.org/resource/Jeff_Goldblum> ,
+                                                                        <http://dbpedia.org/resource/Laura_Dern> ,
+                                                                        <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                        <http://dbpedia.org/resource/Matt_Damon> ,
+                                                                        <http://dbpedia.org/resource/Sam_Neill> ,
+                                                                        <http://dbpedia.org/resource/Tom_Hanks> ;
+                                               rdfs:label "Steven Spielberg"@en .
+
+
+###  http://dbpedia.org/resource/The_Dark_Knight
+<http://dbpedia.org/resource/The_Dark_Knight> rdf:type owl:NamedIndividual ,
+                                                       onto:Film ,
+                                                       tbox:Movie ;
+                                              onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                              onto:genre <http://dbpedia.org/resource/Action> ,
+                                                         <http://dbpedia.org/resource/Thriller> ;
+                                              onto:starring <http://dbpedia.org/resource/Christian_Bale> ,
+                                                            <http://dbpedia.org/resource/Heath_Ledger> ;
+                                              tbox:hasActor <http://dbpedia.org/resource/Christian_Bale> ,
+                                                            <http://dbpedia.org/resource/Heath_Ledger> ;
+                                              tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                              tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                            <http://dbpedia.org/resource/Thriller> ;
+                                              onto:releaseDate "2008-07-18"^^xsd:date ;
+                                              onto:runtime 152 ;
+                                              tbox:releaseDate "2008-07-18"^^xsd:date ;
+                                              tbox:runtime 152 ;
+                                              rdfs:label "The Dark Knight"@en .
+
+
+###  http://dbpedia.org/resource/The_Matrix_Reloaded
+<http://dbpedia.org/resource/The_Matrix_Reloaded> rdf:type owl:NamedIndividual ,
+                                                           onto:Film ,
+                                                           tbox:Movie ;
+                                                  onto:director <http://dbpedia.org/resource/Lana_Wachowski> ,
+                                                                <http://dbpedia.org/resource/Lilly_Wachowski> ;
+                                                  onto:genre <http://dbpedia.org/resource/Action> ,
+                                                             <http://dbpedia.org/resource/Science_Fiction> ;
+                                                  onto:starring <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                <http://dbpedia.org/resource/Laurence_Fishburne> ;
+                                                  tbox:hasActor <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
+                                                                <http://dbpedia.org/resource/Keanu_Reeves> ,
+                                                                <http://dbpedia.org/resource/Laurence_Fishburne> ;
+                                                  tbox:hasDirector <http://dbpedia.org/resource/Lana_Wachowski> ,
+                                                                   <http://dbpedia.org/resource/Lilly_Wachowski> ;
+                                                  tbox:hasGenre <http://dbpedia.org/resource/Action> ,
+                                                                <http://dbpedia.org/resource/Science_Fiction> ;
+                                                  onto:releaseDate "2003-05-15"^^xsd:date ;
+                                                  onto:runtime 138 ;
+                                                  tbox:releaseDate "2003-05-15"^^xsd:date ;
+                                                  tbox:runtime 138 ;
+                                                  rdfs:label "The Matrix Reloaded"@en .
+
+
+###  http://dbpedia.org/resource/The_Prestige
+<http://dbpedia.org/resource/The_Prestige> rdf:type owl:NamedIndividual ,
+                                                    onto:Film ,
+                                                    tbox:Movie ;
+                                           onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                           onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                      <http://dbpedia.org/resource/Thriller> ;
+                                           onto:starring <http://dbpedia.org/resource/Christian_Bale> ,
+                                                         <http://dbpedia.org/resource/Hugh_Jackman> ,
+                                                         <http://dbpedia.org/resource/Scarlett_Johansson> ;
+                                           tbox:hasActor <http://dbpedia.org/resource/Christian_Bale> ,
+                                                         <http://dbpedia.org/resource/Hugh_Jackman> ,
+                                                         <http://dbpedia.org/resource/Scarlett_Johansson> ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                           tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                         <http://dbpedia.org/resource/Thriller> ;
+                                           onto:releaseDate "2006-10-20"^^xsd:date ;
+                                           onto:runtime 130 ;
+                                           tbox:releaseDate "2006-10-20"^^xsd:date ;
+                                           tbox:runtime 130 ;
+                                           rdfs:label "The Prestige"@en .
+
+
+###  http://dbpedia.org/resource/The_Social_Network
+<http://dbpedia.org/resource/The_Social_Network> rdf:type owl:NamedIndividual ,
+                                                          onto:Film ,
+                                                          tbox:Movie ;
+                                                 onto:director <http://dbpedia.org/resource/David_Fincher> ;
+                                                 onto:genre <http://dbpedia.org/resource/Biography> ,
+                                                            <http://dbpedia.org/resource/Drama> ;
+                                                 onto:starring <http://dbpedia.org/resource/Andrew_Garfield> ,
+                                                               <http://dbpedia.org/resource/Jesse_Eisenberg> ;
+                                                 tbox:hasActor <http://dbpedia.org/resource/Andrew_Garfield> ,
+                                                               <http://dbpedia.org/resource/Jesse_Eisenberg> ;
+                                                 tbox:hasDirector <http://dbpedia.org/resource/David_Fincher> ;
+                                                 tbox:hasGenre <http://dbpedia.org/resource/Biography> ,
+                                                               <http://dbpedia.org/resource/Drama> ;
+                                                 onto:releaseDate "2010-10-01"^^xsd:date ;
+                                                 onto:runtime 120 ;
+                                                 tbox:releaseDate "2010-10-01"^^xsd:date ;
+                                                 tbox:runtime 120 ;
+                                                 rdfs:label "The Social Network"@en .
+
+
+###  http://dbpedia.org/resource/The_Terminal
+<http://dbpedia.org/resource/The_Terminal> rdf:type owl:NamedIndividual ,
+                                                    onto:Film ,
+                                                    tbox:Movie ;
+                                           onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                           onto:genre <http://dbpedia.org/resource/Comedy> ,
+                                                      <http://dbpedia.org/resource/Drama> ;
+                                           onto:starring <http://dbpedia.org/resource/Catherine_Zeta_Jones> ,
+                                                         <http://dbpedia.org/resource/Tom_Hanks> ;
+                                           tbox:hasActor <http://dbpedia.org/resource/Catherine_Zeta_Jones> ,
+                                                         <http://dbpedia.org/resource/Tom_Hanks> ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                           tbox:hasGenre <http://dbpedia.org/resource/Comedy> ,
+                                                         <http://dbpedia.org/resource/Drama> ;
+                                           onto:releaseDate "2004-06-18"^^xsd:date ;
+                                           onto:runtime 128 ;
+                                           tbox:releaseDate "2004-06-18"^^xsd:date ;
+                                           tbox:runtime 128 ;
+                                           rdfs:label "The Terminal"@en .
+
+
+###  http://dbpedia.org/resource/The_Wolf_of_Wall_Street
+<http://dbpedia.org/resource/The_Wolf_of_Wall_Street> rdf:type owl:NamedIndividual ,
+                                                               onto:Film ,
+                                                               tbox:Movie ;
+                                                      onto:director <http://dbpedia.org/resource/Martin_Scorsese> ;
+                                                      onto:genre <http://dbpedia.org/resource/Biography> ,
+                                                                 <http://dbpedia.org/resource/Comedy> ,
+                                                                 <http://dbpedia.org/resource/Drama> ;
+                                                      onto:starring <http://dbpedia.org/resource/Jonah_Hill> ,
+                                                                    <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                                      tbox:hasActor <http://dbpedia.org/resource/Jonah_Hill> ,
+                                                                    <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                                      tbox:hasDirector <http://dbpedia.org/resource/Martin_Scorsese> ;
+                                                      tbox:hasGenre <http://dbpedia.org/resource/Biography> ,
+                                                                    <http://dbpedia.org/resource/Comedy> ,
+                                                                    <http://dbpedia.org/resource/Drama> ;
+                                                      onto:releaseDate "2013-12-25"^^xsd:date ;
+                                                      onto:runtime 180 ;
+                                                      tbox:releaseDate "2013-12-25"^^xsd:date ;
+                                                      tbox:runtime 180 ;
+                                                      rdfs:label "The Wolf of Wall Street"@en .
+
+
+###  http://dbpedia.org/resource/Thriller
+<http://dbpedia.org/resource/Thriller> rdf:type owl:NamedIndividual ,
+                                                tbox:Genre ,
+                                                <http://schema.org/Genre> ;
+                                       rdfs:label "Thriller"@en .
+
+
+###  http://dbpedia.org/resource/Titanic
+<http://dbpedia.org/resource/Titanic> rdf:type owl:NamedIndividual ,
+                                               onto:Film ,
+                                               tbox:Movie ;
+                                      onto:director <http://dbpedia.org/resource/James_Cameron> ;
+                                      onto:genre <http://dbpedia.org/resource/Drama> ,
+                                                 <http://dbpedia.org/resource/Romance> ;
+                                      onto:starring <http://dbpedia.org/resource/Kate_Winslet> ,
+                                                    <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                      tbox:hasActor <http://dbpedia.org/resource/Kate_Winslet> ,
+                                                    <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
+                                      tbox:hasDirector <http://dbpedia.org/resource/James_Cameron> ;
+                                      tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
+                                                    <http://dbpedia.org/resource/Romance> ;
+                                      onto:releaseDate "1997-12-19"^^xsd:date ;
+                                      onto:runtime 195 ;
+                                      tbox:releaseDate "1997-12-19"^^xsd:date ;
+                                      tbox:runtime 195 ;
+                                      rdfs:label "Titanic"@en .
+
+
+###  http://dbpedia.org/resource/Tom_Hanks
+<http://dbpedia.org/resource/Tom_Hanks> rdf:type owl:NamedIndividual ,
+                                                 onto:Person ,
+                                                 tbox:Star ;
+                                        tbox:actsIn <http://dbpedia.org/resource/Catch_Me_If_You_Can> ,
+                                                    <http://dbpedia.org/resource/Forrest_Gump> ,
+                                                    <http://dbpedia.org/resource/Saving_Private_Ryan> ,
+                                                    <http://dbpedia.org/resource/The_Terminal> ;
+                                        tbox:hasCollaboratedWith <http://dbpedia.org/resource/Catherine_Zeta_Jones> ,
+                                                                 <http://dbpedia.org/resource/Gary_Sinise> ,
+                                                                 <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
+                                                                 <http://dbpedia.org/resource/Matt_Damon> ,
+                                                                 <http://dbpedia.org/resource/Robert_Zemeckis> ,
+                                                                 <http://dbpedia.org/resource/Robin_Wright> ,
+                                                                 <http://dbpedia.org/resource/Steven_Spielberg> ,
+                                                                 <http://dbpedia.org/resource/Tom_Hanks> ;
+                                        rdfs:label "Tom Hanks"@en .
+
+
+###  http://dbpedia.org/resource/Tom_Hardy
+<http://dbpedia.org/resource/Tom_Hardy> rdf:type owl:NamedIndividual ,
+                                                 onto:Person ,
+                                                 tbox:Actor ;
+                                        tbox:actsIn <http://dbpedia.org/resource/Dunkirk> ,
+                                                    <http://dbpedia.org/resource/Mad_Max_Fury_Road> ;
+                                        tbox:hasCollaboratedWith <http://dbpedia.org/resource/Charlize_Theron> ,
+                                                                 <http://dbpedia.org/resource/Christopher_Nolan> ,
+                                                                 <http://dbpedia.org/resource/George_Miller> ,
+                                                                 <http://dbpedia.org/resource/Kenneth_Branagh> ,
+                                                                 <http://dbpedia.org/resource/Mark_Rylance> ,
+                                                                 <http://dbpedia.org/resource/Tom_Hardy> ;
+                                        rdfs:label "Tom Hardy"@en .
+
+
+###  http://dbpedia.org/resource/War
+<http://dbpedia.org/resource/War> rdf:type owl:NamedIndividual ,
+                                           tbox:Genre ,
+                                           <http://schema.org/Genre> ;
+                                  rdfs:label "War"@en .
+
+
+###  http://dbpedia.org/resource/Zoe_Saldana
+<http://dbpedia.org/resource/Zoe_Saldana> rdf:type owl:NamedIndividual ,
+                                                   onto:Person ,
+                                                   tbox:Actor ;
+                                          tbox:actsIn <http://dbpedia.org/resource/Avatar> ;
+                                          tbox:hasCollaboratedWith <http://dbpedia.org/resource/James_Cameron> ,
+                                                                   <http://dbpedia.org/resource/Sam_Worthington> ,
+                                                                   <http://dbpedia.org/resource/Zoe_Saldana> ;
+                                          rdfs:label "Zoe Saldana"@en .
+
+
+###  http://example.org/abox#Adam_McKay
+:Adam_McKay rdf:type owl:NamedIndividual ,
+                     tbox:Director ;
+            tbox:directs :The_Big_Short ;
+            tbox:hasCollaboratedWith :Christian_Bale ,
+                                     :Steve_Carell .
+
+
+###  http://example.org/abox#Alejandro_G._Inarritu
+:Alejandro_G._Inarritu rdf:type owl:NamedIndividual ,
+                                tbox:Director ;
+                       tbox:directs :Birdman ,
+                                    :The_Revenant ;
+                       tbox:hasCollaboratedWith :Edward_Norton ,
+                                                :Leonardo_DiCaprio ,
+                                                :Michael_Keaton ,
+                                                :Tom_Hardy .
+
+
+###  http://example.org/abox#Alex_Garland
+:Alex_Garland rdf:type owl:NamedIndividual ,
+                       tbox:Director ;
+              tbox:directs :Ex_Machina ;
+              tbox:hasCollaboratedWith :Alicia_Vikander ,
+                                       :Domhnall_Gleeson .
+
+
+###  http://example.org/abox#Alfonso_Cuaron
+:Alfonso_Cuaron rdf:type owl:NamedIndividual ,
+                         tbox:Director ;
+                tbox:directs :Gravity ;
+                tbox:hasCollaboratedWith :George_Clooney ,
+                                         :Sandra_Bullock .
+
+
+###  http://example.org/abox#Alicia_Vikander
+:Alicia_Vikander rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :Ex_Machina ;
+                 tbox:hasCollaboratedWith :Alex_Garland ,
+                                          :Alicia_Vikander ,
+                                          :Domhnall_Gleeson .
+
+
+###  http://example.org/abox#Allison_Williams
+:Allison_Williams rdf:type owl:NamedIndividual ,
+                           tbox:Actor ;
+                  tbox:actsIn :Get_Out ;
+                  tbox:hasCollaboratedWith :Allison_Williams ,
+                                           :Daniel_Kaluuya ,
+                                           :Jordan_Peele .
+
+
+###  http://example.org/abox#Amy_Adams
+:Amy_Adams rdf:type owl:NamedIndividual ,
+                    tbox:Actor ;
+           tbox:actsIn :Arrival ;
+           tbox:hasCollaboratedWith :Amy_Adams ,
+                                    :Denis_Villeneuve ,
+                                    :Jeremy_Renner .
+
+
+###  http://example.org/abox#Amy_Poehler
+:Amy_Poehler rdf:type owl:NamedIndividual ,
+                      tbox:Actor ;
+             tbox:actsIn :Inside_Out ;
+             tbox:hasCollaboratedWith :Amy_Poehler ,
+                                      :Pete_Docter ,
+                                      :Phyllis_Smith .
+
+
+###  http://example.org/abox#Argo
+:Argo rdf:type owl:NamedIndividual ,
+               onto:Film ,
+               tbox:Movie ;
+      onto:director :Ben_Affleck ;
+      tbox:hasDirector :Ben_Affleck .
+
+
+###  http://example.org/abox#Arrival
+:Arrival rdf:type owl:NamedIndividual ,
+                  onto:Film ,
+                  tbox:Movie ;
+         onto:director :Denis_Villeneuve ;
+         onto:genre <https://schema.org/Drama> ,
+                    <https://schema.org/Mystery> ,
+                    <https://schema.org/Sci-Fi> ;
+         onto:starring :Amy_Adams ,
+                       :Jeremy_Renner ;
+         tbox:hasActor :Amy_Adams ,
+                       :Jeremy_Renner ;
+         tbox:hasDirector :Denis_Villeneuve ;
+         tbox:hasGenre <https://schema.org/Drama> ,
+                       <https://schema.org/Mystery> ,
+                       <https://schema.org/Sci-Fi> ;
+         onto:releaseDate "2016-11-11"^^xsd:date ;
+         onto:runtime 116 ;
+         tbox:releaseDate "2016-11-11"^^xsd:date ;
+         tbox:runtime 116 ;
+         rdfs:label "Arrival"@en .
+
+
+###  http://example.org/abox#Barry_Jenkins
+:Barry_Jenkins rdf:type owl:NamedIndividual ,
+                        tbox:Director ;
+               tbox:directs :Moonlight ;
+               tbox:hasCollaboratedWith :Mahershala_Ali ,
+                                        :Naomie_Harris .
+
+
+###  http://example.org/abox#Barry_Keoghan
+:Barry_Keoghan rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Dunkirk ;
+               tbox:hasCollaboratedWith :Barry_Keoghan ,
+                                        :Christopher_Nolan ,
+                                        :Fionn_Whitehead .
+
+
+###  http://example.org/abox#Batman_Begins
+:Batman_Begins rdf:type owl:NamedIndividual ,
+                        onto:Film ,
+                        tbox:Movie ;
+               tbox:isPrequel :The_Dark_Knight ,
+                              :The_Dark_Knight_Rises .
+
+
+###  http://example.org/abox#Ben_Affleck
+:Ben_Affleck rdf:type owl:NamedIndividual ,
+                      tbox:Actor ,
+                      tbox:Actor_Director ;
+             tbox:actsIn :Gone_Girl ;
+             tbox:hasCollaboratedWith :Ben_Affleck ,
+                                      :David_Fincher ,
+                                      :Rosamund_Pike .
+
+
+###  http://example.org/abox#Benedict_Cumberbatch
+:Benedict_Cumberbatch rdf:type owl:NamedIndividual ,
+                               tbox:Actor ;
+                      tbox:actsIn :The_Imitation_Game ;
+                      tbox:hasCollaboratedWith :Benedict_Cumberbatch ,
+                                               :Keira_Knightley ,
+                                               :Morten_Tyldum .
+
+
+###  http://example.org/abox#Birdman
+:Birdman rdf:type owl:NamedIndividual ,
+                  onto:Film ,
+                  tbox:Movie ;
+         onto:director :Alejandro_G._Inarritu ;
+         onto:genre <https://schema.org/Comedy> ,
+                    <https://schema.org/Drama> ;
+         onto:starring :Edward_Norton ,
+                       :Michael_Keaton ;
+         tbox:hasActor :Edward_Norton ,
+                       :Michael_Keaton ;
+         tbox:hasDirector :Alejandro_G._Inarritu ;
+         tbox:hasGenre <https://schema.org/Comedy> ,
+                       <https://schema.org/Drama> ;
+         onto:releaseDate "2014-10-17"^^xsd:date ;
+         onto:runtime 119 ;
+         tbox:releaseDate "2014-10-17"^^xsd:date ;
+         tbox:runtime 119 ;
+         rdfs:label "Birdman"@en .
+
+
+###  http://example.org/abox#Blade_Runner_2049
+:Blade_Runner_2049 rdf:type owl:NamedIndividual ,
+                            onto:Film ,
+                            tbox:Movie ;
+                   onto:director :Denis_Villeneuve ;
+                   onto:genre <https://schema.org/Action> ,
+                              <https://schema.org/Drama> ,
+                              <https://schema.org/Mystery> ;
+                   onto:starring :Harrison_Ford ,
+                                 :Ryan_Gosling ;
+                   tbox:hasActor :Harrison_Ford ,
+                                 :Ryan_Gosling ;
+                   tbox:hasDirector :Denis_Villeneuve ;
+                   tbox:hasGenre <https://schema.org/Action> ,
+                                 <https://schema.org/Drama> ,
+                                 <https://schema.org/Mystery> ;
+                   onto:releaseDate "2017-10-06"^^xsd:date ;
+                   onto:runtime 164 ;
+                   tbox:releaseDate "2017-10-06"^^xsd:date ;
+                   tbox:runtime 164 ;
+                   rdfs:label "Blade Runner 2049"@en .
+
+
+###  http://example.org/abox#Bong_Joon-ho
+:Bong_Joon-ho rdf:type owl:NamedIndividual ,
+                       tbox:Director ;
+              tbox:directs :Parasite ;
+              tbox:hasCollaboratedWith :Lee_Sun-kyun ,
+                                       :Song_Kang-ho .
+
+
+###  http://example.org/abox#Boyhood
+:Boyhood rdf:type owl:NamedIndividual ,
+                  onto:Film ,
+                  tbox:Movie ;
+         onto:director :Richard_Linklater ;
+         onto:genre <https://schema.org/Drama> ;
+         onto:starring :Ellar_Coltrane ,
+                       :Patricia_Arquette ;
+         tbox:hasActor :Ellar_Coltrane ,
+                       :Patricia_Arquette ;
+         tbox:hasDirector :Richard_Linklater ;
+         tbox:hasGenre <https://schema.org/Drama> ;
+         onto:releaseDate "2014-07-11"^^xsd:date ;
+         onto:runtime 165 ;
+         tbox:releaseDate "2014-07-11"^^xsd:date ;
+         tbox:runtime 165 ;
+         rdfs:label "Boyhood"@en .
+
+
+###  http://example.org/abox#Brie_Larson
+:Brie_Larson rdf:type owl:NamedIndividual ,
+                      tbox:Actor ;
+             tbox:actsIn :Room ;
+             tbox:hasCollaboratedWith :Brie_Larson ,
+                                      :Jacob_Tremblay ,
+                                      :Lenny_Abrahamson .
+
+
+###  http://example.org/abox#Brooklynn_Prince
+:Brooklynn_Prince rdf:type owl:NamedIndividual ,
+                           tbox:Actor ;
+                  tbox:actsIn :The_Florida_Project ;
+                  tbox:hasCollaboratedWith :Brooklynn_Prince ,
+                                           :Sean_Baker ,
+                                           :Willem_Dafoe .
+
+
+###  http://example.org/abox#Charlize_Theron
+:Charlize_Theron rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :Mad_Max_Fury_Road ;
+                 tbox:hasCollaboratedWith :Charlize_Theron ,
+                                          :George_Miller ,
+                                          :Tom_Hardy .
+
+
+###  http://example.org/abox#Chiwetel_Ejiofor
+:Chiwetel_Ejiofor rdf:type owl:NamedIndividual ,
+                           tbox:Actor ;
+                  tbox:actsIn <http://example.org/abox#12_Years_a_Slave> ;
+                  tbox:hasCollaboratedWith :Chiwetel_Ejiofor ,
+                                           :Michael_Fassbender ,
+                                           :Steve_McQueen .
+
+
+###  http://example.org/abox#Christian_Bale
+:Christian_Bale rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :The_Big_Short ;
+                tbox:hasCollaboratedWith :Adam_McKay ,
+                                         :Christian_Bale ,
+                                         :Steve_Carell .
+
+
+###  http://example.org/abox#Christopher_Nolan
+:Christopher_Nolan rdf:type owl:NamedIndividual ,
+                            tbox:Director ;
+                   tbox:directs :Dunkirk ;
+                   tbox:hasCollaboratedWith :Barry_Keoghan ,
+                                            :Fionn_Whitehead .
+
+
+###  http://example.org/abox#Colin_Farrell
+:Colin_Farrell rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :The_Lobster ;
+               tbox:hasCollaboratedWith :Colin_Farrell ,
+                                        :Rachel_Weisz ,
+                                        :Yorgos_Lanthimos .
+
+
+###  http://example.org/abox#Dallas_Buyers_Club
+:Dallas_Buyers_Club rdf:type owl:NamedIndividual ,
+                             onto:Film ,
+                             tbox:Movie ;
+                    onto:director :Jean-Marc_Vallee ;
+                    onto:genre <https://schema.org/Biography> ,
+                               <https://schema.org/Drama> ;
+                    onto:starring :Jennifer_Garner ,
+                                  :Matthew_McConaughey ;
+                    tbox:hasActor :Jennifer_Garner ,
+                                  :Matthew_McConaughey ;
+                    tbox:hasDirector :Jean-Marc_Vallee ;
+                    tbox:hasGenre <https://schema.org/Biography> ,
+                                  <https://schema.org/Drama> ;
+                    onto:releaseDate "2013-11-01"^^xsd:date ;
+                    onto:runtime 117 ;
+                    tbox:releaseDate "2013-11-01"^^xsd:date ;
+                    tbox:runtime 117 ;
+                    rdfs:label "Dallas Buyers Club"@en .
+
+
+###  http://example.org/abox#Damien_Chazelle
+:Damien_Chazelle rdf:type owl:NamedIndividual ,
+                          tbox:Director ;
+                 tbox:directs :La_La_Land ,
+                              :Whiplash ;
+                 tbox:hasCollaboratedWith :Emma_Stone ,
+                                          :J.K._Simmons ,
+                                          :Miles_Teller ,
+                                          :Ryan_Gosling .
+
+
+###  http://example.org/abox#Daniel_Kaluuya
+:Daniel_Kaluuya rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Get_Out ;
+                tbox:hasCollaboratedWith :Allison_Williams ,
+                                         :Daniel_Kaluuya ,
+                                         :Jordan_Peele .
+
+
+###  http://example.org/abox#David_Fincher
+:David_Fincher rdf:type owl:NamedIndividual ,
+                        tbox:Director ;
+               tbox:directs :Gone_Girl ;
+               tbox:hasCollaboratedWith :Ben_Affleck ,
+                                        :Rosamund_Pike .
+
+
+###  http://example.org/abox#Denis_Villeneuve
+:Denis_Villeneuve rdf:type owl:NamedIndividual ,
+                           tbox:Director ;
+                  tbox:directs :Arrival ,
+                               :Blade_Runner_2049 ;
+                  tbox:hasCollaboratedWith :Amy_Adams ,
+                                           :Harrison_Ford ,
+                                           :Jeremy_Renner ,
+                                           :Ryan_Gosling .
+
+
+###  http://example.org/abox#Domhnall_Gleeson
+:Domhnall_Gleeson rdf:type owl:NamedIndividual ,
+                           tbox:Actor ;
+                  tbox:actsIn :Ex_Machina ;
+                  tbox:hasCollaboratedWith :Alex_Garland ,
+                                           :Alicia_Vikander ,
+                                           :Domhnall_Gleeson .
+
+
+###  http://example.org/abox#Dunkirk
+:Dunkirk rdf:type owl:NamedIndividual ,
+                  onto:Film ,
+                  tbox:Movie ;
+         onto:director :Christopher_Nolan ;
+         onto:genre <https://schema.org/Action> ,
+                    <https://schema.org/Drama> ,
+                    <https://schema.org/History> ;
+         onto:starring :Barry_Keoghan ,
+                       :Fionn_Whitehead ;
+         tbox:hasActor :Barry_Keoghan ,
+                       :Fionn_Whitehead ;
+         tbox:hasDirector :Christopher_Nolan ;
+         tbox:hasGenre <https://schema.org/Action> ,
+                       <https://schema.org/Drama> ,
+                       <https://schema.org/History> ;
+         onto:releaseDate "2017-07-21"^^xsd:date ;
+         onto:runtime 106 ;
+         tbox:releaseDate "2017-07-21"^^xsd:date ;
+         tbox:runtime 106 ;
+         rdfs:label "Dunkirk"@en .
+
+
+###  http://example.org/abox#Edward_Norton
+:Edward_Norton rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Birdman ;
+               tbox:hasCollaboratedWith :Alejandro_G._Inarritu ,
+                                        :Edward_Norton ,
+                                        :Michael_Keaton .
+
+
+###  http://example.org/abox#Ellar_Coltrane
+:Ellar_Coltrane rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Boyhood ;
+                tbox:hasCollaboratedWith :Ellar_Coltrane ,
+                                         :Patricia_Arquette ,
+                                         :Richard_Linklater .
+
+
+###  http://example.org/abox#Emma_Stone
+:Emma_Stone rdf:type owl:NamedIndividual ,
+                     tbox:Actor ;
+            tbox:actsIn :La_La_Land ;
+            tbox:hasCollaboratedWith :Damien_Chazelle ,
+                                     :Emma_Stone ,
+                                     :Ryan_Gosling .
+
+
+###  http://example.org/abox#Ex_Machina
+:Ex_Machina rdf:type owl:NamedIndividual ,
+                     onto:Film ,
+                     tbox:Movie ;
+            onto:director :Alex_Garland ;
+            onto:genre <https://schema.org/Drama> ,
+                       <https://schema.org/Sci-Fi> ,
+                       <https://schema.org/Thriller> ;
+            onto:starring :Alicia_Vikander ,
+                          :Domhnall_Gleeson ;
+            tbox:hasActor :Alicia_Vikander ,
+                          :Domhnall_Gleeson ;
+            tbox:hasDirector :Alex_Garland ;
+            tbox:hasGenre <https://schema.org/Drama> ,
+                          <https://schema.org/Sci-Fi> ,
+                          <https://schema.org/Thriller> ;
+            onto:releaseDate "2014-12-16"^^xsd:date ;
+            onto:runtime 108 ;
+            tbox:releaseDate "2014-12-16"^^xsd:date ;
+            tbox:runtime 108 ;
+            rdfs:label "Ex Machina"@en .
+
+
+###  http://example.org/abox#Fionn_Whitehead
+:Fionn_Whitehead rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :Dunkirk ;
+                 tbox:hasCollaboratedWith :Barry_Keoghan ,
+                                          :Christopher_Nolan ,
+                                          :Fionn_Whitehead .
+
+
+###  http://example.org/abox#Frances_McDormand
+:Frances_McDormand rdf:type owl:NamedIndividual ,
+                            tbox:Actor ;
+                   tbox:actsIn :Three_Billboards_Outside_Ebbing_Missouri ;
+                   tbox:hasCollaboratedWith :Frances_McDormand ,
+                                            :Martin_McDonagh ,
+                                            :Woody_Harrelson .
+
+
+###  http://example.org/abox#George_Clooney
+:George_Clooney rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Gravity ;
+                tbox:hasCollaboratedWith :Alfonso_Cuaron ,
+                                         :George_Clooney ,
+                                         :Sandra_Bullock .
+
+
+###  http://example.org/abox#George_Miller
+:George_Miller rdf:type owl:NamedIndividual ,
+                        tbox:Director ;
+               tbox:directs :Mad_Max_Fury_Road ;
+               tbox:hasCollaboratedWith :Charlize_Theron ,
+                                        :Tom_Hardy .
+
+
+###  http://example.org/abox#Get_Out
+:Get_Out rdf:type owl:NamedIndividual ,
+                  onto:Film ,
+                  tbox:Movie ;
+         onto:director :Jordan_Peele ;
+         onto:genre <https://schema.org/Horror> ,
+                    <https://schema.org/Mystery> ,
+                    <https://schema.org/Thriller> ;
+         onto:starring :Allison_Williams ,
+                       :Daniel_Kaluuya ;
+         tbox:hasActor :Allison_Williams ,
+                       :Daniel_Kaluuya ;
+         tbox:hasDirector :Jordan_Peele ;
+         tbox:hasGenre <https://schema.org/Horror> ,
+                       <https://schema.org/Mystery> ,
+                       <https://schema.org/Thriller> ;
+         onto:releaseDate "2017-02-24"^^xsd:date ;
+         onto:runtime 104 ;
+         tbox:releaseDate "2017-02-24"^^xsd:date ;
+         tbox:runtime 104 ;
+         rdfs:label "Get Out"@en .
+
+
+###  http://example.org/abox#Gone_Girl
+:Gone_Girl rdf:type owl:NamedIndividual ,
+                    onto:Film ,
+                    tbox:Movie ;
+           onto:director :David_Fincher ;
+           onto:genre <https://schema.org/Drama> ,
+                      <https://schema.org/Mystery> ,
+                      <https://schema.org/Thriller> ;
+           onto:starring :Ben_Affleck ,
+                         :Rosamund_Pike ;
+           tbox:hasActor :Ben_Affleck ,
+                         :Rosamund_Pike ;
+           tbox:hasDirector :David_Fincher ;
+           tbox:hasGenre <https://schema.org/Drama> ,
+                         <https://schema.org/Mystery> ,
+                         <https://schema.org/Thriller> ;
+           onto:releaseDate "2014-10-03"^^xsd:date ;
+           onto:runtime 149 ;
+           tbox:releaseDate "2014-10-03"^^xsd:date ;
+           tbox:runtime 149 ;
+           rdfs:label "Gone Girl"@en .
+
+
+###  http://example.org/abox#Gravity
+:Gravity rdf:type owl:NamedIndividual ,
+                  onto:Film ,
+                  tbox:Movie ;
+         onto:director :Alfonso_Cuaron ;
+         onto:genre <https://schema.org/Drama> ,
+                    <https://schema.org/Sci-Fi> ,
+                    <https://schema.org/Thriller> ;
+         onto:starring :George_Clooney ,
+                       :Sandra_Bullock ;
+         tbox:hasActor :George_Clooney ,
+                       :Sandra_Bullock ;
+         tbox:hasDirector :Alfonso_Cuaron ;
+         tbox:hasGenre <https://schema.org/Drama> ,
+                       <https://schema.org/Sci-Fi> ,
+                       <https://schema.org/Thriller> ;
+         onto:releaseDate "2013-10-04"^^xsd:date ;
+         onto:runtime 91 ;
+         tbox:releaseDate "2013-10-04"^^xsd:date ;
+         tbox:runtime 91 ;
+         rdfs:label "Gravity"@en .
+
+
+###  http://example.org/abox#Greta_Gerwig
+:Greta_Gerwig rdf:type owl:NamedIndividual ,
+                       tbox:Director ;
+              tbox:directs :Lady_Bird ;
+              tbox:hasCollaboratedWith :Laurie_Metcalf ,
+                                       :Saoirse_Ronan .
+
+
+###  http://example.org/abox#Guillermo_del_Toro
+:Guillermo_del_Toro rdf:type owl:NamedIndividual ,
+                             tbox:Director ;
+                    tbox:directs :The_Shape_of_Water ;
+                    tbox:hasCollaboratedWith :Michael_Shannon ,
+                                             :Sally_Hawkins .
+
+
+###  http://example.org/abox#Harrison_Ford
+:Harrison_Ford rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Blade_Runner_2049 ;
+               tbox:hasCollaboratedWith :Denis_Villeneuve ,
+                                        :Harrison_Ford ,
+                                        :Ryan_Gosling .
+
+
+###  http://example.org/abox#Her
+:Her rdf:type owl:NamedIndividual ,
+              onto:Film ,
+              tbox:Movie ;
+     onto:director :Spike_Jonze ;
+     onto:genre <https://schema.org/Drama> ,
+                <https://schema.org/Romance> ,
+                <https://schema.org/Sci-Fi> ;
+     onto:starring :Joaquin_Phoenix ,
+                   :Scarlett_Johansson ;
+     tbox:hasActor :Joaquin_Phoenix ,
+                   :Scarlett_Johansson ;
+     tbox:hasDirector :Spike_Jonze ;
+     tbox:hasGenre <https://schema.org/Drama> ,
+                   <https://schema.org/Romance> ,
+                   <https://schema.org/Sci-Fi> ;
+     onto:releaseDate "2013-12-18"^^xsd:date ;
+     onto:runtime 126 ;
+     tbox:releaseDate "2013-12-18"^^xsd:date ;
+     tbox:runtime 126 ;
+     rdfs:label "Her"@en .
+
+
+###  http://example.org/abox#Inside_Out
+:Inside_Out rdf:type owl:NamedIndividual ,
+                     onto:Film ,
+                     tbox:Movie ;
+            onto:director :Pete_Docter ;
+            onto:genre <https://schema.org/Adventure> ,
+                       <https://schema.org/Animation> ,
+                       <https://schema.org/Comedy> ;
+            onto:starring :Amy_Poehler ,
+                          :Phyllis_Smith ;
+            tbox:hasActor :Amy_Poehler ,
+                          :Phyllis_Smith ;
+            tbox:hasDirector :Pete_Docter ;
+            tbox:hasGenre <https://schema.org/Adventure> ,
+                          <https://schema.org/Animation> ,
+                          <https://schema.org/Comedy> ;
+            onto:releaseDate "2015-06-19"^^xsd:date ;
+            onto:runtime 95 ;
+            tbox:releaseDate "2015-06-19"^^xsd:date ;
+            tbox:runtime 95 ;
+            rdfs:label "Inside Out"@en .
+
+
+###  http://example.org/abox#J.K._Simmons
+:J.K._Simmons rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :Whiplash ;
+              tbox:hasCollaboratedWith :Damien_Chazelle ,
+                                       :J.K._Simmons ,
+                                       :Miles_Teller .
+
+
+###  http://example.org/abox#Jacob_Tremblay
+:Jacob_Tremblay rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Room ;
+                tbox:hasCollaboratedWith :Brie_Larson ,
+                                         :Jacob_Tremblay ,
+                                         :Lenny_Abrahamson .
+
+
+###  http://example.org/abox#Jean-Marc_Vallee
+:Jean-Marc_Vallee rdf:type owl:NamedIndividual ,
+                           tbox:Director ;
+                  tbox:directs :Dallas_Buyers_Club ;
+                  tbox:hasCollaboratedWith :Jennifer_Garner ,
+                                           :Matthew_McConaughey .
+
+
+###  http://example.org/abox#Jennifer_Garner
+:Jennifer_Garner rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :Dallas_Buyers_Club ;
+                 tbox:hasCollaboratedWith :Jean-Marc_Vallee ,
+                                          :Jennifer_Garner ,
+                                          :Matthew_McConaughey .
+
+
+###  http://example.org/abox#Jeremy_Renner
+:Jeremy_Renner rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Arrival ;
+               tbox:hasCollaboratedWith :Amy_Adams ,
+                                        :Denis_Villeneuve ,
+                                        :Jeremy_Renner .
+
+
+###  http://example.org/abox#Joaquin_Phoenix
+:Joaquin_Phoenix rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :Her ;
+                 tbox:hasCollaboratedWith :Joaquin_Phoenix ,
+                                          :Scarlett_Johansson ,
+                                          :Spike_Jonze .
+
+
+###  http://example.org/abox#Jonah_Hill
+:Jonah_Hill rdf:type owl:NamedIndividual ,
+                     tbox:Actor ;
+            tbox:actsIn :The_Wolf_of_Wall_Street ;
+            tbox:hasCollaboratedWith :Jonah_Hill ,
+                                     :Leonardo_DiCaprio ,
+                                     :Martin_Scorsese .
+
+
+###  http://example.org/abox#Jordan_Peele
+:Jordan_Peele rdf:type owl:NamedIndividual ,
+                       tbox:Director ;
+              tbox:directs :Get_Out ;
+              tbox:hasCollaboratedWith :Allison_Williams ,
+                                       :Daniel_Kaluuya .
+
+
+###  http://example.org/abox#Keira_Knightley
+:Keira_Knightley rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :The_Imitation_Game ;
+                 tbox:hasCollaboratedWith :Benedict_Cumberbatch ,
+                                          :Keira_Knightley ,
+                                          :Morten_Tyldum .
+
+
+###  http://example.org/abox#La_La_Land
+:La_La_Land rdf:type owl:NamedIndividual ,
+                     onto:Film ,
+                     tbox:Movie ;
+            onto:director :Damien_Chazelle ;
+            onto:genre <https://schema.org/Comedy> ,
+                       <https://schema.org/Drama> ,
+                       <https://schema.org/Music> ;
+            onto:starring :Emma_Stone ,
+                          :Ryan_Gosling ;
+            tbox:hasActor :Emma_Stone ,
+                          :Ryan_Gosling ;
+            tbox:hasDirector :Damien_Chazelle ;
+            tbox:hasGenre <https://schema.org/Comedy> ,
+                          <https://schema.org/Drama> ,
+                          <https://schema.org/Music> ;
+            onto:releaseDate "2016-12-09"^^xsd:date ;
+            onto:runtime 128 ;
+            tbox:releaseDate "2016-12-09"^^xsd:date ;
+            tbox:runtime 128 ;
+            rdfs:label "La La Land"@en .
+
+
+###  http://example.org/abox#Lady_Bird
+:Lady_Bird rdf:type owl:NamedIndividual ,
+                    onto:Film ,
+                    tbox:Movie ;
+           onto:director :Greta_Gerwig ;
+           onto:genre <https://schema.org/Comedy> ,
+                      <https://schema.org/Drama> ;
+           onto:starring :Laurie_Metcalf ,
+                         :Saoirse_Ronan ;
+           tbox:hasActor :Laurie_Metcalf ,
+                         :Saoirse_Ronan ;
+           tbox:hasDirector :Greta_Gerwig ;
+           tbox:hasGenre <https://schema.org/Comedy> ,
+                         <https://schema.org/Drama> ;
+           onto:releaseDate "2017-11-03"^^xsd:date ;
+           onto:runtime 94 ;
+           tbox:releaseDate "2017-11-03"^^xsd:date ;
+           tbox:runtime 94 ;
+           rdfs:label "Lady Bird"@en .
+
+
+###  http://example.org/abox#Laurie_Metcalf
+:Laurie_Metcalf rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Lady_Bird ;
+                tbox:hasCollaboratedWith :Greta_Gerwig ,
+                                         :Laurie_Metcalf ,
+                                         :Saoirse_Ronan .
+
+
+###  http://example.org/abox#Lee_Sun-kyun
+:Lee_Sun-kyun rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :Parasite ;
+              tbox:hasCollaboratedWith :Bong_Joon-ho ,
+                                       :Lee_Sun-kyun ,
+                                       :Song_Kang-ho .
+
+
+###  http://example.org/abox#Lenny_Abrahamson
+:Lenny_Abrahamson rdf:type owl:NamedIndividual ,
+                           tbox:Director ;
+                  tbox:directs :Room ;
+                  tbox:hasCollaboratedWith :Brie_Larson ,
+                                           :Jacob_Tremblay .
+
+
+###  http://example.org/abox#Leonardo_DiCaprio
+:Leonardo_DiCaprio rdf:type owl:NamedIndividual ,
+                            tbox:Actor ;
+                   tbox:actsIn :The_Revenant ,
+                               :The_Wolf_of_Wall_Street ;
+                   tbox:hasCollaboratedWith :Alejandro_G._Inarritu ,
+                                            :Jonah_Hill ,
+                                            :Leonardo_DiCaprio ,
+                                            :Martin_Scorsese ,
+                                            :Tom_Hardy .
+
+
+###  http://example.org/abox#Mad_Max_Fury_Road
+:Mad_Max_Fury_Road rdf:type owl:NamedIndividual ,
+                            onto:Film ,
+                            tbox:Movie ;
+                   onto:director :George_Miller ;
+                   onto:genre <https://schema.org/Action> ,
+                              <https://schema.org/Adventure> ,
+                              <https://schema.org/Sci-Fi> ;
+                   onto:starring :Charlize_Theron ,
+                                 :Tom_Hardy ;
+                   tbox:hasActor :Charlize_Theron ,
+                                 :Tom_Hardy ;
+                   tbox:hasDirector :George_Miller ;
+                   tbox:hasGenre <https://schema.org/Action> ,
+                                 <https://schema.org/Adventure> ,
+                                 <https://schema.org/Sci-Fi> ;
+                   onto:releaseDate "2015-05-15"^^xsd:date ;
+                   onto:runtime 120 ;
+                   tbox:releaseDate "2015-05-15"^^xsd:date ;
+                   tbox:runtime 120 ;
+                   rdfs:label "Mad Max Fury Road"@en .
+
+
+###  http://example.org/abox#Mahershala_Ali
+:Mahershala_Ali rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Moonlight ;
+                tbox:hasCollaboratedWith :Barry_Jenkins ,
+                                         :Mahershala_Ali ,
+                                         :Naomie_Harris .
+
+
+###  http://example.org/abox#Mark_Ruffalo
+:Mark_Ruffalo rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :Spotlight ;
+              tbox:hasCollaboratedWith :Mark_Ruffalo ,
+                                       :Michael_Keaton ,
+                                       :Tom_McCarthy .
+
+
+###  http://example.org/abox#Martin_McDonagh
+:Martin_McDonagh rdf:type owl:NamedIndividual ,
+                          tbox:Director ;
+                 tbox:directs :Three_Billboards_Outside_Ebbing_Missouri ;
+                 tbox:hasCollaboratedWith :Frances_McDormand ,
+                                          :Woody_Harrelson .
+
+
+###  http://example.org/abox#Martin_Scorsese
+:Martin_Scorsese rdf:type owl:NamedIndividual ,
+                          tbox:Director ;
+                 tbox:directs :The_Wolf_of_Wall_Street ;
+                 tbox:hasCollaboratedWith :Jonah_Hill ,
+                                          :Leonardo_DiCaprio .
+
+
+###  http://example.org/abox#Matthew_McConaughey
+:Matthew_McConaughey rdf:type owl:NamedIndividual ,
+                              tbox:Actor ;
+                     tbox:actsIn :Dallas_Buyers_Club ;
+                     tbox:hasCollaboratedWith :Jean-Marc_Vallee ,
+                                              :Jennifer_Garner ,
+                                              :Matthew_McConaughey .
+
+
+###  http://example.org/abox#Michael_Fassbender
+:Michael_Fassbender rdf:type owl:NamedIndividual ,
+                             tbox:Actor ;
+                    tbox:actsIn <http://example.org/abox#12_Years_a_Slave> ;
+                    tbox:hasCollaboratedWith :Chiwetel_Ejiofor ,
+                                             :Michael_Fassbender ,
+                                             :Steve_McQueen .
+
+
+###  http://example.org/abox#Michael_Keaton
+:Michael_Keaton rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Birdman ,
+                            :Spotlight ;
+                tbox:hasCollaboratedWith :Alejandro_G._Inarritu ,
+                                         :Edward_Norton ,
+                                         :Mark_Ruffalo ,
+                                         :Michael_Keaton ,
+                                         :Tom_McCarthy .
+
+
+###  http://example.org/abox#Michael_Shannon
+:Michael_Shannon rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :The_Shape_of_Water ;
+                 tbox:hasCollaboratedWith :Guillermo_del_Toro ,
+                                          :Michael_Shannon ,
+                                          :Sally_Hawkins .
+
+
+###  http://example.org/abox#Miles_Teller
+:Miles_Teller rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :Whiplash ;
+              tbox:hasCollaboratedWith :Damien_Chazelle ,
+                                       :J.K._Simmons ,
+                                       :Miles_Teller .
+
+
+###  http://example.org/abox#Moonlight
+:Moonlight rdf:type owl:NamedIndividual ,
+                    onto:Film ,
+                    tbox:Movie ;
+           onto:director :Barry_Jenkins ;
+           onto:genre <https://schema.org/Drama> ;
+           onto:starring :Mahershala_Ali ,
+                         :Naomie_Harris ;
+           tbox:hasActor :Mahershala_Ali ,
+                         :Naomie_Harris ;
+           tbox:hasDirector :Barry_Jenkins ;
+           tbox:hasGenre <https://schema.org/Drama> ;
+           onto:releaseDate "2016-10-21"^^xsd:date ;
+           onto:runtime 111 ;
+           tbox:releaseDate "2016-10-21"^^xsd:date ;
+           tbox:runtime 111 ;
+           rdfs:label "Moonlight"@en .
+
+
+###  http://example.org/abox#Morten_Tyldum
+:Morten_Tyldum rdf:type owl:NamedIndividual ,
+                        tbox:Director ;
+               tbox:directs :The_Imitation_Game ;
+               tbox:hasCollaboratedWith :Benedict_Cumberbatch ,
+                                        :Keira_Knightley .
+
+
+###  http://example.org/abox#Naomie_Harris
+:Naomie_Harris rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Moonlight ;
+               tbox:hasCollaboratedWith :Barry_Jenkins ,
+                                        :Mahershala_Ali ,
+                                        :Naomie_Harris .
+
+
+###  http://example.org/abox#Parasite
+:Parasite rdf:type owl:NamedIndividual ,
+                   onto:Film ,
+                   tbox:Movie ;
+          onto:director :Bong_Joon-ho ;
+          onto:genre <https://schema.org/Comedy> ,
+                     <https://schema.org/Drama> ,
+                     <https://schema.org/Thriller> ;
+          onto:starring :Lee_Sun-kyun ,
+                        :Song_Kang-ho ;
+          tbox:hasActor :Lee_Sun-kyun ,
+                        :Song_Kang-ho ;
+          tbox:hasDirector :Bong_Joon-ho ;
+          tbox:hasGenre <https://schema.org/Comedy> ,
+                        <https://schema.org/Drama> ,
+                        <https://schema.org/Thriller> ;
+          onto:releaseDate "2019-05-30"^^xsd:date ;
+          onto:runtime 132 ;
+          tbox:releaseDate "2019-05-30"^^xsd:date ;
+          tbox:runtime 132 ;
+          rdfs:label "Parasite"@en .
+
+
+###  http://example.org/abox#Patricia_Arquette
+:Patricia_Arquette rdf:type owl:NamedIndividual ,
+                            tbox:Actor ;
+                   tbox:actsIn :Boyhood ;
+                   tbox:hasCollaboratedWith :Ellar_Coltrane ,
+                                            :Patricia_Arquette ,
+                                            :Richard_Linklater .
+
+
+###  http://example.org/abox#Pete_Docter
+:Pete_Docter rdf:type owl:NamedIndividual ,
+                      tbox:Director ;
+             tbox:directs :Inside_Out ;
+             tbox:hasCollaboratedWith :Amy_Poehler ,
+                                      :Phyllis_Smith .
+
+
+###  http://example.org/abox#Phyllis_Smith
+:Phyllis_Smith rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Inside_Out ;
+               tbox:hasCollaboratedWith :Amy_Poehler ,
+                                        :Pete_Docter ,
+                                        :Phyllis_Smith .
+
+
+###  http://example.org/abox#Rachel_Weisz
+:Rachel_Weisz rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :The_Lobster ;
+              tbox:hasCollaboratedWith :Colin_Farrell ,
+                                       :Rachel_Weisz ,
+                                       :Yorgos_Lanthimos .
+
+
+###  http://example.org/abox#Ralph_Fiennes
+:Ralph_Fiennes rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :The_Grand_Budapest_Hotel ;
+               tbox:hasCollaboratedWith :Ralph_Fiennes ,
+                                        :Tony_Revolori ,
+                                        :Wes_Anderson .
+
+
+###  http://example.org/abox#Richard_Linklater
+:Richard_Linklater rdf:type owl:NamedIndividual ,
+                            tbox:Director ;
+                   tbox:directs :Boyhood ;
+                   tbox:hasCollaboratedWith :Ellar_Coltrane ,
+                                            :Patricia_Arquette .
+
+
+###  http://example.org/abox#Room
+:Room rdf:type owl:NamedIndividual ,
+               onto:Film ,
+               tbox:Movie ;
+      onto:director :Lenny_Abrahamson ;
+      onto:genre <https://schema.org/Drama> ,
+                 <https://schema.org/Thriller> ;
+      onto:starring :Brie_Larson ,
+                    :Jacob_Tremblay ;
+      tbox:hasActor :Brie_Larson ,
+                    :Jacob_Tremblay ;
+      tbox:hasDirector :Lenny_Abrahamson ;
+      tbox:hasGenre <https://schema.org/Drama> ,
+                    <https://schema.org/Thriller> ;
+      onto:releaseDate "2015-10-16"^^xsd:date ;
+      onto:runtime 118 ;
+      tbox:releaseDate "2015-10-16"^^xsd:date ;
+      tbox:runtime 118 ;
+      rdfs:label "Room"@en .
+
+
+###  http://example.org/abox#Rosamund_Pike
+:Rosamund_Pike rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Gone_Girl ;
+               tbox:hasCollaboratedWith :Ben_Affleck ,
+                                        :David_Fincher ,
+                                        :Rosamund_Pike .
+
+
+###  http://example.org/abox#Ryan_Gosling
+:Ryan_Gosling rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :Blade_Runner_2049 ,
+                          :La_La_Land ;
+              tbox:hasCollaboratedWith :Damien_Chazelle ,
+                                       :Denis_Villeneuve ,
+                                       :Emma_Stone ,
+                                       :Harrison_Ford ,
+                                       :Ryan_Gosling .
+
+
+###  http://example.org/abox#Sally_Hawkins
+:Sally_Hawkins rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :The_Shape_of_Water ;
+               tbox:hasCollaboratedWith :Guillermo_del_Toro ,
+                                        :Michael_Shannon ,
+                                        :Sally_Hawkins .
+
+
+###  http://example.org/abox#Sandra_Bullock
+:Sandra_Bullock rdf:type owl:NamedIndividual ,
+                         tbox:Actor ;
+                tbox:actsIn :Gravity ;
+                tbox:hasCollaboratedWith :Alfonso_Cuaron ,
+                                         :George_Clooney ,
+                                         :Sandra_Bullock .
+
+
+###  http://example.org/abox#Saoirse_Ronan
+:Saoirse_Ronan rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :Lady_Bird ;
+               tbox:hasCollaboratedWith :Greta_Gerwig ,
+                                        :Laurie_Metcalf ,
+                                        :Saoirse_Ronan .
+
+
+###  http://example.org/abox#Scarlett_Johansson
+:Scarlett_Johansson rdf:type owl:NamedIndividual ,
+                             tbox:Actor ;
+                    tbox:actsIn :Her ;
+                    tbox:hasCollaboratedWith :Joaquin_Phoenix ,
+                                             :Scarlett_Johansson ,
+                                             :Spike_Jonze .
+
+
+###  http://example.org/abox#Sean_Baker
+:Sean_Baker rdf:type owl:NamedIndividual ,
+                     tbox:Director ;
+            tbox:directs :The_Florida_Project ;
+            tbox:hasCollaboratedWith :Brooklynn_Prince ,
+                                     :Willem_Dafoe .
+
+
+###  http://example.org/abox#Song_Kang-ho
+:Song_Kang-ho rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :Parasite ;
+              tbox:hasCollaboratedWith :Bong_Joon-ho ,
+                                       :Lee_Sun-kyun ,
+                                       :Song_Kang-ho .
+
+
+###  http://example.org/abox#Spike_Jonze
+:Spike_Jonze rdf:type owl:NamedIndividual ,
+                      tbox:Director ;
+             tbox:directs :Her ;
+             tbox:hasCollaboratedWith :Joaquin_Phoenix ,
+                                      :Scarlett_Johansson .
+
+
+###  http://example.org/abox#Spotlight
+:Spotlight rdf:type owl:NamedIndividual ,
+                    onto:Film ,
+                    tbox:Movie ;
+           onto:director :Tom_McCarthy ;
+           onto:genre <https://schema.org/Biography> ,
+                      <https://schema.org/Crime> ,
+                      <https://schema.org/Drama> ;
+           onto:starring :Mark_Ruffalo ,
+                         :Michael_Keaton ;
+           tbox:hasActor :Mark_Ruffalo ,
+                         :Michael_Keaton ;
+           tbox:hasDirector :Tom_McCarthy ;
+           tbox:hasGenre <https://schema.org/Biography> ,
+                         <https://schema.org/Crime> ,
+                         <https://schema.org/Drama> ;
+           onto:releaseDate "2015-11-06"^^xsd:date ;
+           onto:runtime 129 ;
+           tbox:releaseDate "2015-11-06"^^xsd:date ;
+           tbox:runtime 129 ;
+           rdfs:label "Spotlight"@en .
+
+
+###  http://example.org/abox#Steve_Carell
+:Steve_Carell rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :The_Big_Short ;
+              tbox:hasCollaboratedWith :Adam_McKay ,
+                                       :Christian_Bale ,
+                                       :Steve_Carell .
+
+
+###  http://example.org/abox#Steve_McQueen
+:Steve_McQueen rdf:type owl:NamedIndividual ,
+                        tbox:Director ;
+               tbox:directs <http://example.org/abox#12_Years_a_Slave> ;
+               tbox:hasCollaboratedWith :Chiwetel_Ejiofor ,
+                                        :Michael_Fassbender .
+
+
+###  http://example.org/abox#The_Big_Short
+:The_Big_Short rdf:type owl:NamedIndividual ,
+                        onto:Film ,
+                        tbox:Movie ;
+               onto:director :Adam_McKay ;
+               onto:genre <https://schema.org/Biography> ,
+                          <https://schema.org/Comedy> ,
+                          <https://schema.org/Drama> ;
+               onto:starring :Christian_Bale ,
+                             :Steve_Carell ;
+               tbox:hasActor :Christian_Bale ,
+                             :Steve_Carell ;
+               tbox:hasDirector :Adam_McKay ;
+               tbox:hasGenre <https://schema.org/Biography> ,
+                             <https://schema.org/Comedy> ,
+                             <https://schema.org/Drama> ;
+               onto:releaseDate "2015-12-11"^^xsd:date ;
+               onto:runtime 130 ;
+               tbox:releaseDate "2015-12-11"^^xsd:date ;
+               tbox:runtime 130 ;
+               rdfs:label "The Big Short"@en .
+
+
+###  http://example.org/abox#The_Dark_Knight
+:The_Dark_Knight rdf:type owl:NamedIndividual ,
+                          onto:Film ,
+                          tbox:Movie ;
+                 tbox:isPrequel :The_Dark_Knight_Rises .
+
+
+###  http://example.org/abox#The_Dark_Knight_Rises
+:The_Dark_Knight_Rises rdf:type owl:NamedIndividual ,
+                                onto:Film ,
+                                tbox:Movie ;
+                       tbox:isSequel :Batman_Begins .
+
+
+###  http://example.org/abox#The_Florida_Project
+:The_Florida_Project rdf:type owl:NamedIndividual ,
+                              onto:Film ,
+                              tbox:Movie ;
+                     onto:director :Sean_Baker ;
+                     onto:genre <https://schema.org/Drama> ;
+                     onto:starring :Brooklynn_Prince ,
+                                   :Willem_Dafoe ;
+                     tbox:hasActor :Brooklynn_Prince ,
+                                   :Willem_Dafoe ;
+                     tbox:hasDirector :Sean_Baker ;
+                     tbox:hasGenre <https://schema.org/Drama> ;
+                     onto:releaseDate "2017-10-06"^^xsd:date ;
+                     onto:runtime 111 ;
+                     tbox:releaseDate "2017-10-06"^^xsd:date ;
+                     tbox:runtime 111 ;
+                     rdfs:label "The Florida Project"@en .
+
+
+###  http://example.org/abox#The_Grand_Budapest_Hotel
+:The_Grand_Budapest_Hotel rdf:type owl:NamedIndividual ,
+                                   onto:Film ,
+                                   tbox:Movie ;
+                          onto:director :Wes_Anderson ;
+                          onto:genre <https://schema.org/Adventure> ,
+                                     <https://schema.org/Comedy> ,
+                                     <https://schema.org/Crime> ;
+                          onto:starring :Ralph_Fiennes ,
+                                        :Tony_Revolori ;
+                          tbox:hasActor :Ralph_Fiennes ,
+                                        :Tony_Revolori ;
+                          tbox:hasDirector :Wes_Anderson ;
+                          tbox:hasGenre <https://schema.org/Adventure> ,
+                                        <https://schema.org/Comedy> ,
+                                        <https://schema.org/Crime> ;
+                          onto:releaseDate "2014-03-07"^^xsd:date ;
+                          onto:runtime 99 ;
+                          tbox:releaseDate "2014-03-07"^^xsd:date ;
+                          tbox:runtime 99 ;
+                          rdfs:label "The Grand Budapest Hotel"@en .
+
+
+###  http://example.org/abox#The_Imitation_Game
+:The_Imitation_Game rdf:type owl:NamedIndividual ,
+                             onto:Film ,
+                             tbox:Movie ;
+                    onto:director :Morten_Tyldum ;
+                    onto:genre <https://schema.org/Biography> ,
+                               <https://schema.org/Drama> ,
+                               <https://schema.org/Thriller> ;
+                    onto:starring :Benedict_Cumberbatch ,
+                                  :Keira_Knightley ;
+                    tbox:hasActor :Benedict_Cumberbatch ,
+                                  :Keira_Knightley ;
+                    tbox:hasDirector :Morten_Tyldum ;
+                    tbox:hasGenre <https://schema.org/Biography> ,
+                                  <https://schema.org/Drama> ,
+                                  <https://schema.org/Thriller> ;
+                    onto:releaseDate "2014-11-28"^^xsd:date ;
+                    onto:runtime 114 ;
+                    tbox:releaseDate "2014-11-28"^^xsd:date ;
+                    tbox:runtime 114 ;
+                    rdfs:label "The Imitation Game"@en .
+
+
+###  http://example.org/abox#The_Lobster
+:The_Lobster rdf:type owl:NamedIndividual ,
+                      onto:Film ,
+                      tbox:Movie ;
+             onto:director :Yorgos_Lanthimos ;
+             onto:genre <https://schema.org/Comedy> ,
+                        <https://schema.org/Drama> ,
+                        <https://schema.org/Romance> ;
+             onto:starring :Colin_Farrell ,
+                           :Rachel_Weisz ;
+             tbox:hasActor :Colin_Farrell ,
+                           :Rachel_Weisz ;
+             tbox:hasDirector :Yorgos_Lanthimos ;
+             tbox:hasGenre <https://schema.org/Comedy> ,
+                           <https://schema.org/Drama> ,
+                           <https://schema.org/Romance> ;
+             onto:releaseDate "2015-10-16"^^xsd:date ;
+             onto:runtime 119 ;
+             tbox:releaseDate "2015-10-16"^^xsd:date ;
+             tbox:runtime 119 ;
+             rdfs:label "The Lobster"@en .
+
+
+###  http://example.org/abox#The_Revenant
+:The_Revenant rdf:type owl:NamedIndividual ,
+                       onto:Film ,
+                       tbox:Movie ;
+              onto:director :Alejandro_G._Inarritu ;
+              onto:genre <https://schema.org/Action> ,
+                         <https://schema.org/Adventure> ,
+                         <https://schema.org/Drama> ;
+              onto:starring :Leonardo_DiCaprio ,
+                            :Tom_Hardy ;
+              tbox:hasActor :Leonardo_DiCaprio ,
+                            :Tom_Hardy ;
+              tbox:hasDirector :Alejandro_G._Inarritu ;
+              tbox:hasGenre <https://schema.org/Action> ,
+                            <https://schema.org/Adventure> ,
+                            <https://schema.org/Drama> ;
+              onto:releaseDate "2015-12-25"^^xsd:date ;
+              onto:runtime 156 ;
+              tbox:releaseDate "2015-12-25"^^xsd:date ;
+              tbox:runtime 156 ;
+              rdfs:label "The Revenant"@en .
+
+
+###  http://example.org/abox#The_Shape_of_Water
+:The_Shape_of_Water rdf:type owl:NamedIndividual ,
+                             onto:Film ,
+                             tbox:Movie ;
+                    onto:director :Guillermo_del_Toro ;
+                    onto:genre <https://schema.org/Adventure> ,
+                               <https://schema.org/Drama> ,
+                               <https://schema.org/Fantasy> ;
+                    onto:starring :Michael_Shannon ,
+                                  :Sally_Hawkins ;
+                    tbox:hasActor :Michael_Shannon ,
+                                  :Sally_Hawkins ;
+                    tbox:hasDirector :Guillermo_del_Toro ;
+                    tbox:hasGenre <https://schema.org/Adventure> ,
+                                  <https://schema.org/Drama> ,
+                                  <https://schema.org/Fantasy> ;
+                    onto:releaseDate "2017-12-01"^^xsd:date ;
+                    onto:runtime 123 ;
+                    tbox:releaseDate "2017-12-01"^^xsd:date ;
+                    tbox:runtime 123 ;
+                    rdfs:label "The Shape of Water"@en .
+
+
+###  http://example.org/abox#The_Wolf_of_Wall_Street
+:The_Wolf_of_Wall_Street rdf:type owl:NamedIndividual ,
+                                  onto:Film ,
+                                  tbox:Movie ;
+                         onto:director :Martin_Scorsese ;
+                         onto:genre <https://schema.org/Biography> ,
+                                    <https://schema.org/Comedy> ,
+                                    <https://schema.org/Crime> ;
+                         onto:starring :Jonah_Hill ,
+                                       :Leonardo_DiCaprio ;
+                         tbox:hasActor :Jonah_Hill ,
+                                       :Leonardo_DiCaprio ;
+                         tbox:hasDirector :Martin_Scorsese ;
+                         tbox:hasGenre <https://schema.org/Biography> ,
+                                       <https://schema.org/Comedy> ,
+                                       <https://schema.org/Crime> ;
+                         onto:releaseDate "2013-12-25"^^xsd:date ;
+                         onto:runtime 180 ;
+                         tbox:releaseDate "2013-12-25"^^xsd:date ;
+                         tbox:runtime 180 ;
+                         rdfs:label "The Wolf of Wall Street"@en .
+
+
+###  http://example.org/abox#Three_Billboards_Outside_Ebbing_Missouri
+:Three_Billboards_Outside_Ebbing_Missouri rdf:type owl:NamedIndividual ,
+                                                   onto:Film ,
+                                                   tbox:Movie ;
+                                          onto:director :Martin_McDonagh ;
+                                          onto:genre <https://schema.org/Comedy> ,
+                                                     <https://schema.org/Crime> ,
+                                                     <https://schema.org/Drama> ;
+                                          onto:starring :Frances_McDormand ,
+                                                        :Woody_Harrelson ;
+                                          tbox:hasActor :Frances_McDormand ,
+                                                        :Woody_Harrelson ;
+                                          tbox:hasDirector :Martin_McDonagh ;
+                                          tbox:hasGenre <https://schema.org/Comedy> ,
+                                                        <https://schema.org/Crime> ,
+                                                        <https://schema.org/Drama> ;
+                                          onto:releaseDate "2017-11-10"^^xsd:date ;
+                                          onto:runtime 115 ;
+                                          tbox:releaseDate "2017-11-10"^^xsd:date ;
+                                          tbox:runtime 115 ;
+                                          rdfs:label "Three Billboards Outside Ebbing Missouri"@en .
+
+
+###  http://example.org/abox#Tom_Hardy
+:Tom_Hardy rdf:type owl:NamedIndividual ,
+                    tbox:Actor ;
+           tbox:actsIn :Mad_Max_Fury_Road ,
+                       :The_Revenant ;
+           tbox:hasCollaboratedWith :Alejandro_G._Inarritu ,
+                                    :Charlize_Theron ,
+                                    :George_Miller ,
+                                    :Leonardo_DiCaprio ,
+                                    :Tom_Hardy .
+
+
+###  http://example.org/abox#Tom_McCarthy
+:Tom_McCarthy rdf:type owl:NamedIndividual ,
+                       tbox:Director ;
+              tbox:directs :Spotlight ;
+              tbox:hasCollaboratedWith :Mark_Ruffalo ,
+                                       :Michael_Keaton .
+
+
+###  http://example.org/abox#Tony_Revolori
+:Tony_Revolori rdf:type owl:NamedIndividual ,
+                        tbox:Actor ;
+               tbox:actsIn :The_Grand_Budapest_Hotel ;
+               tbox:hasCollaboratedWith :Ralph_Fiennes ,
+                                        :Tony_Revolori ,
+                                        :Wes_Anderson .
+
+
+###  http://example.org/abox#Wes_Anderson
+:Wes_Anderson rdf:type owl:NamedIndividual ,
+                       tbox:Director ;
+              tbox:directs :The_Grand_Budapest_Hotel ;
+              tbox:hasCollaboratedWith :Ralph_Fiennes ,
+                                       :Tony_Revolori .
+
+
+###  http://example.org/abox#Whiplash
+:Whiplash rdf:type owl:NamedIndividual ,
+                   onto:Film ,
+                   tbox:Movie ;
+          onto:director :Damien_Chazelle ;
+          onto:genre <https://schema.org/Drama> ,
+                     <https://schema.org/Music> ;
+          onto:starring :J.K._Simmons ,
+                        :Miles_Teller ;
+          tbox:hasActor :J.K._Simmons ,
+                        :Miles_Teller ;
+          tbox:hasDirector :Damien_Chazelle ;
+          tbox:hasGenre <https://schema.org/Drama> ,
+                        <https://schema.org/Music> ;
+          onto:releaseDate "2014-10-10"^^xsd:date ;
+          onto:runtime 106 ;
+          tbox:releaseDate "2014-10-10"^^xsd:date ;
+          tbox:runtime 106 ;
+          rdfs:label "Whiplash"@en .
+
+
+###  http://example.org/abox#Willem_Dafoe
+:Willem_Dafoe rdf:type owl:NamedIndividual ,
+                       tbox:Actor ;
+              tbox:actsIn :The_Florida_Project ;
+              tbox:hasCollaboratedWith :Brooklynn_Prince ,
+                                       :Sean_Baker ,
+                                       :Willem_Dafoe .
+
+
+###  http://example.org/abox#Woody_Harrelson
+:Woody_Harrelson rdf:type owl:NamedIndividual ,
+                          tbox:Actor ;
+                 tbox:actsIn :Three_Billboards_Outside_Ebbing_Missouri ;
+                 tbox:hasCollaboratedWith :Frances_McDormand ,
+                                          :Martin_McDonagh ,
+                                          :Woody_Harrelson .
+
+
+###  http://example.org/abox#Yorgos_Lanthimos
+:Yorgos_Lanthimos rdf:type owl:NamedIndividual ,
+                           tbox:Director ;
+                  tbox:directs :The_Lobster ;
+                  tbox:hasCollaboratedWith :Colin_Farrell ,
+                                           :Rachel_Weisz .
+
+
+###  http://example.org/abox#12_Years_a_Slave
+<http://example.org/abox#12_Years_a_Slave> rdf:type owl:NamedIndividual ,
+                                                    onto:Film ,
+                                                    tbox:Movie ;
+                                           onto:director :Steve_McQueen ;
+                                           onto:genre <https://schema.org/Biography> ,
+                                                      <https://schema.org/Drama> ,
+                                                      <https://schema.org/History> ;
+                                           onto:starring :Chiwetel_Ejiofor ,
+                                                         :Michael_Fassbender ;
+                                           tbox:hasActor :Chiwetel_Ejiofor ,
+                                                         :Michael_Fassbender ;
+                                           tbox:hasDirector :Steve_McQueen ;
+                                           tbox:hasGenre <https://schema.org/Biography> ,
+                                                         <https://schema.org/Drama> ,
+                                                         <https://schema.org/History> ;
+                                           onto:releaseDate "2013-10-18"^^xsd:date ;
+                                           onto:runtime 136 ;
+                                           tbox:releaseDate "2013-10-18"^^xsd:date ;
+                                           tbox:runtime 136 ;
+                                           rdfs:label "12 Years a Slave"@en .
+
+
+###  https://schema.org/Action
+<https://schema.org/Action> rdf:type owl:NamedIndividual ,
+                                     tbox:Genre ,
+                                     <http://schema.org/Genre> .
+
+
+###  https://schema.org/Adventure
+<https://schema.org/Adventure> rdf:type owl:NamedIndividual ,
+                                        tbox:Genre ,
+                                        <http://schema.org/Genre> .
+
+
+###  https://schema.org/Animation
+<https://schema.org/Animation> rdf:type owl:NamedIndividual ,
+                                        tbox:Genre ,
+                                        <http://schema.org/Genre> .
+
+
+###  https://schema.org/Biography
+<https://schema.org/Biography> rdf:type owl:NamedIndividual ,
+                                        tbox:Genre ,
+                                        <http://schema.org/Genre> .
+
+
+###  https://schema.org/Comedy
+<https://schema.org/Comedy> rdf:type owl:NamedIndividual ,
+                                     tbox:Genre ,
+                                     <http://schema.org/Genre> .
+
+
+###  https://schema.org/Crime
+<https://schema.org/Crime> rdf:type owl:NamedIndividual ,
+                                    tbox:Genre ,
+                                    <http://schema.org/Genre> .
+
+
+###  https://schema.org/Drama
+<https://schema.org/Drama> rdf:type owl:NamedIndividual ,
+                                    tbox:Genre ,
+                                    <http://schema.org/Genre> .
+
+
+###  https://schema.org/Fantasy
+<https://schema.org/Fantasy> rdf:type owl:NamedIndividual ,
+                                      tbox:Genre ,
+                                      <http://schema.org/Genre> .
+
+
+###  https://schema.org/History
+<https://schema.org/History> rdf:type owl:NamedIndividual ,
+                                      tbox:Genre ,
+                                      <http://schema.org/Genre> .
+
+
+###  https://schema.org/Horror
+<https://schema.org/Horror> rdf:type owl:NamedIndividual ,
+                                     tbox:Genre ,
+                                     <http://schema.org/Genre> .
+
+
+###  https://schema.org/Music
+<https://schema.org/Music> rdf:type owl:NamedIndividual ,
+                                    tbox:Genre ,
+                                    <http://schema.org/Genre> .
+
+
+###  https://schema.org/Mystery
+<https://schema.org/Mystery> rdf:type owl:NamedIndividual ,
+                                      tbox:Genre ,
+                                      <http://schema.org/Genre> .
+
+
+###  https://schema.org/Romance
+<https://schema.org/Romance> rdf:type owl:NamedIndividual ,
+                                      tbox:Genre ,
+                                      <http://schema.org/Genre> .
+
+
+###  https://schema.org/Sci-Fi
+<https://schema.org/Sci-Fi> rdf:type owl:NamedIndividual ,
+                                     tbox:Genre ,
+                                     <http://schema.org/Genre> .
+
+
+###  https://schema.org/Thriller
+<https://schema.org/Thriller> rdf:type owl:NamedIndividual ,
+                                       tbox:Genre ,
+                                       <http://schema.org/Genre> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

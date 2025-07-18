@@ -1,17 +1,18 @@
 from owlready2 import *
 
-tbox = get_ontology("file://film_tbox.owl").load()
-alignment = get_ontology("file://film_alignment.owl").load()
+tbox = get_ontology("file://owl/film_tbox.owl").load()
+alignment = get_ontology("file://owl/film_alignment.owl").load()
 
-abox = get_ontology("file://film_abox.owl").load()
+abox = get_ontology("file://owl/film_abox.owl").load()
 
 abox.imported_ontologies.append(tbox)
 abox.imported_ontologies.append(alignment)
 
 with abox:
-    sync_reasoner_pellet(infer_property_values = True, infer_data_property_values = True)
+    sync_reasoner_pellet(infer_property_values=True,
+                         infer_data_property_values=True)
 
-abox.save(file="inferred_abox.owl", format="rdfxml")
+abox.save(file="owl/inferred_abox.owl", format="rdfxml")
 
 print("Reasoning process is finished")
 
