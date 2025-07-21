@@ -1,0 +1,5822 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix exa: <http://example.org/abox#> .
+@prefix ext: <http://example.org/tbox#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+_:Ncd6577179a774cbf84002b08970ee8aa a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        _:Ncd6577179a774cbf84002b08970ee8aa,
+        dbo:Person,
+        ext:Actor,
+        ext:Actor_Director,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass _:Ncd6577179a774cbf84002b08970ee8aa,
+        ext:Actor_Director ;
+    owl:intersectionOf _:N98f0a6f3fde14c0d9afa9f8e3c76392c,
+        _:Nc54ba02f372142ada878410c97586ba0 ;
+    owl:sameAs _:Ncd6577179a774cbf84002b08970ee8aa .
+
+dbo:Film a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass dbo:Film,
+        ext:Movie ;
+    owl:sameAs dbo:Film .
+
+dbo:Person a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf dbo:Person,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass dbo:Person,
+        ext:Person ;
+    owl:sameAs dbo:Person .
+
+ext:Actor a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:Actor ;
+    owl:sameAs ext:Actor .
+
+ext:Actor_Director a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        _:Ncd6577179a774cbf84002b08970ee8aa,
+        dbo:Person,
+        ext:Actor,
+        ext:Actor_Director,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass _:Ncd6577179a774cbf84002b08970ee8aa,
+        ext:Actor_Director ;
+    owl:sameAs ext:Actor_Director .
+
+ext:CreativeWork a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ext:CreativeWork,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:CreativeWork ;
+    owl:sameAs ext:CreativeWork .
+
+ext:Director a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:Director ;
+    owl:sameAs ext:Director .
+
+ext:Genre a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:Genre,
+        schema1:Genre ;
+    owl:sameAs ext:Genre .
+
+ext:Media a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ext:Media,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:Media ;
+    owl:sameAs ext:Media .
+
+ext:Movie a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass dbo:Film,
+        ext:Movie ;
+    owl:sameAs ext:Movie .
+
+ext:Person a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf dbo:Person,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:disjointWith ext:Work ;
+    owl:equivalentClass dbo:Person,
+        ext:Person ;
+    owl:sameAs ext:Person .
+
+ext:Star a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf _:N3fc16c772ff04a1e9a2b300a692f5d79,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        ext:Star,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass _:N3fc16c772ff04a1e9a2b300a692f5d79,
+        ext:Star ;
+    owl:sameAs ext:Star .
+
+ext:Work a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:Work ;
+    owl:sameAs ext:Work .
+
+schema1:Genre a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass ext:Genre,
+        schema1:Genre ;
+    owl:sameAs schema1:Genre .
+
+owl:Nothing a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N20d00866c1f54bbb97dd74e942add076,
+        _:N3fc16c772ff04a1e9a2b300a692f5d79,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        _:Ncd6577179a774cbf84002b08970ee8aa,
+        dbo:Film,
+        dbo:Person,
+        ext:Actor,
+        ext:Actor_Director,
+        ext:CreativeWork,
+        ext:Director,
+        ext:Genre,
+        ext:Media,
+        ext:Movie,
+        ext:Person,
+        ext:Star,
+        ext:Work,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:Nothing,
+        owl:Thing ;
+    owl:equivalentClass owl:Nothing ;
+    owl:sameAs owl:Nothing .
+
+owl:Thing a rdfs:Class,
+        rdfs:Resource,
+        owl:Class,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:Thing .
+
+<http://example.org/abox> a rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    owl:imports <http://example.org/tbox/0.1> ;
+    owl:sameAs <http://example.org/abox> .
+
+<http://example.org/alignment> a rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    owl:sameAs <http://example.org/alignment> .
+
+<http://example.org/tbox> a rdfs:Resource,
+        owl:Ontology,
+        owl:Thing ;
+    owl:sameAs <http://example.org/tbox> ;
+    owl:versionIRI <http://example.org/tbox/0.1> ;
+    owl:versionInfo 0.1 .
+
+ext:ChatGPTExplanation a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:sameAs ext:ChatGPTExplanation .
+
+dcterms:creator a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs dcterms:creator .
+
+dcterms:description a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs dcterms:description .
+
+dcterms:issued a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs dcterms:issued .
+
+dcterms:license a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs dcterms:license .
+
+dcterms:modified a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs dcterms:modified .
+
+dcterms:title a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs dcterms:title .
+
+vann:preferredNamespacePrefix a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs vann:preferredNamespacePrefix .
+
+vann:preferredNamespaceUri a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs vann:preferredNamespaceUri .
+
+rdf:HTML a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:HTML .
+
+rdf:PlainLiteral a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:PlainLiteral .
+
+rdf:XMLLiteral a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:XMLLiteral .
+
+rdf:langString a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs rdf:langString .
+
+rdfs:isDefinedBy a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs rdfs:isDefinedBy .
+
+rdfs:seeAlso a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs rdfs:seeAlso .
+
+xsd:NCName a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:NCName .
+
+xsd:NMTOKEN a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:NMTOKEN .
+
+xsd:Name a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:Name .
+
+xsd:anyURI a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:anyURI .
+
+xsd:base64Binary a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:base64Binary .
+
+xsd:boolean a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:boolean .
+
+xsd:byte a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:byte .
+
+xsd:dateTime a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:dateTime .
+
+xsd:dateTimeStamp a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:dateTimeStamp .
+
+xsd:double a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:double .
+
+xsd:float a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:float .
+
+xsd:hexBinary a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:hexBinary .
+
+xsd:int a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:int .
+
+xsd:language a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:language .
+
+xsd:long a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:long .
+
+xsd:negativeInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:negativeInteger .
+
+xsd:nonPositiveInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:nonPositiveInteger .
+
+xsd:normalizedString a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:normalizedString .
+
+xsd:positiveInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:positiveInteger .
+
+xsd:short a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:short .
+
+xsd:string a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:string .
+
+xsd:time a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:time .
+
+xsd:token a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:token .
+
+xsd:unsignedByte a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedByte .
+
+xsd:unsignedInt a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedInt .
+
+xsd:unsignedLong a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedLong .
+
+xsd:unsignedShort a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:unsignedShort .
+
+owl:backwardCompatibleWith a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:backwardCompatibleWith .
+
+owl:deprecated a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:deprecated .
+
+owl:incompatibleWith a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:incompatibleWith .
+
+owl:priorVersion a rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    owl:sameAs owl:priorVersion .
+
+exa:Argo a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    dbo:director exa:Ben_Affleck ;
+    ext:hasDirector exa:Ben_Affleck ;
+    owl:sameAs exa:Argo .
+
+xsd:nonNegativeInteger a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:nonNegativeInteger .
+
+owl:IrreflexiveProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:IrreflexiveProperty .
+
+owl:SymmetricProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:SymmetricProperty .
+
+0.1 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        owl:Thing ;
+    owl:sameAs 0.1 .
+
+"2"^^xsd:nonNegativeInteger a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        xsd:nonNegativeInteger,
+        owl:Thing ;
+    owl:sameAs "2"^^xsd:nonNegativeInteger .
+
+"12 Years a Slave"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "12 Years a Slave"@en .
+
+"A Beautiful Mind"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "A Beautiful Mind"@en .
+
+"A property that assigns a director to a film."@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "A property that assigns a director to a film."@en .
+
+"Action"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Action"@en .
+
+"Adventure"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Adventure"@en .
+
+"Andrew Garfield"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Andrew Garfield"@en .
+
+"Anne Hathaway"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Anne Hathaway"@en .
+
+"Arrival"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Arrival"@en .
+
+"Avatar"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Avatar"@en .
+
+"Biography"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Biography"@en .
+
+"Birdman"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Birdman"@en .
+
+"Boyhood"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Boyhood"@en .
+
+"Brad Pitt"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Brad Pitt"@en .
+
+"Catch Me If You Can"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Catch Me If You Can"@en .
+
+"Catherine Zeta-Jones"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Catherine Zeta-Jones"@en .
+
+"Charlize Theron"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Charlize Theron"@en .
+
+"Christian Bale"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Christian Bale"@en .
+
+"Christoph Waltz"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Christoph Waltz"@en .
+
+"Christopher Nolan"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Christopher Nolan"@en .
+
+"Dallas Buyers Club"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Dallas Buyers Club"@en .
+
+"David Fincher"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "David Fincher"@en .
+
+"Denis Villeneuve"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Denis Villeneuve"@en .
+
+"Drama"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Drama"@en .
+
+"Elliot Page"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Elliot Page"@en .
+
+"Ex Machina"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Ex Machina"@en .
+
+"Forrest Gump"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Forrest Gump"@en .
+
+"Gary Sinise"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Gary Sinise"@en .
+
+"George Miller"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "George Miller"@en .
+
+"Get Out"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Get Out"@en .
+
+"Gladiator"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Gladiator"@en .
+
+"Gone Girl"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Gone Girl"@en .
+
+"Gravity"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Gravity"@en .
+
+"Harrison Ford"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Harrison Ford"@en .
+
+"Heath Ledger"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Heath Ledger"@en .
+
+"Her"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Her"@en .
+
+"Hugh Jackman"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Hugh Jackman"@en .
+
+"Inception"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Inception"@en .
+
+"Inglourious Basterds"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Inglourious Basterds"@en .
+
+"Inside Out"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Inside Out"@en .
+
+"Interstellar"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Interstellar"@en .
+
+"James Cameron"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "James Cameron"@en .
+
+"Jeff Goldblum"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Jeff Goldblum"@en .
+
+"Jennifer Connelly"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Jennifer Connelly"@en .
+
+"Jesse Eisenberg"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Jesse Eisenberg"@en .
+
+"Joaquin Phoenix"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Joaquin Phoenix"@en .
+
+"Jonah Hill"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Jonah Hill"@en .
+
+"Jurassic Park"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Jurassic Park"@en .
+
+"Kate Winslet"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Kate Winslet"@en .
+
+"Kenneth Branagh"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Kenneth Branagh"@en .
+
+"La La Land"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "La La Land"@en .
+
+"Lady Bird"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Lady Bird"@en .
+
+"Laura Dern"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Laura Dern"@en .
+
+"Leonardo DiCaprio"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Leonardo DiCaprio"@en .
+
+"Mad Max Fury Road"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Mad Max Fury Road"@en .
+
+"Mad Max: Fury Road"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Mad Max: Fury Road"@en .
+
+"Mark Rylance"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Mark Rylance"@en .
+
+"Martin Scorsese"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Martin Scorsese"@en .
+
+"Matt Damon"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Matt Damon"@en .
+
+"Matthew McConaughey"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Matthew McConaughey"@en .
+
+"Moonlight"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Moonlight"@en .
+
+"Parasite"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Parasite"@en .
+
+"Quentin Tarantino"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Quentin Tarantino"@en .
+
+"Ridley Scott"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Ridley Scott"@en .
+
+"Robert Zemeckis"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Robert Zemeckis"@en .
+
+"Robin Wright"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Robin Wright"@en .
+
+"Romance"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Romance"@en .
+
+"Ron Howard"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Ron Howard"@en .
+
+"Room"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Room"@en .
+
+"Russell Crowe"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Russell Crowe"@en .
+
+"Ryan Gosling"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Ryan Gosling"@en .
+
+"Sam Neill"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Sam Neill"@en .
+
+"Sam Worthington"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Sam Worthington"@en .
+
+"Saving Private Ryan"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Saving Private Ryan"@en .
+
+"Scarlett Johansson"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Scarlett Johansson"@en .
+
+"Spotlight"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Spotlight"@en .
+
+"Steven Spielberg"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Steven Spielberg"@en .
+
+"The Big Short"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Big Short"@en .
+
+"The Dark Knight"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Dark Knight"@en .
+
+"The Florida Project"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Florida Project"@en .
+
+"The Grand Budapest Hotel"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Grand Budapest Hotel"@en .
+
+"The Imitation Game"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Imitation Game"@en .
+
+"The Lobster"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Lobster"@en .
+
+"The Matrix Reloaded"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Matrix Reloaded"@en .
+
+"The Prestige"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Prestige"@en .
+
+"The Revenant"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Revenant"@en .
+
+"The Shape of Water"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Shape of Water"@en .
+
+"The Social Network"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Social Network"@en .
+
+"The Terminal"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Terminal"@en .
+
+"Three Billboards Outside Ebbing Missouri"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Three Billboards Outside Ebbing Missouri"@en .
+
+"Thriller"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Thriller"@en .
+
+"Titanic"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Titanic"@en .
+
+"Tom Hanks"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Tom Hanks"@en .
+
+"Tom Hardy"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Tom Hardy"@en .
+
+"War"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "War"@en .
+
+"Whiplash"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Whiplash"@en .
+
+"Zoe Saldana"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Zoe Saldana"@en .
+
+"hasDirector"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "hasDirector"@en .
+
+exa:Batman_Begins a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:isPrequel exa:The_Dark_Knight,
+        exa:The_Dark_Knight_Rises ;
+    owl:sameAs exa:Batman_Begins .
+
+exa:The_Dark_Knight a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:isPrequel exa:The_Dark_Knight_Rises ;
+    ext:isSequel exa:Batman_Begins ;
+    owl:sameAs exa:The_Dark_Knight .
+
+exa:The_Dark_Knight_Rises a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:isSequel exa:Batman_Begins,
+        exa:The_Dark_Knight ;
+    owl:sameAs exa:The_Dark_Knight_Rises .
+
+ext:hasCollaboratedWith a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:SymmetricProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Person,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Person,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ext:hasCollaboratedWith ;
+    owl:equivalentProperty ext:hasCollaboratedWith ;
+    owl:propertyChainAxiom _:Naf5f6fa53b3c4786b13435a09277f531,
+        _:Nd9dd4db3bf264072a97aad5474d2c688 ;
+    owl:sameAs ext:hasCollaboratedWith .
+
+ext:isPrequel a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing,
+        owl:TransitiveProperty ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ext:isPrequel ;
+    owl:equivalentProperty ext:isPrequel ;
+    owl:inverseOf ext:isSequel ;
+    owl:sameAs ext:isPrequel .
+
+ext:totalRuntime a rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range rdfs:Literal,
+        xsd:integer ;
+    rdfs:subPropertyOf ext:totalRuntime ;
+    owl:equivalentProperty ext:totalRuntime ;
+    owl:sameAs ext:totalRuntime .
+
+<http://example.org/tbox/0.1> a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs <http://example.org/tbox/0.1> .
+
+rdf:first a rdf:Property ;
+    rdfs:subPropertyOf rdf:first ;
+    owl:equivalentProperty rdf:first ;
+    owl:sameAs rdf:first .
+
+rdf:rest a rdf:Property ;
+    rdfs:subPropertyOf rdf:rest ;
+    owl:equivalentProperty rdf:rest ;
+    owl:sameAs rdf:rest .
+
+rdf:type a rdf:Property ;
+    rdfs:subPropertyOf rdf:type ;
+    owl:equivalentProperty rdf:type ;
+    owl:sameAs rdf:type .
+
+rdfs:domain a rdf:Property ;
+    rdfs:subPropertyOf rdfs:domain ;
+    owl:equivalentProperty rdfs:domain ;
+    owl:sameAs rdfs:domain .
+
+rdfs:label a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf rdfs:label ;
+    owl:equivalentProperty rdfs:label ;
+    owl:sameAs rdfs:label .
+
+rdfs:range a rdf:Property ;
+    rdfs:subPropertyOf rdfs:range ;
+    owl:equivalentProperty rdfs:range ;
+    owl:sameAs rdfs:range .
+
+rdfs:subClassOf a rdf:Property ;
+    rdfs:subPropertyOf rdfs:subClassOf ;
+    owl:equivalentProperty rdfs:subClassOf ;
+    owl:sameAs rdfs:subClassOf .
+
+rdfs:subPropertyOf a rdf:Property ;
+    rdfs:subPropertyOf rdfs:subPropertyOf ;
+    owl:equivalentProperty rdfs:subPropertyOf ;
+    owl:sameAs rdfs:subPropertyOf .
+
+owl:FunctionalProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:FunctionalProperty .
+
+owl:TransitiveProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:TransitiveProperty .
+
+owl:disjointWith a rdf:Property ;
+    rdfs:subPropertyOf owl:disjointWith ;
+    owl:equivalentProperty owl:disjointWith ;
+    owl:sameAs owl:disjointWith .
+
+owl:equivalentClass a rdf:Property ;
+    rdfs:subPropertyOf owl:equivalentClass ;
+    owl:equivalentProperty owl:equivalentClass ;
+    owl:sameAs owl:equivalentClass .
+
+owl:equivalentProperty a rdf:Property ;
+    rdfs:subPropertyOf owl:equivalentProperty ;
+    owl:equivalentProperty owl:equivalentProperty ;
+    owl:sameAs owl:equivalentProperty .
+
+owl:imports a rdf:Property ;
+    rdfs:subPropertyOf owl:imports ;
+    owl:equivalentProperty owl:imports ;
+    owl:sameAs owl:imports .
+
+owl:intersectionOf a rdf:Property ;
+    rdfs:subPropertyOf owl:intersectionOf ;
+    owl:equivalentProperty owl:intersectionOf ;
+    owl:sameAs owl:intersectionOf .
+
+owl:inverseOf a rdf:Property ;
+    rdfs:subPropertyOf owl:inverseOf ;
+    owl:equivalentProperty owl:inverseOf ;
+    owl:sameAs owl:inverseOf .
+
+owl:minCardinality a rdf:Property ;
+    rdfs:subPropertyOf owl:minCardinality ;
+    owl:equivalentProperty owl:minCardinality ;
+    owl:sameAs owl:minCardinality .
+
+owl:onProperty a rdf:Property ;
+    rdfs:subPropertyOf owl:onProperty ;
+    owl:equivalentProperty owl:onProperty ;
+    owl:sameAs owl:onProperty .
+
+owl:propertyChainAxiom a rdf:Property ;
+    rdfs:subPropertyOf owl:propertyChainAxiom ;
+    owl:equivalentProperty owl:propertyChainAxiom ;
+    owl:sameAs owl:propertyChainAxiom .
+
+owl:sameAs a rdf:Property ;
+    rdfs:subPropertyOf owl:sameAs ;
+    owl:equivalentProperty owl:sameAs ;
+    owl:sameAs owl:sameAs .
+
+owl:someValuesFrom a rdf:Property ;
+    rdfs:subPropertyOf owl:someValuesFrom ;
+    owl:equivalentProperty owl:someValuesFrom ;
+    owl:sameAs owl:someValuesFrom .
+
+owl:versionIRI a rdf:Property ;
+    rdfs:subPropertyOf owl:versionIRI ;
+    owl:equivalentProperty owl:versionIRI ;
+    owl:sameAs owl:versionIRI .
+
+owl:versionInfo a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf owl:versionInfo ;
+    owl:equivalentProperty owl:versionInfo ;
+    owl:sameAs owl:versionInfo .
+
+schema:Animation a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Animation .
+
+schema:Fantasy a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Fantasy .
+
+schema:Horror a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Horror .
+
+"1993-06-11"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "1993-06-11"^^xsd:date .
+
+"1994-07-06"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "1994-07-06"^^xsd:date .
+
+"1997-12-19"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "1997-12-19"^^xsd:date .
+
+"1998-07-24"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "1998-07-24"^^xsd:date .
+
+"2000-05-05"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2000-05-05"^^xsd:date .
+
+"2001-12-21"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2001-12-21"^^xsd:date .
+
+"2002-12-25"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2002-12-25"^^xsd:date .
+
+"2003-05-15"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2003-05-15"^^xsd:date .
+
+"2004-06-18"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2004-06-18"^^xsd:date .
+
+"2006-10-20"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2006-10-20"^^xsd:date .
+
+"2008-07-18"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2008-07-18"^^xsd:date .
+
+"2009-08-21"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2009-08-21"^^xsd:date .
+
+"2009-12-18"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2009-12-18"^^xsd:date .
+
+"2010-07-16"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2010-07-16"^^xsd:date .
+
+"2010-10-01"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2010-10-01"^^xsd:date .
+
+"2013-10-04"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2013-10-04"^^xsd:date .
+
+"2013-10-18"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2013-10-18"^^xsd:date .
+
+"2013-11-01"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2013-11-01"^^xsd:date .
+
+"2013-12-18"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2013-12-18"^^xsd:date .
+
+"2014-03-07"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-03-07"^^xsd:date .
+
+"2014-07-11"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-07-11"^^xsd:date .
+
+"2014-10-03"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-10-03"^^xsd:date .
+
+"2014-10-10"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-10-10"^^xsd:date .
+
+"2014-10-17"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-10-17"^^xsd:date .
+
+"2014-11-07"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-11-07"^^xsd:date .
+
+"2014-11-28"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-11-28"^^xsd:date .
+
+"2014-12-16"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2014-12-16"^^xsd:date .
+
+"2015-06-19"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2015-06-19"^^xsd:date .
+
+"2015-11-06"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2015-11-06"^^xsd:date .
+
+"2015-12-11"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2015-12-11"^^xsd:date .
+
+"2015-12-25"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2015-12-25"^^xsd:date .
+
+"2016-10-21"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2016-10-21"^^xsd:date .
+
+"2016-11-11"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2016-11-11"^^xsd:date .
+
+"2016-12-09"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2016-12-09"^^xsd:date .
+
+"2017-02-24"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2017-02-24"^^xsd:date .
+
+"2017-11-03"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2017-11-03"^^xsd:date .
+
+"2017-11-10"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2017-11-10"^^xsd:date .
+
+"2017-12-01"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2017-12-01"^^xsd:date .
+
+"2019-05-30"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2019-05-30"^^xsd:date .
+
+91 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 91 .
+
+94 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 94 .
+
+95 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 95 .
+
+99 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 99 .
+
+104 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 104 .
+
+108 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 108 .
+
+114 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 114 .
+
+115 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 115 .
+
+116 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 116 .
+
+117 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 117 .
+
+118 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 118 .
+
+123 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 123 .
+
+126 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 126 .
+
+127 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 127 .
+
+129 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 129 .
+
+132 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 132 .
+
+135 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 135 .
+
+136 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 136 .
+
+138 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 138 .
+
+141 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 141 .
+
+142 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 142 .
+
+148 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 148 .
+
+149 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 149 .
+
+152 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 152 .
+
+153 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 153 .
+
+155 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 155 .
+
+156 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 156 .
+
+162 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 162 .
+
+165 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 165 .
+
+195 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 195 .
+
+"Blade Runner 2049"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Blade Runner 2049"@en .
+
+"Dunkirk"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "Dunkirk"@en .
+
+"The Wolf of Wall Street"@en a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs "The Wolf of Wall Street"@en .
+
+dbr:A_Beautiful_Mind a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "A Beautiful Mind"@en ;
+    dbo:director dbr:Ron_Howard ;
+    dbo:genre dbr:Biography,
+        dbr:Drama ;
+    dbo:releaseDate "2001-12-21"^^xsd:date ;
+    dbo:runtime 135 ;
+    dbo:starring dbr:Jennifer_Connelly,
+        dbr:Russell_Crowe ;
+    ext:hasActor dbr:Jennifer_Connelly,
+        dbr:Russell_Crowe ;
+    ext:hasDirector dbr:Ron_Howard ;
+    ext:hasGenre dbr:Biography,
+        dbr:Drama ;
+    ext:releaseDate "2001-12-21"^^xsd:date ;
+    ext:runtime 135 ;
+    owl:sameAs dbr:A_Beautiful_Mind .
+
+dbr:Avatar a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Avatar"@en ;
+    dbo:director dbr:James_Cameron ;
+    dbo:genre dbr:Action,
+        dbr:Adventure,
+        dbr:Science_Fiction ;
+    dbo:releaseDate "2009-12-18"^^xsd:date ;
+    dbo:runtime 162 ;
+    dbo:starring dbr:Sam_Worthington,
+        dbr:Zoe_Saldana ;
+    ext:hasActor dbr:Sam_Worthington,
+        dbr:Zoe_Saldana ;
+    ext:hasDirector dbr:James_Cameron ;
+    ext:hasGenre dbr:Action,
+        dbr:Adventure,
+        dbr:Science_Fiction ;
+    ext:releaseDate "2009-12-18"^^xsd:date ;
+    ext:runtime 162 ;
+    owl:sameAs dbr:Avatar .
+
+dbr:Blade_Runner_2049 a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Blade Runner 2049"@en ;
+    dbo:director dbr:Denis_Villeneuve ;
+    dbo:genre dbr:Drama,
+        dbr:Science_Fiction ;
+    dbo:releaseDate "2017-10-06"^^xsd:date ;
+    dbo:runtime 164 ;
+    dbo:starring dbr:Harrison_Ford,
+        dbr:Ryan_Gosling ;
+    ext:hasActor dbr:Harrison_Ford,
+        dbr:Ryan_Gosling ;
+    ext:hasDirector dbr:Denis_Villeneuve ;
+    ext:hasGenre dbr:Drama,
+        dbr:Science_Fiction ;
+    ext:releaseDate "2017-10-06"^^xsd:date ;
+    ext:runtime 164 ;
+    owl:sameAs dbr:Blade_Runner_2049 .
+
+dbr:Catch_Me_If_You_Can a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Catch Me If You Can"@en ;
+    dbo:director dbr:Steven_Spielberg ;
+    dbo:genre dbr:Drama,
+        dbr:Thriller ;
+    dbo:releaseDate "2002-12-25"^^xsd:date ;
+    dbo:runtime 141 ;
+    dbo:starring dbr:Leonardo_DiCaprio,
+        dbr:Tom_Hanks ;
+    ext:hasActor dbr:Leonardo_DiCaprio,
+        dbr:Tom_Hanks ;
+    ext:hasDirector dbr:Steven_Spielberg ;
+    ext:hasGenre dbr:Drama,
+        dbr:Thriller ;
+    ext:releaseDate "2002-12-25"^^xsd:date ;
+    ext:runtime 141 ;
+    owl:sameAs dbr:Catch_Me_If_You_Can .
+
+dbr:Gladiator a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Gladiator"@en ;
+    dbo:director dbr:Ridley_Scott ;
+    dbo:genre dbr:Action,
+        dbr:Adventure,
+        dbr:Drama ;
+    dbo:releaseDate "2000-05-05"^^xsd:date ;
+    dbo:runtime 155 ;
+    dbo:starring dbr:Joaquin_Phoenix,
+        dbr:Russell_Crowe ;
+    ext:hasActor dbr:Joaquin_Phoenix,
+        dbr:Russell_Crowe ;
+    ext:hasDirector dbr:Ridley_Scott ;
+    ext:hasGenre dbr:Action,
+        dbr:Adventure,
+        dbr:Drama ;
+    ext:releaseDate "2000-05-05"^^xsd:date ;
+    ext:runtime 155 ;
+    owl:sameAs dbr:Gladiator .
+
+dbr:Inception a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Inception"@en ;
+    dbo:director dbr:Christopher_Nolan ;
+    dbo:genre dbr:Science_Fiction,
+        dbr:Thriller ;
+    dbo:releaseDate "2010-07-16"^^xsd:date ;
+    dbo:runtime 148 ;
+    dbo:starring dbr:Elliot_Page,
+        dbr:Leonardo_DiCaprio ;
+    ext:hasActor dbr:Elliot_Page,
+        dbr:Leonardo_DiCaprio ;
+    ext:hasDirector dbr:Christopher_Nolan ;
+    ext:hasGenre dbr:Science_Fiction,
+        dbr:Thriller ;
+    ext:releaseDate "2010-07-16"^^xsd:date ;
+    ext:runtime 148 ;
+    owl:sameAs dbr:Inception .
+
+dbr:Inglourious_Basterds a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Inglourious Basterds"@en ;
+    dbo:director dbr:Quentin_Tarantino ;
+    dbo:genre dbr:Action,
+        dbr:Drama,
+        dbr:War ;
+    dbo:releaseDate "2009-08-21"^^xsd:date ;
+    dbo:runtime 153 ;
+    dbo:starring dbr:Brad_Pitt,
+        dbr:Christoph_Waltz ;
+    ext:hasActor dbr:Brad_Pitt,
+        dbr:Christoph_Waltz ;
+    ext:hasDirector dbr:Quentin_Tarantino ;
+    ext:hasGenre dbr:Action,
+        dbr:Drama,
+        dbr:War ;
+    ext:releaseDate "2009-08-21"^^xsd:date ;
+    ext:runtime 153 ;
+    owl:sameAs dbr:Inglourious_Basterds .
+
+dbr:Interstellar a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Interstellar"@en ;
+    dbo:director dbr:Christopher_Nolan ;
+    dbo:genre dbr:Drama,
+        dbr:Science_Fiction ;
+    dbo:releaseDate "2014-11-07"^^xsd:date ;
+    dbo:runtime 169 ;
+    dbo:starring dbr:Anne_Hathaway,
+        dbr:Matthew_McConaughey ;
+    ext:hasActor dbr:Anne_Hathaway,
+        dbr:Matthew_McConaughey ;
+    ext:hasDirector dbr:Christopher_Nolan ;
+    ext:hasGenre dbr:Drama,
+        dbr:Science_Fiction ;
+    ext:releaseDate "2014-11-07"^^xsd:date ;
+    ext:runtime 169 ;
+    owl:sameAs dbr:Interstellar .
+
+dbr:Mad_Max_Fury_Road a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Mad Max: Fury Road"@en ;
+    dbo:director dbr:George_Miller ;
+    dbo:genre dbr:Action,
+        dbr:Adventure,
+        dbr:Science_Fiction ;
+    dbo:releaseDate "2015-05-15"^^xsd:date ;
+    dbo:runtime 120 ;
+    dbo:starring dbr:Charlize_Theron,
+        dbr:Tom_Hardy ;
+    ext:hasActor dbr:Charlize_Theron,
+        dbr:Tom_Hardy ;
+    ext:hasDirector dbr:George_Miller ;
+    ext:hasGenre dbr:Action,
+        dbr:Adventure,
+        dbr:Science_Fiction ;
+    ext:releaseDate "2015-05-15"^^xsd:date ;
+    ext:runtime 120 ;
+    owl:sameAs dbr:Mad_Max_Fury_Road .
+
+dbr:Saving_Private_Ryan a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Saving Private Ryan"@en ;
+    dbo:director dbr:Steven_Spielberg ;
+    dbo:genre dbr:Drama,
+        dbr:War ;
+    dbo:releaseDate "1998-07-24"^^xsd:date ;
+    dbo:runtime 169 ;
+    dbo:starring dbr:Matt_Damon,
+        dbr:Tom_Hanks ;
+    ext:hasActor dbr:Matt_Damon,
+        dbr:Tom_Hanks ;
+    ext:hasDirector dbr:Steven_Spielberg ;
+    ext:hasGenre dbr:Drama,
+        dbr:War ;
+    ext:releaseDate "1998-07-24"^^xsd:date ;
+    ext:runtime 169 ;
+    owl:sameAs dbr:Saving_Private_Ryan .
+
+dbr:The_Dark_Knight a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Dark Knight"@en ;
+    dbo:director dbr:Christopher_Nolan ;
+    dbo:genre dbr:Action,
+        dbr:Thriller ;
+    dbo:releaseDate "2008-07-18"^^xsd:date ;
+    dbo:runtime 152 ;
+    dbo:starring dbr:Christian_Bale,
+        dbr:Heath_Ledger ;
+    ext:hasActor dbr:Christian_Bale,
+        dbr:Heath_Ledger ;
+    ext:hasDirector dbr:Christopher_Nolan ;
+    ext:hasGenre dbr:Action,
+        dbr:Thriller ;
+    ext:releaseDate "2008-07-18"^^xsd:date ;
+    ext:runtime 152 ;
+    owl:sameAs dbr:The_Dark_Knight .
+
+dbr:The_Social_Network a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Social Network"@en ;
+    dbo:director dbr:David_Fincher ;
+    dbo:genre dbr:Biography,
+        dbr:Drama ;
+    dbo:releaseDate "2010-10-01"^^xsd:date ;
+    dbo:runtime 120 ;
+    dbo:starring dbr:Andrew_Garfield,
+        dbr:Jesse_Eisenberg ;
+    ext:hasActor dbr:Andrew_Garfield,
+        dbr:Jesse_Eisenberg ;
+    ext:hasDirector dbr:David_Fincher ;
+    ext:hasGenre dbr:Biography,
+        dbr:Drama ;
+    ext:releaseDate "2010-10-01"^^xsd:date ;
+    ext:runtime 120 ;
+    owl:sameAs dbr:The_Social_Network .
+
+dbr:The_Terminal a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Terminal"@en ;
+    dbo:director dbr:Steven_Spielberg ;
+    dbo:genre dbr:Comedy,
+        dbr:Drama ;
+    dbo:releaseDate "2004-06-18"^^xsd:date ;
+    dbo:runtime 128 ;
+    dbo:starring dbr:Catherine_Zeta_Jones,
+        dbr:Tom_Hanks ;
+    ext:hasActor dbr:Catherine_Zeta_Jones,
+        dbr:Tom_Hanks ;
+    ext:hasDirector dbr:Steven_Spielberg ;
+    ext:hasGenre dbr:Comedy,
+        dbr:Drama ;
+    ext:releaseDate "2004-06-18"^^xsd:date ;
+    ext:runtime 128 ;
+    owl:sameAs dbr:The_Terminal .
+
+dbr:The_Wolf_of_Wall_Street a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Wolf of Wall Street"@en ;
+    dbo:director dbr:Martin_Scorsese ;
+    dbo:genre dbr:Biography,
+        dbr:Comedy,
+        dbr:Drama ;
+    dbo:releaseDate "2013-12-25"^^xsd:date ;
+    dbo:runtime 180 ;
+    dbo:starring dbr:Jonah_Hill,
+        dbr:Leonardo_DiCaprio ;
+    ext:hasActor dbr:Jonah_Hill,
+        dbr:Leonardo_DiCaprio ;
+    ext:hasDirector dbr:Martin_Scorsese ;
+    ext:hasGenre dbr:Biography,
+        dbr:Comedy,
+        dbr:Drama ;
+    ext:releaseDate "2013-12-25"^^xsd:date ;
+    ext:runtime 180 ;
+    owl:sameAs dbr:The_Wolf_of_Wall_Street .
+
+dbr:Titanic a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Titanic"@en ;
+    dbo:director dbr:James_Cameron ;
+    dbo:genre dbr:Drama,
+        dbr:Romance ;
+    dbo:releaseDate "1997-12-19"^^xsd:date ;
+    dbo:runtime 195 ;
+    dbo:starring dbr:Kate_Winslet,
+        dbr:Leonardo_DiCaprio ;
+    ext:hasActor dbr:Kate_Winslet,
+        dbr:Leonardo_DiCaprio ;
+    ext:hasDirector dbr:James_Cameron ;
+    ext:hasGenre dbr:Drama,
+        dbr:Romance ;
+    ext:releaseDate "1997-12-19"^^xsd:date ;
+    ext:runtime 195 ;
+    owl:sameAs dbr:Titanic .
+
+exa:12_Years_a_Slave a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "12 Years a Slave"@en ;
+    dbo:director exa:Steve_McQueen ;
+    dbo:genre schema:Biography,
+        schema:Drama,
+        schema:History ;
+    dbo:releaseDate "2013-10-18"^^xsd:date ;
+    dbo:runtime 136 ;
+    dbo:starring exa:Chiwetel_Ejiofor,
+        exa:Michael_Fassbender ;
+    ext:hasActor exa:Chiwetel_Ejiofor,
+        exa:Michael_Fassbender ;
+    ext:hasDirector exa:Steve_McQueen ;
+    ext:hasGenre schema:Biography,
+        schema:Drama,
+        schema:History ;
+    ext:releaseDate "2013-10-18"^^xsd:date ;
+    ext:runtime 136 ;
+    owl:sameAs exa:12_Years_a_Slave .
+
+exa:Arrival a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Arrival"@en ;
+    dbo:director exa:Denis_Villeneuve ;
+    dbo:genre schema:Drama,
+        schema:Mystery,
+        schema:Sci-Fi ;
+    dbo:releaseDate "2016-11-11"^^xsd:date ;
+    dbo:runtime 116 ;
+    dbo:starring exa:Amy_Adams,
+        exa:Jeremy_Renner ;
+    ext:hasActor exa:Amy_Adams,
+        exa:Jeremy_Renner ;
+    ext:hasDirector exa:Denis_Villeneuve ;
+    ext:hasGenre schema:Drama,
+        schema:Mystery,
+        schema:Sci-Fi ;
+    ext:releaseDate "2016-11-11"^^xsd:date ;
+    ext:runtime 116 ;
+    owl:sameAs exa:Arrival .
+
+exa:Birdman a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Birdman"@en ;
+    dbo:director exa:Alejandro_G._Inarritu ;
+    dbo:genre schema:Comedy,
+        schema:Drama ;
+    dbo:releaseDate "2014-10-17"^^xsd:date ;
+    dbo:runtime 119 ;
+    dbo:starring exa:Edward_Norton,
+        exa:Michael_Keaton ;
+    ext:hasActor exa:Edward_Norton,
+        exa:Michael_Keaton ;
+    ext:hasDirector exa:Alejandro_G._Inarritu ;
+    ext:hasGenre schema:Comedy,
+        schema:Drama ;
+    ext:releaseDate "2014-10-17"^^xsd:date ;
+    ext:runtime 119 ;
+    owl:sameAs exa:Birdman .
+
+exa:Blade_Runner_2049 a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Blade Runner 2049"@en ;
+    dbo:director exa:Denis_Villeneuve ;
+    dbo:genre schema:Action,
+        schema:Drama,
+        schema:Mystery ;
+    dbo:releaseDate "2017-10-06"^^xsd:date ;
+    dbo:runtime 164 ;
+    dbo:starring exa:Harrison_Ford,
+        exa:Ryan_Gosling ;
+    ext:hasActor exa:Harrison_Ford,
+        exa:Ryan_Gosling ;
+    ext:hasDirector exa:Denis_Villeneuve ;
+    ext:hasGenre schema:Action,
+        schema:Drama,
+        schema:Mystery ;
+    ext:releaseDate "2017-10-06"^^xsd:date ;
+    ext:runtime 164 ;
+    owl:sameAs exa:Blade_Runner_2049 .
+
+exa:Boyhood a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Boyhood"@en ;
+    dbo:director exa:Richard_Linklater ;
+    dbo:genre schema:Drama ;
+    dbo:releaseDate "2014-07-11"^^xsd:date ;
+    dbo:runtime 165 ;
+    dbo:starring exa:Ellar_Coltrane,
+        exa:Patricia_Arquette ;
+    ext:hasActor exa:Ellar_Coltrane,
+        exa:Patricia_Arquette ;
+    ext:hasDirector exa:Richard_Linklater ;
+    ext:hasGenre schema:Drama ;
+    ext:releaseDate "2014-07-11"^^xsd:date ;
+    ext:runtime 165 ;
+    owl:sameAs exa:Boyhood .
+
+exa:Dallas_Buyers_Club a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Dallas Buyers Club"@en ;
+    dbo:director exa:Jean-Marc_Vallee ;
+    dbo:genre schema:Biography,
+        schema:Drama ;
+    dbo:releaseDate "2013-11-01"^^xsd:date ;
+    dbo:runtime 117 ;
+    dbo:starring exa:Jennifer_Garner,
+        exa:Matthew_McConaughey ;
+    ext:hasActor exa:Jennifer_Garner,
+        exa:Matthew_McConaughey ;
+    ext:hasDirector exa:Jean-Marc_Vallee ;
+    ext:hasGenre schema:Biography,
+        schema:Drama ;
+    ext:releaseDate "2013-11-01"^^xsd:date ;
+    ext:runtime 117 ;
+    owl:sameAs exa:Dallas_Buyers_Club .
+
+exa:Dunkirk a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Dunkirk"@en ;
+    dbo:director exa:Christopher_Nolan ;
+    dbo:genre schema:Action,
+        schema:Drama,
+        schema:History ;
+    dbo:releaseDate "2017-07-21"^^xsd:date ;
+    dbo:runtime 106 ;
+    dbo:starring exa:Barry_Keoghan,
+        exa:Fionn_Whitehead ;
+    ext:hasActor exa:Barry_Keoghan,
+        exa:Fionn_Whitehead ;
+    ext:hasDirector exa:Christopher_Nolan ;
+    ext:hasGenre schema:Action,
+        schema:Drama,
+        schema:History ;
+    ext:releaseDate "2017-07-21"^^xsd:date ;
+    ext:runtime 106 ;
+    owl:sameAs exa:Dunkirk .
+
+exa:Ex_Machina a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Ex Machina"@en ;
+    dbo:director exa:Alex_Garland ;
+    dbo:genre schema:Drama,
+        schema:Sci-Fi,
+        schema:Thriller ;
+    dbo:releaseDate "2014-12-16"^^xsd:date ;
+    dbo:runtime 108 ;
+    dbo:starring exa:Alicia_Vikander,
+        exa:Domhnall_Gleeson ;
+    ext:hasActor exa:Alicia_Vikander,
+        exa:Domhnall_Gleeson ;
+    ext:hasDirector exa:Alex_Garland ;
+    ext:hasGenre schema:Drama,
+        schema:Sci-Fi,
+        schema:Thriller ;
+    ext:releaseDate "2014-12-16"^^xsd:date ;
+    ext:runtime 108 ;
+    owl:sameAs exa:Ex_Machina .
+
+exa:Get_Out a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Get Out"@en ;
+    dbo:director exa:Jordan_Peele ;
+    dbo:genre schema:Horror,
+        schema:Mystery,
+        schema:Thriller ;
+    dbo:releaseDate "2017-02-24"^^xsd:date ;
+    dbo:runtime 104 ;
+    dbo:starring exa:Allison_Williams,
+        exa:Daniel_Kaluuya ;
+    ext:hasActor exa:Allison_Williams,
+        exa:Daniel_Kaluuya ;
+    ext:hasDirector exa:Jordan_Peele ;
+    ext:hasGenre schema:Horror,
+        schema:Mystery,
+        schema:Thriller ;
+    ext:releaseDate "2017-02-24"^^xsd:date ;
+    ext:runtime 104 ;
+    owl:sameAs exa:Get_Out .
+
+exa:Gone_Girl a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Gone Girl"@en ;
+    dbo:director exa:David_Fincher ;
+    dbo:genre schema:Drama,
+        schema:Mystery,
+        schema:Thriller ;
+    dbo:releaseDate "2014-10-03"^^xsd:date ;
+    dbo:runtime 149 ;
+    dbo:starring exa:Ben_Affleck,
+        exa:Rosamund_Pike ;
+    ext:hasActor exa:Ben_Affleck,
+        exa:Rosamund_Pike ;
+    ext:hasDirector exa:David_Fincher ;
+    ext:hasGenre schema:Drama,
+        schema:Mystery,
+        schema:Thriller ;
+    ext:releaseDate "2014-10-03"^^xsd:date ;
+    ext:runtime 149 ;
+    owl:sameAs exa:Gone_Girl .
+
+exa:Gravity a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Gravity"@en ;
+    dbo:director exa:Alfonso_Cuaron ;
+    dbo:genre schema:Drama,
+        schema:Sci-Fi,
+        schema:Thriller ;
+    dbo:releaseDate "2013-10-04"^^xsd:date ;
+    dbo:runtime 91 ;
+    dbo:starring exa:George_Clooney,
+        exa:Sandra_Bullock ;
+    ext:hasActor exa:George_Clooney,
+        exa:Sandra_Bullock ;
+    ext:hasDirector exa:Alfonso_Cuaron ;
+    ext:hasGenre schema:Drama,
+        schema:Sci-Fi,
+        schema:Thriller ;
+    ext:releaseDate "2013-10-04"^^xsd:date ;
+    ext:runtime 91 ;
+    owl:sameAs exa:Gravity .
+
+exa:Her a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Her"@en ;
+    dbo:director exa:Spike_Jonze ;
+    dbo:genre schema:Drama,
+        schema:Romance,
+        schema:Sci-Fi ;
+    dbo:releaseDate "2013-12-18"^^xsd:date ;
+    dbo:runtime 126 ;
+    dbo:starring exa:Joaquin_Phoenix,
+        exa:Scarlett_Johansson ;
+    ext:hasActor exa:Joaquin_Phoenix,
+        exa:Scarlett_Johansson ;
+    ext:hasDirector exa:Spike_Jonze ;
+    ext:hasGenre schema:Drama,
+        schema:Romance,
+        schema:Sci-Fi ;
+    ext:releaseDate "2013-12-18"^^xsd:date ;
+    ext:runtime 126 ;
+    owl:sameAs exa:Her .
+
+exa:Inside_Out a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Inside Out"@en ;
+    dbo:director exa:Pete_Docter ;
+    dbo:genre schema:Adventure,
+        schema:Animation,
+        schema:Comedy ;
+    dbo:releaseDate "2015-06-19"^^xsd:date ;
+    dbo:runtime 95 ;
+    dbo:starring exa:Amy_Poehler,
+        exa:Phyllis_Smith ;
+    ext:hasActor exa:Amy_Poehler,
+        exa:Phyllis_Smith ;
+    ext:hasDirector exa:Pete_Docter ;
+    ext:hasGenre schema:Adventure,
+        schema:Animation,
+        schema:Comedy ;
+    ext:releaseDate "2015-06-19"^^xsd:date ;
+    ext:runtime 95 ;
+    owl:sameAs exa:Inside_Out .
+
+exa:La_La_Land a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "La La Land"@en ;
+    dbo:director exa:Damien_Chazelle ;
+    dbo:genre schema:Comedy,
+        schema:Drama,
+        schema:Music ;
+    dbo:releaseDate "2016-12-09"^^xsd:date ;
+    dbo:runtime 128 ;
+    dbo:starring exa:Emma_Stone,
+        exa:Ryan_Gosling ;
+    ext:hasActor exa:Emma_Stone,
+        exa:Ryan_Gosling ;
+    ext:hasDirector exa:Damien_Chazelle ;
+    ext:hasGenre schema:Comedy,
+        schema:Drama,
+        schema:Music ;
+    ext:releaseDate "2016-12-09"^^xsd:date ;
+    ext:runtime 128 ;
+    owl:sameAs exa:La_La_Land .
+
+exa:Lady_Bird a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Lady Bird"@en ;
+    dbo:director exa:Greta_Gerwig ;
+    dbo:genre schema:Comedy,
+        schema:Drama ;
+    dbo:releaseDate "2017-11-03"^^xsd:date ;
+    dbo:runtime 94 ;
+    dbo:starring exa:Laurie_Metcalf,
+        exa:Saoirse_Ronan ;
+    ext:hasActor exa:Laurie_Metcalf,
+        exa:Saoirse_Ronan ;
+    ext:hasDirector exa:Greta_Gerwig ;
+    ext:hasGenre schema:Comedy,
+        schema:Drama ;
+    ext:releaseDate "2017-11-03"^^xsd:date ;
+    ext:runtime 94 ;
+    owl:sameAs exa:Lady_Bird .
+
+exa:Mad_Max_Fury_Road a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Mad Max Fury Road"@en ;
+    dbo:director exa:George_Miller ;
+    dbo:genre schema:Action,
+        schema:Adventure,
+        schema:Sci-Fi ;
+    dbo:releaseDate "2015-05-15"^^xsd:date ;
+    dbo:runtime 120 ;
+    dbo:starring exa:Charlize_Theron,
+        exa:Tom_Hardy ;
+    ext:hasActor exa:Charlize_Theron,
+        exa:Tom_Hardy ;
+    ext:hasDirector exa:George_Miller ;
+    ext:hasGenre schema:Action,
+        schema:Adventure,
+        schema:Sci-Fi ;
+    ext:releaseDate "2015-05-15"^^xsd:date ;
+    ext:runtime 120 ;
+    owl:sameAs exa:Mad_Max_Fury_Road .
+
+exa:Moonlight a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Moonlight"@en ;
+    dbo:director exa:Barry_Jenkins ;
+    dbo:genre schema:Drama ;
+    dbo:releaseDate "2016-10-21"^^xsd:date ;
+    dbo:runtime 111 ;
+    dbo:starring exa:Mahershala_Ali,
+        exa:Naomie_Harris ;
+    ext:hasActor exa:Mahershala_Ali,
+        exa:Naomie_Harris ;
+    ext:hasDirector exa:Barry_Jenkins ;
+    ext:hasGenre schema:Drama ;
+    ext:releaseDate "2016-10-21"^^xsd:date ;
+    ext:runtime 111 ;
+    owl:sameAs exa:Moonlight .
+
+exa:Parasite a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Parasite"@en ;
+    dbo:director exa:Bong_Joon-ho ;
+    dbo:genre schema:Comedy,
+        schema:Drama,
+        schema:Thriller ;
+    dbo:releaseDate "2019-05-30"^^xsd:date ;
+    dbo:runtime 132 ;
+    dbo:starring exa:Lee_Sun-kyun,
+        exa:Song_Kang-ho ;
+    ext:hasActor exa:Lee_Sun-kyun,
+        exa:Song_Kang-ho ;
+    ext:hasDirector exa:Bong_Joon-ho ;
+    ext:hasGenre schema:Comedy,
+        schema:Drama,
+        schema:Thriller ;
+    ext:releaseDate "2019-05-30"^^xsd:date ;
+    ext:runtime 132 ;
+    owl:sameAs exa:Parasite .
+
+exa:Room a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Room"@en ;
+    dbo:director exa:Lenny_Abrahamson ;
+    dbo:genre schema:Drama,
+        schema:Thriller ;
+    dbo:releaseDate "2015-10-16"^^xsd:date ;
+    dbo:runtime 118 ;
+    dbo:starring exa:Brie_Larson,
+        exa:Jacob_Tremblay ;
+    ext:hasActor exa:Brie_Larson,
+        exa:Jacob_Tremblay ;
+    ext:hasDirector exa:Lenny_Abrahamson ;
+    ext:hasGenre schema:Drama,
+        schema:Thriller ;
+    ext:releaseDate "2015-10-16"^^xsd:date ;
+    ext:runtime 118 ;
+    owl:sameAs exa:Room .
+
+exa:Spotlight a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Spotlight"@en ;
+    dbo:director exa:Tom_McCarthy ;
+    dbo:genre schema:Biography,
+        schema:Crime,
+        schema:Drama ;
+    dbo:releaseDate "2015-11-06"^^xsd:date ;
+    dbo:runtime 129 ;
+    dbo:starring exa:Mark_Ruffalo,
+        exa:Michael_Keaton ;
+    ext:hasActor exa:Mark_Ruffalo,
+        exa:Michael_Keaton ;
+    ext:hasDirector exa:Tom_McCarthy ;
+    ext:hasGenre schema:Biography,
+        schema:Crime,
+        schema:Drama ;
+    ext:releaseDate "2015-11-06"^^xsd:date ;
+    ext:runtime 129 ;
+    owl:sameAs exa:Spotlight .
+
+exa:The_Big_Short a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Big Short"@en ;
+    dbo:director exa:Adam_McKay ;
+    dbo:genre schema:Biography,
+        schema:Comedy,
+        schema:Drama ;
+    dbo:releaseDate "2015-12-11"^^xsd:date ;
+    dbo:runtime 130 ;
+    dbo:starring exa:Christian_Bale,
+        exa:Steve_Carell ;
+    ext:hasActor exa:Christian_Bale,
+        exa:Steve_Carell ;
+    ext:hasDirector exa:Adam_McKay ;
+    ext:hasGenre schema:Biography,
+        schema:Comedy,
+        schema:Drama ;
+    ext:releaseDate "2015-12-11"^^xsd:date ;
+    ext:runtime 130 ;
+    owl:sameAs exa:The_Big_Short .
+
+exa:The_Florida_Project a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Florida Project"@en ;
+    dbo:director exa:Sean_Baker ;
+    dbo:genre schema:Drama ;
+    dbo:releaseDate "2017-10-06"^^xsd:date ;
+    dbo:runtime 111 ;
+    dbo:starring exa:Brooklynn_Prince,
+        exa:Willem_Dafoe ;
+    ext:hasActor exa:Brooklynn_Prince,
+        exa:Willem_Dafoe ;
+    ext:hasDirector exa:Sean_Baker ;
+    ext:hasGenre schema:Drama ;
+    ext:releaseDate "2017-10-06"^^xsd:date ;
+    ext:runtime 111 ;
+    owl:sameAs exa:The_Florida_Project .
+
+exa:The_Grand_Budapest_Hotel a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Grand Budapest Hotel"@en ;
+    dbo:director exa:Wes_Anderson ;
+    dbo:genre schema:Adventure,
+        schema:Comedy,
+        schema:Crime ;
+    dbo:releaseDate "2014-03-07"^^xsd:date ;
+    dbo:runtime 99 ;
+    dbo:starring exa:Ralph_Fiennes,
+        exa:Tony_Revolori ;
+    ext:hasActor exa:Ralph_Fiennes,
+        exa:Tony_Revolori ;
+    ext:hasDirector exa:Wes_Anderson ;
+    ext:hasGenre schema:Adventure,
+        schema:Comedy,
+        schema:Crime ;
+    ext:releaseDate "2014-03-07"^^xsd:date ;
+    ext:runtime 99 ;
+    owl:sameAs exa:The_Grand_Budapest_Hotel .
+
+exa:The_Imitation_Game a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Imitation Game"@en ;
+    dbo:director exa:Morten_Tyldum ;
+    dbo:genre schema:Biography,
+        schema:Drama,
+        schema:Thriller ;
+    dbo:releaseDate "2014-11-28"^^xsd:date ;
+    dbo:runtime 114 ;
+    dbo:starring exa:Benedict_Cumberbatch,
+        exa:Keira_Knightley ;
+    ext:hasActor exa:Benedict_Cumberbatch,
+        exa:Keira_Knightley ;
+    ext:hasDirector exa:Morten_Tyldum ;
+    ext:hasGenre schema:Biography,
+        schema:Drama,
+        schema:Thriller ;
+    ext:releaseDate "2014-11-28"^^xsd:date ;
+    ext:runtime 114 ;
+    owl:sameAs exa:The_Imitation_Game .
+
+exa:The_Lobster a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Lobster"@en ;
+    dbo:director exa:Yorgos_Lanthimos ;
+    dbo:genre schema:Comedy,
+        schema:Drama,
+        schema:Romance ;
+    dbo:releaseDate "2015-10-16"^^xsd:date ;
+    dbo:runtime 119 ;
+    dbo:starring exa:Colin_Farrell,
+        exa:Rachel_Weisz ;
+    ext:hasActor exa:Colin_Farrell,
+        exa:Rachel_Weisz ;
+    ext:hasDirector exa:Yorgos_Lanthimos ;
+    ext:hasGenre schema:Comedy,
+        schema:Drama,
+        schema:Romance ;
+    ext:releaseDate "2015-10-16"^^xsd:date ;
+    ext:runtime 119 ;
+    owl:sameAs exa:The_Lobster .
+
+exa:The_Revenant a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Revenant"@en ;
+    dbo:director exa:Alejandro_G._Inarritu ;
+    dbo:genre schema:Action,
+        schema:Adventure,
+        schema:Drama ;
+    dbo:releaseDate "2015-12-25"^^xsd:date ;
+    dbo:runtime 156 ;
+    dbo:starring exa:Leonardo_DiCaprio,
+        exa:Tom_Hardy ;
+    ext:hasActor exa:Leonardo_DiCaprio,
+        exa:Tom_Hardy ;
+    ext:hasDirector exa:Alejandro_G._Inarritu ;
+    ext:hasGenre schema:Action,
+        schema:Adventure,
+        schema:Drama ;
+    ext:releaseDate "2015-12-25"^^xsd:date ;
+    ext:runtime 156 ;
+    owl:sameAs exa:The_Revenant .
+
+exa:The_Shape_of_Water a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Shape of Water"@en ;
+    dbo:director exa:Guillermo_del_Toro ;
+    dbo:genre schema:Adventure,
+        schema:Drama,
+        schema:Fantasy ;
+    dbo:releaseDate "2017-12-01"^^xsd:date ;
+    dbo:runtime 123 ;
+    dbo:starring exa:Michael_Shannon,
+        exa:Sally_Hawkins ;
+    ext:hasActor exa:Michael_Shannon,
+        exa:Sally_Hawkins ;
+    ext:hasDirector exa:Guillermo_del_Toro ;
+    ext:hasGenre schema:Adventure,
+        schema:Drama,
+        schema:Fantasy ;
+    ext:releaseDate "2017-12-01"^^xsd:date ;
+    ext:runtime 123 ;
+    owl:sameAs exa:The_Shape_of_Water .
+
+exa:The_Wolf_of_Wall_Street a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Wolf of Wall Street"@en ;
+    dbo:director exa:Martin_Scorsese ;
+    dbo:genre schema:Biography,
+        schema:Comedy,
+        schema:Crime ;
+    dbo:releaseDate "2013-12-25"^^xsd:date ;
+    dbo:runtime 180 ;
+    dbo:starring exa:Jonah_Hill,
+        exa:Leonardo_DiCaprio ;
+    ext:hasActor exa:Jonah_Hill,
+        exa:Leonardo_DiCaprio ;
+    ext:hasDirector exa:Martin_Scorsese ;
+    ext:hasGenre schema:Biography,
+        schema:Comedy,
+        schema:Crime ;
+    ext:releaseDate "2013-12-25"^^xsd:date ;
+    ext:runtime 180 ;
+    owl:sameAs exa:The_Wolf_of_Wall_Street .
+
+exa:Three_Billboards_Outside_Ebbing_Missouri a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Three Billboards Outside Ebbing Missouri"@en ;
+    dbo:director exa:Martin_McDonagh ;
+    dbo:genre schema:Comedy,
+        schema:Crime,
+        schema:Drama ;
+    dbo:releaseDate "2017-11-10"^^xsd:date ;
+    dbo:runtime 115 ;
+    dbo:starring exa:Frances_McDormand,
+        exa:Woody_Harrelson ;
+    ext:hasActor exa:Frances_McDormand,
+        exa:Woody_Harrelson ;
+    ext:hasDirector exa:Martin_McDonagh ;
+    ext:hasGenre schema:Comedy,
+        schema:Crime,
+        schema:Drama ;
+    ext:releaseDate "2017-11-10"^^xsd:date ;
+    ext:runtime 115 ;
+    owl:sameAs exa:Three_Billboards_Outside_Ebbing_Missouri .
+
+exa:Whiplash a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Whiplash"@en ;
+    dbo:director exa:Damien_Chazelle ;
+    dbo:genre schema:Drama,
+        schema:Music ;
+    dbo:releaseDate "2014-10-10"^^xsd:date ;
+    dbo:runtime 106 ;
+    dbo:starring exa:J.K._Simmons,
+        exa:Miles_Teller ;
+    ext:hasActor exa:J.K._Simmons,
+        exa:Miles_Teller ;
+    ext:hasDirector exa:Damien_Chazelle ;
+    ext:hasGenre schema:Drama,
+        schema:Music ;
+    ext:releaseDate "2014-10-10"^^xsd:date ;
+    ext:runtime 106 ;
+    owl:sameAs exa:Whiplash .
+
+ext:isSequel a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing,
+        owl:TransitiveProperty ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf ext:isSequel ;
+    owl:equivalentProperty ext:isSequel ;
+    owl:sameAs ext:isSequel .
+
+rdfs:comment a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:equivalentProperty rdfs:comment ;
+    owl:sameAs rdfs:comment .
+
+owl:Ontology a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:Ontology .
+
+dbo:director a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:director,
+        ext:hasDirector ;
+    owl:equivalentProperty dbo:director,
+        ext:hasDirector ;
+    owl:sameAs dbo:director .
+
+dbo:genre a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:genre,
+        ext:hasGenre ;
+    owl:equivalentProperty dbo:genre,
+        ext:hasGenre ;
+    owl:sameAs dbo:genre .
+
+dbo:releaseDate a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:DatatypeProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:releaseDate,
+        ext:releaseDate ;
+    owl:equivalentProperty dbo:releaseDate,
+        ext:releaseDate ;
+    owl:sameAs dbo:releaseDate .
+
+dbo:runtime a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:DatatypeProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:runtime,
+        ext:runtime ;
+    owl:equivalentProperty dbo:runtime,
+        ext:runtime ;
+    owl:sameAs dbo:runtime .
+
+dbo:starring a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:starring,
+        ext:hasActor ;
+    owl:equivalentProperty dbo:starring,
+        ext:hasActor ;
+    owl:sameAs dbo:starring .
+
+dbr:Comedy a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs dbr:Comedy .
+
+dbr:David_Fincher a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "David Fincher"@en ;
+    ext:directs dbr:The_Social_Network ;
+    ext:hasCollaboratedWith dbr:Andrew_Garfield,
+        dbr:Jesse_Eisenberg ;
+    owl:sameAs dbr:David_Fincher .
+
+dbr:Denis_Villeneuve a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Denis Villeneuve"@en ;
+    ext:directs dbr:Blade_Runner_2049 ;
+    ext:hasCollaboratedWith dbr:Harrison_Ford,
+        dbr:Ryan_Gosling ;
+    owl:sameAs dbr:Denis_Villeneuve .
+
+dbr:Dunkirk a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Dunkirk"@en ;
+    dbo:director dbr:Christopher_Nolan ;
+    dbo:genre dbr:Action,
+        dbr:Drama,
+        dbr:War ;
+    dbo:releaseDate "2017-07-21"^^xsd:date ;
+    dbo:runtime 106 ;
+    dbo:starring dbr:Kenneth_Branagh,
+        dbr:Mark_Rylance,
+        dbr:Tom_Hardy ;
+    ext:hasActor dbr:Kenneth_Branagh,
+        dbr:Mark_Rylance,
+        dbr:Tom_Hardy ;
+    ext:hasDirector dbr:Christopher_Nolan ;
+    ext:hasGenre dbr:Action,
+        dbr:Drama,
+        dbr:War ;
+    ext:releaseDate "2017-07-21"^^xsd:date ;
+    ext:runtime 106 ;
+    owl:sameAs dbr:Dunkirk .
+
+dbr:Forrest_Gump a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Forrest Gump"@en ;
+    dbo:director dbr:Robert_Zemeckis ;
+    dbo:genre dbr:Drama,
+        dbr:Romance ;
+    dbo:releaseDate "1994-07-06"^^xsd:date ;
+    dbo:runtime 142 ;
+    dbo:starring dbr:Gary_Sinise,
+        dbr:Robin_Wright,
+        dbr:Tom_Hanks ;
+    ext:hasActor dbr:Gary_Sinise,
+        dbr:Robin_Wright,
+        dbr:Tom_Hanks ;
+    ext:hasDirector dbr:Robert_Zemeckis ;
+    ext:hasGenre dbr:Drama,
+        dbr:Romance ;
+    ext:releaseDate "1994-07-06"^^xsd:date ;
+    ext:runtime 142 ;
+    owl:sameAs dbr:Forrest_Gump .
+
+dbr:George_Miller a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "George Miller"@en ;
+    ext:directs dbr:Mad_Max_Fury_Road ;
+    ext:hasCollaboratedWith dbr:Charlize_Theron,
+        dbr:Tom_Hardy ;
+    owl:sameAs dbr:George_Miller .
+
+dbr:Jurassic_Park a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Jurassic Park"@en ;
+    dbo:director dbr:Steven_Spielberg ;
+    dbo:genre dbr:Adventure,
+        dbr:Science_Fiction ;
+    dbo:releaseDate "1993-06-11"^^xsd:date ;
+    dbo:runtime 127 ;
+    dbo:starring dbr:Jeff_Goldblum,
+        dbr:Laura_Dern,
+        dbr:Sam_Neill ;
+    ext:hasActor dbr:Jeff_Goldblum,
+        dbr:Laura_Dern,
+        dbr:Sam_Neill ;
+    ext:hasDirector dbr:Steven_Spielberg ;
+    ext:hasGenre dbr:Adventure,
+        dbr:Science_Fiction ;
+    ext:releaseDate "1993-06-11"^^xsd:date ;
+    ext:runtime 127 ;
+    owl:sameAs dbr:Jurassic_Park .
+
+dbr:Martin_Scorsese a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Martin Scorsese"@en ;
+    ext:directs dbr:The_Wolf_of_Wall_Street ;
+    ext:hasCollaboratedWith dbr:Jonah_Hill,
+        dbr:Leonardo_DiCaprio ;
+    owl:sameAs dbr:Martin_Scorsese .
+
+dbr:Quentin_Tarantino a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Quentin Tarantino"@en ;
+    ext:directs dbr:Inglourious_Basterds ;
+    ext:hasCollaboratedWith dbr:Brad_Pitt,
+        dbr:Christoph_Waltz ;
+    owl:sameAs dbr:Quentin_Tarantino .
+
+dbr:Ridley_Scott a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Ridley Scott"@en ;
+    ext:directs dbr:Gladiator ;
+    ext:hasCollaboratedWith dbr:Joaquin_Phoenix,
+        dbr:Russell_Crowe ;
+    owl:sameAs dbr:Ridley_Scott .
+
+dbr:Romance a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Romance"@en ;
+    owl:sameAs dbr:Romance .
+
+dbr:Ron_Howard a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Ron Howard"@en ;
+    ext:directs dbr:A_Beautiful_Mind ;
+    ext:hasCollaboratedWith dbr:Jennifer_Connelly,
+        dbr:Russell_Crowe ;
+    owl:sameAs dbr:Ron_Howard .
+
+dbr:The_Prestige a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Prestige"@en ;
+    dbo:director dbr:Christopher_Nolan ;
+    dbo:genre dbr:Drama,
+        dbr:Thriller ;
+    dbo:releaseDate "2006-10-20"^^xsd:date ;
+    dbo:runtime 130 ;
+    dbo:starring dbr:Christian_Bale,
+        dbr:Hugh_Jackman,
+        dbr:Scarlett_Johansson ;
+    ext:hasActor dbr:Christian_Bale,
+        dbr:Hugh_Jackman,
+        dbr:Scarlett_Johansson ;
+    ext:hasDirector dbr:Christopher_Nolan ;
+    ext:hasGenre dbr:Drama,
+        dbr:Thriller ;
+    ext:releaseDate "2006-10-20"^^xsd:date ;
+    ext:runtime 130 ;
+    owl:sameAs dbr:The_Prestige .
+
+exa:Adam_McKay a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Big_Short ;
+    ext:hasCollaboratedWith exa:Christian_Bale,
+        exa:Steve_Carell ;
+    owl:sameAs exa:Adam_McKay .
+
+exa:Alex_Garland a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Ex_Machina ;
+    ext:hasCollaboratedWith exa:Alicia_Vikander,
+        exa:Domhnall_Gleeson ;
+    owl:sameAs exa:Alex_Garland .
+
+exa:Alfonso_Cuaron a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Gravity ;
+    ext:hasCollaboratedWith exa:George_Clooney,
+        exa:Sandra_Bullock ;
+    owl:sameAs exa:Alfonso_Cuaron .
+
+exa:Barry_Jenkins a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Moonlight ;
+    ext:hasCollaboratedWith exa:Mahershala_Ali,
+        exa:Naomie_Harris ;
+    owl:sameAs exa:Barry_Jenkins .
+
+exa:Bong_Joon-ho a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Parasite ;
+    ext:hasCollaboratedWith exa:Lee_Sun-kyun,
+        exa:Song_Kang-ho ;
+    owl:sameAs exa:Bong_Joon-ho .
+
+exa:Christopher_Nolan a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Dunkirk ;
+    ext:hasCollaboratedWith exa:Barry_Keoghan,
+        exa:Fionn_Whitehead ;
+    owl:sameAs exa:Christopher_Nolan .
+
+exa:David_Fincher a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Gone_Girl ;
+    ext:hasCollaboratedWith exa:Ben_Affleck,
+        exa:Rosamund_Pike ;
+    owl:sameAs exa:David_Fincher .
+
+exa:George_Miller a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Mad_Max_Fury_Road ;
+    ext:hasCollaboratedWith exa:Charlize_Theron,
+        exa:Tom_Hardy ;
+    owl:sameAs exa:George_Miller .
+
+exa:Greta_Gerwig a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Lady_Bird ;
+    ext:hasCollaboratedWith exa:Laurie_Metcalf,
+        exa:Saoirse_Ronan ;
+    owl:sameAs exa:Greta_Gerwig .
+
+exa:Guillermo_del_Toro a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Shape_of_Water ;
+    ext:hasCollaboratedWith exa:Michael_Shannon,
+        exa:Sally_Hawkins ;
+    owl:sameAs exa:Guillermo_del_Toro .
+
+exa:Jean-Marc_Vallee a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Dallas_Buyers_Club ;
+    ext:hasCollaboratedWith exa:Jennifer_Garner,
+        exa:Matthew_McConaughey ;
+    owl:sameAs exa:Jean-Marc_Vallee .
+
+exa:Jordan_Peele a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Get_Out ;
+    ext:hasCollaboratedWith exa:Allison_Williams,
+        exa:Daniel_Kaluuya ;
+    owl:sameAs exa:Jordan_Peele .
+
+exa:Lenny_Abrahamson a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Room ;
+    ext:hasCollaboratedWith exa:Brie_Larson,
+        exa:Jacob_Tremblay ;
+    owl:sameAs exa:Lenny_Abrahamson .
+
+exa:Martin_McDonagh a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Three_Billboards_Outside_Ebbing_Missouri ;
+    ext:hasCollaboratedWith exa:Frances_McDormand,
+        exa:Woody_Harrelson ;
+    owl:sameAs exa:Martin_McDonagh .
+
+exa:Martin_Scorsese a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Wolf_of_Wall_Street ;
+    ext:hasCollaboratedWith exa:Jonah_Hill,
+        exa:Leonardo_DiCaprio ;
+    owl:sameAs exa:Martin_Scorsese .
+
+exa:Morten_Tyldum a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Imitation_Game ;
+    ext:hasCollaboratedWith exa:Benedict_Cumberbatch,
+        exa:Keira_Knightley ;
+    owl:sameAs exa:Morten_Tyldum .
+
+exa:Pete_Docter a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Inside_Out ;
+    ext:hasCollaboratedWith exa:Amy_Poehler,
+        exa:Phyllis_Smith ;
+    owl:sameAs exa:Pete_Docter .
+
+exa:Richard_Linklater a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Boyhood ;
+    ext:hasCollaboratedWith exa:Ellar_Coltrane,
+        exa:Patricia_Arquette ;
+    owl:sameAs exa:Richard_Linklater .
+
+exa:Sean_Baker a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Florida_Project ;
+    ext:hasCollaboratedWith exa:Brooklynn_Prince,
+        exa:Willem_Dafoe ;
+    owl:sameAs exa:Sean_Baker .
+
+exa:Spike_Jonze a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Her ;
+    ext:hasCollaboratedWith exa:Joaquin_Phoenix,
+        exa:Scarlett_Johansson ;
+    owl:sameAs exa:Spike_Jonze .
+
+exa:Steve_McQueen a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:12_Years_a_Slave ;
+    ext:hasCollaboratedWith exa:Chiwetel_Ejiofor,
+        exa:Michael_Fassbender ;
+    owl:sameAs exa:Steve_McQueen .
+
+exa:Tom_McCarthy a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Spotlight ;
+    ext:hasCollaboratedWith exa:Mark_Ruffalo,
+        exa:Michael_Keaton ;
+    owl:sameAs exa:Tom_McCarthy .
+
+exa:Wes_Anderson a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Grand_Budapest_Hotel ;
+    ext:hasCollaboratedWith exa:Ralph_Fiennes,
+        exa:Tony_Revolori ;
+    owl:sameAs exa:Wes_Anderson .
+
+exa:Yorgos_Lanthimos a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:The_Lobster ;
+    ext:hasCollaboratedWith exa:Colin_Farrell,
+        exa:Rachel_Weisz ;
+    owl:sameAs exa:Yorgos_Lanthimos .
+
+ext:hasGenre a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:genre,
+        ext:hasGenre ;
+    owl:equivalentProperty dbo:genre,
+        ext:hasGenre ;
+    owl:sameAs ext:hasGenre .
+
+ext:releaseDate a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:FunctionalProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:releaseDate,
+        ext:releaseDate ;
+    owl:equivalentProperty dbo:releaseDate,
+        ext:releaseDate ;
+    owl:sameAs ext:releaseDate .
+
+ext:runtime a rdf:Property,
+        rdfs:Resource,
+        owl:DatatypeProperty,
+        owl:FunctionalProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:runtime,
+        ext:runtime ;
+    owl:equivalentProperty dbo:runtime,
+        ext:runtime ;
+    owl:sameAs ext:runtime .
+
+() a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs () .
+
+schema:History a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:History .
+
+schema:Music a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Music .
+
+schema:Romance a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Romance .
+
+"2013-12-25"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2013-12-25"^^xsd:date .
+
+"2015-05-15"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2015-05-15"^^xsd:date .
+
+"2015-10-16"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2015-10-16"^^xsd:date .
+
+"2017-07-21"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2017-07-21"^^xsd:date .
+
+111 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 111 .
+
+119 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 119 .
+
+128 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 128 .
+
+130 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 130 .
+
+164 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 164 .
+
+169 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 169 .
+
+180 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 180 .
+
+dbr:Andrew_Garfield a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Andrew Garfield"@en ;
+    ext:actsIn dbr:The_Social_Network ;
+    ext:hasCollaboratedWith dbr:Andrew_Garfield,
+        dbr:David_Fincher,
+        dbr:Jesse_Eisenberg ;
+    owl:sameAs dbr:Andrew_Garfield .
+
+dbr:Anne_Hathaway a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Anne Hathaway"@en ;
+    ext:actsIn dbr:Interstellar ;
+    ext:hasCollaboratedWith dbr:Anne_Hathaway,
+        dbr:Christopher_Nolan,
+        dbr:Matthew_McConaughey ;
+    owl:sameAs dbr:Anne_Hathaway .
+
+dbr:Brad_Pitt a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Brad Pitt"@en ;
+    ext:actsIn dbr:Inglourious_Basterds ;
+    ext:hasCollaboratedWith dbr:Brad_Pitt,
+        dbr:Christoph_Waltz,
+        dbr:Quentin_Tarantino ;
+    owl:sameAs dbr:Brad_Pitt .
+
+dbr:Catherine_Zeta_Jones a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Catherine Zeta-Jones"@en ;
+    ext:actsIn dbr:The_Terminal ;
+    ext:hasCollaboratedWith dbr:Catherine_Zeta_Jones,
+        dbr:Steven_Spielberg,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Catherine_Zeta_Jones .
+
+dbr:Charlize_Theron a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Charlize Theron"@en ;
+    ext:actsIn dbr:Mad_Max_Fury_Road ;
+    ext:hasCollaboratedWith dbr:Charlize_Theron,
+        dbr:George_Miller,
+        dbr:Tom_Hardy ;
+    owl:sameAs dbr:Charlize_Theron .
+
+dbr:Christoph_Waltz a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Christoph Waltz"@en ;
+    ext:actsIn dbr:Inglourious_Basterds ;
+    ext:hasCollaboratedWith dbr:Brad_Pitt,
+        dbr:Christoph_Waltz,
+        dbr:Quentin_Tarantino ;
+    owl:sameAs dbr:Christoph_Waltz .
+
+dbr:Elliot_Page a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Elliot Page"@en ;
+    ext:actsIn dbr:Inception ;
+    ext:hasCollaboratedWith dbr:Christopher_Nolan,
+        dbr:Elliot_Page,
+        dbr:Leonardo_DiCaprio ;
+    owl:sameAs dbr:Elliot_Page .
+
+dbr:Harrison_Ford a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Harrison Ford"@en ;
+    ext:actsIn dbr:Blade_Runner_2049 ;
+    ext:hasCollaboratedWith dbr:Denis_Villeneuve,
+        dbr:Harrison_Ford,
+        dbr:Ryan_Gosling ;
+    owl:sameAs dbr:Harrison_Ford .
+
+dbr:Heath_Ledger a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Heath Ledger"@en ;
+    ext:actsIn dbr:The_Dark_Knight ;
+    ext:hasCollaboratedWith dbr:Christian_Bale,
+        dbr:Christopher_Nolan,
+        dbr:Heath_Ledger ;
+    owl:sameAs dbr:Heath_Ledger .
+
+dbr:Jennifer_Connelly a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Jennifer Connelly"@en ;
+    ext:actsIn dbr:A_Beautiful_Mind ;
+    ext:hasCollaboratedWith dbr:Jennifer_Connelly,
+        dbr:Ron_Howard,
+        dbr:Russell_Crowe ;
+    owl:sameAs dbr:Jennifer_Connelly .
+
+dbr:Jesse_Eisenberg a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Jesse Eisenberg"@en ;
+    ext:actsIn dbr:The_Social_Network ;
+    ext:hasCollaboratedWith dbr:Andrew_Garfield,
+        dbr:David_Fincher,
+        dbr:Jesse_Eisenberg ;
+    owl:sameAs dbr:Jesse_Eisenberg .
+
+dbr:Joaquin_Phoenix a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Joaquin Phoenix"@en ;
+    ext:actsIn dbr:Gladiator ;
+    ext:hasCollaboratedWith dbr:Joaquin_Phoenix,
+        dbr:Ridley_Scott,
+        dbr:Russell_Crowe ;
+    owl:sameAs dbr:Joaquin_Phoenix .
+
+dbr:Jonah_Hill a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Jonah Hill"@en ;
+    ext:actsIn dbr:The_Wolf_of_Wall_Street ;
+    ext:hasCollaboratedWith dbr:Jonah_Hill,
+        dbr:Leonardo_DiCaprio,
+        dbr:Martin_Scorsese ;
+    owl:sameAs dbr:Jonah_Hill .
+
+dbr:Kate_Winslet a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Kate Winslet"@en ;
+    ext:actsIn dbr:Titanic ;
+    ext:hasCollaboratedWith dbr:James_Cameron,
+        dbr:Kate_Winslet,
+        dbr:Leonardo_DiCaprio ;
+    owl:sameAs dbr:Kate_Winslet .
+
+dbr:Lana_Wachowski a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs dbr:The_Matrix_Reloaded ;
+    ext:hasCollaboratedWith dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Laurence_Fishburne ;
+    owl:sameAs dbr:Lana_Wachowski .
+
+dbr:Lilly_Wachowski a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs dbr:The_Matrix_Reloaded ;
+    ext:hasCollaboratedWith dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Laurence_Fishburne ;
+    owl:sameAs dbr:Lilly_Wachowski .
+
+dbr:Matt_Damon a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Matt Damon"@en ;
+    ext:actsIn dbr:Saving_Private_Ryan ;
+    ext:hasCollaboratedWith dbr:Matt_Damon,
+        dbr:Steven_Spielberg,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Matt_Damon .
+
+dbr:Matthew_McConaughey a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Matthew McConaughey"@en ;
+    ext:actsIn dbr:Interstellar ;
+    ext:hasCollaboratedWith dbr:Anne_Hathaway,
+        dbr:Christopher_Nolan,
+        dbr:Matthew_McConaughey ;
+    owl:sameAs dbr:Matthew_McConaughey .
+
+dbr:Robert_Zemeckis a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Robert Zemeckis"@en ;
+    ext:directs dbr:Forrest_Gump ;
+    ext:hasCollaboratedWith dbr:Gary_Sinise,
+        dbr:Robin_Wright,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Robert_Zemeckis .
+
+dbr:Ryan_Gosling a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Ryan Gosling"@en ;
+    ext:actsIn dbr:Blade_Runner_2049 ;
+    ext:hasCollaboratedWith dbr:Denis_Villeneuve,
+        dbr:Harrison_Ford,
+        dbr:Ryan_Gosling ;
+    owl:sameAs dbr:Ryan_Gosling .
+
+dbr:Sam_Worthington a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Sam Worthington"@en ;
+    ext:actsIn dbr:Avatar ;
+    ext:hasCollaboratedWith dbr:James_Cameron,
+        dbr:Sam_Worthington,
+        dbr:Zoe_Saldana ;
+    owl:sameAs dbr:Sam_Worthington .
+
+dbr:The_Matrix_Reloaded a dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "The Matrix Reloaded"@en ;
+    dbo:director dbr:Lana_Wachowski,
+        dbr:Lilly_Wachowski ;
+    dbo:genre dbr:Action,
+        dbr:Science_Fiction ;
+    dbo:releaseDate "2003-05-15"^^xsd:date ;
+    dbo:runtime 138 ;
+    dbo:starring dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Laurence_Fishburne ;
+    ext:hasActor dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Laurence_Fishburne ;
+    ext:hasDirector dbr:Lana_Wachowski,
+        dbr:Lilly_Wachowski ;
+    ext:hasGenre dbr:Action,
+        dbr:Science_Fiction ;
+    ext:releaseDate "2003-05-15"^^xsd:date ;
+    ext:runtime 138 ;
+    owl:sameAs dbr:The_Matrix_Reloaded .
+
+dbr:Zoe_Saldana a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Zoe Saldana"@en ;
+    ext:actsIn dbr:Avatar ;
+    ext:hasCollaboratedWith dbr:James_Cameron,
+        dbr:Sam_Worthington,
+        dbr:Zoe_Saldana ;
+    owl:sameAs dbr:Zoe_Saldana .
+
+exa:Alicia_Vikander a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Ex_Machina ;
+    ext:hasCollaboratedWith exa:Alex_Garland,
+        exa:Alicia_Vikander,
+        exa:Domhnall_Gleeson ;
+    owl:sameAs exa:Alicia_Vikander .
+
+exa:Allison_Williams a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Get_Out ;
+    ext:hasCollaboratedWith exa:Allison_Williams,
+        exa:Daniel_Kaluuya,
+        exa:Jordan_Peele ;
+    owl:sameAs exa:Allison_Williams .
+
+exa:Amy_Adams a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Arrival ;
+    ext:hasCollaboratedWith exa:Amy_Adams,
+        exa:Denis_Villeneuve,
+        exa:Jeremy_Renner ;
+    owl:sameAs exa:Amy_Adams .
+
+exa:Amy_Poehler a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Inside_Out ;
+    ext:hasCollaboratedWith exa:Amy_Poehler,
+        exa:Pete_Docter,
+        exa:Phyllis_Smith ;
+    owl:sameAs exa:Amy_Poehler .
+
+exa:Barry_Keoghan a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Dunkirk ;
+    ext:hasCollaboratedWith exa:Barry_Keoghan,
+        exa:Christopher_Nolan,
+        exa:Fionn_Whitehead ;
+    owl:sameAs exa:Barry_Keoghan .
+
+exa:Benedict_Cumberbatch a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Imitation_Game ;
+    ext:hasCollaboratedWith exa:Benedict_Cumberbatch,
+        exa:Keira_Knightley,
+        exa:Morten_Tyldum ;
+    owl:sameAs exa:Benedict_Cumberbatch .
+
+exa:Brie_Larson a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Room ;
+    ext:hasCollaboratedWith exa:Brie_Larson,
+        exa:Jacob_Tremblay,
+        exa:Lenny_Abrahamson ;
+    owl:sameAs exa:Brie_Larson .
+
+exa:Brooklynn_Prince a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Florida_Project ;
+    ext:hasCollaboratedWith exa:Brooklynn_Prince,
+        exa:Sean_Baker,
+        exa:Willem_Dafoe ;
+    owl:sameAs exa:Brooklynn_Prince .
+
+exa:Charlize_Theron a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Mad_Max_Fury_Road ;
+    ext:hasCollaboratedWith exa:Charlize_Theron,
+        exa:George_Miller,
+        exa:Tom_Hardy ;
+    owl:sameAs exa:Charlize_Theron .
+
+exa:Chiwetel_Ejiofor a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:12_Years_a_Slave ;
+    ext:hasCollaboratedWith exa:Chiwetel_Ejiofor,
+        exa:Michael_Fassbender,
+        exa:Steve_McQueen ;
+    owl:sameAs exa:Chiwetel_Ejiofor .
+
+exa:Christian_Bale a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Big_Short ;
+    ext:hasCollaboratedWith exa:Adam_McKay,
+        exa:Christian_Bale,
+        exa:Steve_Carell ;
+    owl:sameAs exa:Christian_Bale .
+
+exa:Colin_Farrell a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Lobster ;
+    ext:hasCollaboratedWith exa:Colin_Farrell,
+        exa:Rachel_Weisz,
+        exa:Yorgos_Lanthimos ;
+    owl:sameAs exa:Colin_Farrell .
+
+exa:Daniel_Kaluuya a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Get_Out ;
+    ext:hasCollaboratedWith exa:Allison_Williams,
+        exa:Daniel_Kaluuya,
+        exa:Jordan_Peele ;
+    owl:sameAs exa:Daniel_Kaluuya .
+
+exa:Domhnall_Gleeson a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Ex_Machina ;
+    ext:hasCollaboratedWith exa:Alex_Garland,
+        exa:Alicia_Vikander,
+        exa:Domhnall_Gleeson ;
+    owl:sameAs exa:Domhnall_Gleeson .
+
+exa:Edward_Norton a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Birdman ;
+    ext:hasCollaboratedWith exa:Alejandro_G._Inarritu,
+        exa:Edward_Norton,
+        exa:Michael_Keaton ;
+    owl:sameAs exa:Edward_Norton .
+
+exa:Ellar_Coltrane a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Boyhood ;
+    ext:hasCollaboratedWith exa:Ellar_Coltrane,
+        exa:Patricia_Arquette,
+        exa:Richard_Linklater ;
+    owl:sameAs exa:Ellar_Coltrane .
+
+exa:Emma_Stone a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:La_La_Land ;
+    ext:hasCollaboratedWith exa:Damien_Chazelle,
+        exa:Emma_Stone,
+        exa:Ryan_Gosling ;
+    owl:sameAs exa:Emma_Stone .
+
+exa:Fionn_Whitehead a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Dunkirk ;
+    ext:hasCollaboratedWith exa:Barry_Keoghan,
+        exa:Christopher_Nolan,
+        exa:Fionn_Whitehead ;
+    owl:sameAs exa:Fionn_Whitehead .
+
+exa:Frances_McDormand a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Three_Billboards_Outside_Ebbing_Missouri ;
+    ext:hasCollaboratedWith exa:Frances_McDormand,
+        exa:Martin_McDonagh,
+        exa:Woody_Harrelson ;
+    owl:sameAs exa:Frances_McDormand .
+
+exa:George_Clooney a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Gravity ;
+    ext:hasCollaboratedWith exa:Alfonso_Cuaron,
+        exa:George_Clooney,
+        exa:Sandra_Bullock ;
+    owl:sameAs exa:George_Clooney .
+
+exa:Harrison_Ford a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Blade_Runner_2049 ;
+    ext:hasCollaboratedWith exa:Denis_Villeneuve,
+        exa:Harrison_Ford,
+        exa:Ryan_Gosling ;
+    owl:sameAs exa:Harrison_Ford .
+
+exa:J.K._Simmons a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Whiplash ;
+    ext:hasCollaboratedWith exa:Damien_Chazelle,
+        exa:J.K._Simmons,
+        exa:Miles_Teller ;
+    owl:sameAs exa:J.K._Simmons .
+
+exa:Jacob_Tremblay a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Room ;
+    ext:hasCollaboratedWith exa:Brie_Larson,
+        exa:Jacob_Tremblay,
+        exa:Lenny_Abrahamson ;
+    owl:sameAs exa:Jacob_Tremblay .
+
+exa:Jennifer_Garner a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Dallas_Buyers_Club ;
+    ext:hasCollaboratedWith exa:Jean-Marc_Vallee,
+        exa:Jennifer_Garner,
+        exa:Matthew_McConaughey ;
+    owl:sameAs exa:Jennifer_Garner .
+
+exa:Jeremy_Renner a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Arrival ;
+    ext:hasCollaboratedWith exa:Amy_Adams,
+        exa:Denis_Villeneuve,
+        exa:Jeremy_Renner ;
+    owl:sameAs exa:Jeremy_Renner .
+
+exa:Joaquin_Phoenix a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Her ;
+    ext:hasCollaboratedWith exa:Joaquin_Phoenix,
+        exa:Scarlett_Johansson,
+        exa:Spike_Jonze ;
+    owl:sameAs exa:Joaquin_Phoenix .
+
+exa:Jonah_Hill a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Wolf_of_Wall_Street ;
+    ext:hasCollaboratedWith exa:Jonah_Hill,
+        exa:Leonardo_DiCaprio,
+        exa:Martin_Scorsese ;
+    owl:sameAs exa:Jonah_Hill .
+
+exa:Keira_Knightley a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Imitation_Game ;
+    ext:hasCollaboratedWith exa:Benedict_Cumberbatch,
+        exa:Keira_Knightley,
+        exa:Morten_Tyldum ;
+    owl:sameAs exa:Keira_Knightley .
+
+exa:Laurie_Metcalf a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Lady_Bird ;
+    ext:hasCollaboratedWith exa:Greta_Gerwig,
+        exa:Laurie_Metcalf,
+        exa:Saoirse_Ronan ;
+    owl:sameAs exa:Laurie_Metcalf .
+
+exa:Lee_Sun-kyun a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Parasite ;
+    ext:hasCollaboratedWith exa:Bong_Joon-ho,
+        exa:Lee_Sun-kyun,
+        exa:Song_Kang-ho ;
+    owl:sameAs exa:Lee_Sun-kyun .
+
+exa:Mahershala_Ali a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Moonlight ;
+    ext:hasCollaboratedWith exa:Barry_Jenkins,
+        exa:Mahershala_Ali,
+        exa:Naomie_Harris ;
+    owl:sameAs exa:Mahershala_Ali .
+
+exa:Mark_Ruffalo a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Spotlight ;
+    ext:hasCollaboratedWith exa:Mark_Ruffalo,
+        exa:Michael_Keaton,
+        exa:Tom_McCarthy ;
+    owl:sameAs exa:Mark_Ruffalo .
+
+exa:Matthew_McConaughey a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Dallas_Buyers_Club ;
+    ext:hasCollaboratedWith exa:Jean-Marc_Vallee,
+        exa:Jennifer_Garner,
+        exa:Matthew_McConaughey ;
+    owl:sameAs exa:Matthew_McConaughey .
+
+exa:Michael_Fassbender a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:12_Years_a_Slave ;
+    ext:hasCollaboratedWith exa:Chiwetel_Ejiofor,
+        exa:Michael_Fassbender,
+        exa:Steve_McQueen ;
+    owl:sameAs exa:Michael_Fassbender .
+
+exa:Michael_Shannon a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Shape_of_Water ;
+    ext:hasCollaboratedWith exa:Guillermo_del_Toro,
+        exa:Michael_Shannon,
+        exa:Sally_Hawkins ;
+    owl:sameAs exa:Michael_Shannon .
+
+exa:Miles_Teller a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Whiplash ;
+    ext:hasCollaboratedWith exa:Damien_Chazelle,
+        exa:J.K._Simmons,
+        exa:Miles_Teller ;
+    owl:sameAs exa:Miles_Teller .
+
+exa:Naomie_Harris a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Moonlight ;
+    ext:hasCollaboratedWith exa:Barry_Jenkins,
+        exa:Mahershala_Ali,
+        exa:Naomie_Harris ;
+    owl:sameAs exa:Naomie_Harris .
+
+exa:Patricia_Arquette a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Boyhood ;
+    ext:hasCollaboratedWith exa:Ellar_Coltrane,
+        exa:Patricia_Arquette,
+        exa:Richard_Linklater ;
+    owl:sameAs exa:Patricia_Arquette .
+
+exa:Phyllis_Smith a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Inside_Out ;
+    ext:hasCollaboratedWith exa:Amy_Poehler,
+        exa:Pete_Docter,
+        exa:Phyllis_Smith ;
+    owl:sameAs exa:Phyllis_Smith .
+
+exa:Rachel_Weisz a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Lobster ;
+    ext:hasCollaboratedWith exa:Colin_Farrell,
+        exa:Rachel_Weisz,
+        exa:Yorgos_Lanthimos ;
+    owl:sameAs exa:Rachel_Weisz .
+
+exa:Ralph_Fiennes a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Grand_Budapest_Hotel ;
+    ext:hasCollaboratedWith exa:Ralph_Fiennes,
+        exa:Tony_Revolori,
+        exa:Wes_Anderson ;
+    owl:sameAs exa:Ralph_Fiennes .
+
+exa:Rosamund_Pike a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Gone_Girl ;
+    ext:hasCollaboratedWith exa:Ben_Affleck,
+        exa:David_Fincher,
+        exa:Rosamund_Pike ;
+    owl:sameAs exa:Rosamund_Pike .
+
+exa:Sally_Hawkins a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Shape_of_Water ;
+    ext:hasCollaboratedWith exa:Guillermo_del_Toro,
+        exa:Michael_Shannon,
+        exa:Sally_Hawkins ;
+    owl:sameAs exa:Sally_Hawkins .
+
+exa:Sandra_Bullock a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Gravity ;
+    ext:hasCollaboratedWith exa:Alfonso_Cuaron,
+        exa:George_Clooney,
+        exa:Sandra_Bullock ;
+    owl:sameAs exa:Sandra_Bullock .
+
+exa:Saoirse_Ronan a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Lady_Bird ;
+    ext:hasCollaboratedWith exa:Greta_Gerwig,
+        exa:Laurie_Metcalf,
+        exa:Saoirse_Ronan ;
+    owl:sameAs exa:Saoirse_Ronan .
+
+exa:Scarlett_Johansson a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Her ;
+    ext:hasCollaboratedWith exa:Joaquin_Phoenix,
+        exa:Scarlett_Johansson,
+        exa:Spike_Jonze ;
+    owl:sameAs exa:Scarlett_Johansson .
+
+exa:Song_Kang-ho a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Parasite ;
+    ext:hasCollaboratedWith exa:Bong_Joon-ho,
+        exa:Lee_Sun-kyun,
+        exa:Song_Kang-ho ;
+    owl:sameAs exa:Song_Kang-ho .
+
+exa:Steve_Carell a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Big_Short ;
+    ext:hasCollaboratedWith exa:Adam_McKay,
+        exa:Christian_Bale,
+        exa:Steve_Carell ;
+    owl:sameAs exa:Steve_Carell .
+
+exa:Tony_Revolori a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Grand_Budapest_Hotel ;
+    ext:hasCollaboratedWith exa:Ralph_Fiennes,
+        exa:Tony_Revolori,
+        exa:Wes_Anderson ;
+    owl:sameAs exa:Tony_Revolori .
+
+exa:Willem_Dafoe a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Florida_Project ;
+    ext:hasCollaboratedWith exa:Brooklynn_Prince,
+        exa:Sean_Baker,
+        exa:Willem_Dafoe ;
+    owl:sameAs exa:Willem_Dafoe .
+
+exa:Woody_Harrelson a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Three_Billboards_Outside_Ebbing_Missouri ;
+    ext:hasCollaboratedWith exa:Frances_McDormand,
+        exa:Martin_McDonagh,
+        exa:Woody_Harrelson ;
+    owl:sameAs exa:Woody_Harrelson .
+
+ext:hasDirector a rdf:Property,
+        rdfs:Resource,
+        owl:AnnotationProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:label "hasDirector"@en ;
+    rdfs:comment "A property that assigns a director to a film."@en ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:director,
+        ext:hasDirector ;
+    owl:equivalentProperty dbo:director,
+        ext:hasDirector ;
+    owl:sameAs ext:hasDirector .
+
+owl:DatatypeProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:DatatypeProperty .
+
+dbr:Biography a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Biography"@en ;
+    owl:sameAs dbr:Biography .
+
+dbr:Gary_Sinise a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Gary Sinise"@en ;
+    ext:actsIn dbr:Forrest_Gump ;
+    ext:hasCollaboratedWith dbr:Gary_Sinise,
+        dbr:Robert_Zemeckis,
+        dbr:Robin_Wright,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Gary_Sinise .
+
+dbr:Hugh_Jackman a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Hugh Jackman"@en ;
+    ext:actsIn dbr:The_Prestige ;
+    ext:hasCollaboratedWith dbr:Christian_Bale,
+        dbr:Christopher_Nolan,
+        dbr:Hugh_Jackman,
+        dbr:Scarlett_Johansson ;
+    owl:sameAs dbr:Hugh_Jackman .
+
+dbr:Jeff_Goldblum a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Jeff Goldblum"@en ;
+    ext:actsIn dbr:Jurassic_Park ;
+    ext:hasCollaboratedWith dbr:Jeff_Goldblum,
+        dbr:Laura_Dern,
+        dbr:Sam_Neill,
+        dbr:Steven_Spielberg ;
+    owl:sameAs dbr:Jeff_Goldblum .
+
+dbr:Kenneth_Branagh a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Kenneth Branagh"@en ;
+    ext:actsIn dbr:Dunkirk ;
+    ext:hasCollaboratedWith dbr:Christopher_Nolan,
+        dbr:Kenneth_Branagh,
+        dbr:Mark_Rylance,
+        dbr:Tom_Hardy ;
+    owl:sameAs dbr:Kenneth_Branagh .
+
+dbr:Laura_Dern a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Laura Dern"@en ;
+    ext:actsIn dbr:Jurassic_Park ;
+    ext:hasCollaboratedWith dbr:Jeff_Goldblum,
+        dbr:Laura_Dern,
+        dbr:Sam_Neill,
+        dbr:Steven_Spielberg ;
+    owl:sameAs dbr:Laura_Dern .
+
+dbr:Mark_Rylance a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Mark Rylance"@en ;
+    ext:actsIn dbr:Dunkirk ;
+    ext:hasCollaboratedWith dbr:Christopher_Nolan,
+        dbr:Kenneth_Branagh,
+        dbr:Mark_Rylance,
+        dbr:Tom_Hardy ;
+    owl:sameAs dbr:Mark_Rylance .
+
+dbr:Robin_Wright a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Robin Wright"@en ;
+    ext:actsIn dbr:Forrest_Gump ;
+    ext:hasCollaboratedWith dbr:Gary_Sinise,
+        dbr:Robert_Zemeckis,
+        dbr:Robin_Wright,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Robin_Wright .
+
+dbr:Sam_Neill a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Sam Neill"@en ;
+    ext:actsIn dbr:Jurassic_Park ;
+    ext:hasCollaboratedWith dbr:Jeff_Goldblum,
+        dbr:Laura_Dern,
+        dbr:Sam_Neill,
+        dbr:Steven_Spielberg ;
+    owl:sameAs dbr:Sam_Neill .
+
+dbr:Scarlett_Johansson a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Scarlett Johansson"@en ;
+    ext:actsIn dbr:The_Prestige ;
+    ext:hasCollaboratedWith dbr:Christian_Bale,
+        dbr:Christopher_Nolan,
+        dbr:Hugh_Jackman,
+        dbr:Scarlett_Johansson ;
+    owl:sameAs dbr:Scarlett_Johansson .
+
+dbr:War a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "War"@en ;
+    owl:sameAs dbr:War .
+
+ext:directs a rdf:Property,
+        rdfs:Resource,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ext:directs ;
+    owl:equivalentProperty ext:directs ;
+    owl:inverseOf ext:hasDirector ;
+    owl:sameAs ext:directs .
+
+"2017-10-06"^^xsd:date a rdfs:Literal,
+        rdfs:Resource,
+        xsd:date,
+        owl:Thing ;
+    owl:sameAs "2017-10-06"^^xsd:date .
+
+106 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 106 .
+
+120 a rdfs:Literal,
+        rdfs:Resource,
+        xsd:decimal,
+        xsd:integer,
+        owl:Thing ;
+    owl:sameAs 120 .
+
+dbr:Carrie-Anne_Moss a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn dbr:The_Matrix_Reloaded ;
+    ext:hasCollaboratedWith dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Lana_Wachowski,
+        dbr:Laurence_Fishburne,
+        dbr:Lilly_Wachowski ;
+    owl:sameAs dbr:Carrie-Anne_Moss .
+
+dbr:Keanu_Reeves a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn dbr:The_Matrix_Reloaded ;
+    ext:hasCollaboratedWith dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Lana_Wachowski,
+        dbr:Laurence_Fishburne,
+        dbr:Lilly_Wachowski ;
+    owl:sameAs dbr:Keanu_Reeves .
+
+dbr:Laurence_Fishburne a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn dbr:The_Matrix_Reloaded ;
+    ext:hasCollaboratedWith dbr:Carrie-Anne_Moss,
+        dbr:Keanu_Reeves,
+        dbr:Lana_Wachowski,
+        dbr:Laurence_Fishburne,
+        dbr:Lilly_Wachowski ;
+    owl:sameAs dbr:Laurence_Fishburne .
+
+exa:Ben_Affleck a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        _:Ncd6577179a774cbf84002b08970ee8aa,
+        dbo:Person,
+        ext:Actor,
+        ext:Actor_Director,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Gone_Girl ;
+    ext:directs exa:Argo ;
+    ext:hasCollaboratedWith exa:Ben_Affleck,
+        exa:David_Fincher,
+        exa:Rosamund_Pike ;
+    owl:sameAs exa:Ben_Affleck .
+
+ext:actsIn a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:subPropertyOf ext:actsIn ;
+    owl:equivalentProperty ext:actsIn ;
+    owl:inverseOf ext:hasActor ;
+    owl:sameAs ext:actsIn .
+
+ext:hasActor a rdf:Property,
+        rdfs:Resource,
+        owl:ObjectProperty,
+        owl:Thing ;
+    rdfs:domain dbo:Film,
+        ext:CreativeWork,
+        ext:Media,
+        ext:Movie,
+        ext:Work,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:range dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:Thing ;
+    rdfs:subPropertyOf dbo:starring,
+        ext:hasActor ;
+    owl:equivalentProperty dbo:starring,
+        ext:hasActor ;
+    owl:sameAs ext:hasActor .
+
+owl:Restriction a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:Restriction .
+
+dbr:Adventure a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Adventure"@en ;
+    owl:sameAs dbr:Adventure .
+
+dbr:James_Cameron a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "James Cameron"@en ;
+    ext:directs dbr:Avatar,
+        dbr:Titanic ;
+    ext:hasCollaboratedWith dbr:Kate_Winslet,
+        dbr:Leonardo_DiCaprio,
+        dbr:Sam_Worthington,
+        dbr:Zoe_Saldana ;
+    owl:sameAs dbr:James_Cameron .
+
+dbr:Thriller a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Thriller"@en ;
+    owl:sameAs dbr:Thriller .
+
+exa:Alejandro_G._Inarritu a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Birdman,
+        exa:The_Revenant ;
+    ext:hasCollaboratedWith exa:Edward_Norton,
+        exa:Leonardo_DiCaprio,
+        exa:Michael_Keaton,
+        exa:Tom_Hardy ;
+    owl:sameAs exa:Alejandro_G._Inarritu .
+
+exa:Damien_Chazelle a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:La_La_Land,
+        exa:Whiplash ;
+    ext:hasCollaboratedWith exa:Emma_Stone,
+        exa:J.K._Simmons,
+        exa:Miles_Teller,
+        exa:Ryan_Gosling ;
+    owl:sameAs exa:Damien_Chazelle .
+
+exa:Denis_Villeneuve a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:directs exa:Arrival,
+        exa:Blade_Runner_2049 ;
+    ext:hasCollaboratedWith exa:Amy_Adams,
+        exa:Harrison_Ford,
+        exa:Jeremy_Renner,
+        exa:Ryan_Gosling ;
+    owl:sameAs exa:Denis_Villeneuve .
+
+schema:Action a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Action .
+
+schema:Crime a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Crime .
+
+schema:Mystery a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Mystery .
+
+dbr:Christian_Bale a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Christian Bale"@en ;
+    ext:actsIn dbr:The_Dark_Knight,
+        dbr:The_Prestige ;
+    ext:hasCollaboratedWith dbr:Christian_Bale,
+        dbr:Christopher_Nolan,
+        dbr:Heath_Ledger,
+        dbr:Hugh_Jackman,
+        dbr:Scarlett_Johansson ;
+    owl:sameAs dbr:Christian_Bale .
+
+dbr:Russell_Crowe a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Russell Crowe"@en ;
+    ext:actsIn dbr:A_Beautiful_Mind,
+        dbr:Gladiator ;
+    ext:hasCollaboratedWith dbr:Jennifer_Connelly,
+        dbr:Joaquin_Phoenix,
+        dbr:Ridley_Scott,
+        dbr:Ron_Howard,
+        dbr:Russell_Crowe ;
+    owl:sameAs dbr:Russell_Crowe .
+
+exa:Leonardo_DiCaprio a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:The_Revenant,
+        exa:The_Wolf_of_Wall_Street ;
+    ext:hasCollaboratedWith exa:Alejandro_G._Inarritu,
+        exa:Jonah_Hill,
+        exa:Leonardo_DiCaprio,
+        exa:Martin_Scorsese,
+        exa:Tom_Hardy ;
+    owl:sameAs exa:Leonardo_DiCaprio .
+
+exa:Michael_Keaton a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Birdman,
+        exa:Spotlight ;
+    ext:hasCollaboratedWith exa:Alejandro_G._Inarritu,
+        exa:Edward_Norton,
+        exa:Mark_Ruffalo,
+        exa:Michael_Keaton,
+        exa:Tom_McCarthy ;
+    owl:sameAs exa:Michael_Keaton .
+
+exa:Ryan_Gosling a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Blade_Runner_2049,
+        exa:La_La_Land ;
+    ext:hasCollaboratedWith exa:Damien_Chazelle,
+        exa:Denis_Villeneuve,
+        exa:Emma_Stone,
+        exa:Harrison_Ford,
+        exa:Ryan_Gosling ;
+    owl:sameAs exa:Ryan_Gosling .
+
+exa:Tom_Hardy a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    ext:actsIn exa:Mad_Max_Fury_Road,
+        exa:The_Revenant ;
+    ext:hasCollaboratedWith exa:Alejandro_G._Inarritu,
+        exa:Charlize_Theron,
+        exa:George_Miller,
+        exa:Leonardo_DiCaprio,
+        exa:Tom_Hardy ;
+    owl:sameAs exa:Tom_Hardy .
+
+dbr:Tom_Hardy a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Tom Hardy"@en ;
+    ext:actsIn dbr:Dunkirk,
+        dbr:Mad_Max_Fury_Road ;
+    ext:hasCollaboratedWith dbr:Charlize_Theron,
+        dbr:Christopher_Nolan,
+        dbr:George_Miller,
+        dbr:Kenneth_Branagh,
+        dbr:Mark_Rylance,
+        dbr:Tom_Hardy ;
+    owl:sameAs dbr:Tom_Hardy .
+
+schema:Adventure a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Adventure .
+
+schema:Sci-Fi a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Sci-Fi .
+
+owl:ObjectProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:ObjectProperty .
+
+schema:Biography a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Biography .
+
+dbr:Action a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Action"@en ;
+    owl:sameAs dbr:Action .
+
+dbr:Science_Fiction a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs dbr:Science_Fiction .
+
+schema:Thriller a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Thriller .
+
+dbr:Steven_Spielberg a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Steven Spielberg"@en ;
+    ext:directs dbr:Catch_Me_If_You_Can,
+        dbr:Jurassic_Park,
+        dbr:Saving_Private_Ryan,
+        dbr:The_Terminal ;
+    ext:hasCollaboratedWith dbr:Catherine_Zeta_Jones,
+        dbr:Jeff_Goldblum,
+        dbr:Laura_Dern,
+        dbr:Leonardo_DiCaprio,
+        dbr:Matt_Damon,
+        dbr:Sam_Neill,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Steven_Spielberg .
+
+dbr:Tom_Hanks a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Tom Hanks"@en ;
+    ext:actsIn dbr:Catch_Me_If_You_Can,
+        dbr:Forrest_Gump,
+        dbr:Saving_Private_Ryan,
+        dbr:The_Terminal ;
+    ext:hasCollaboratedWith dbr:Catherine_Zeta_Jones,
+        dbr:Gary_Sinise,
+        dbr:Leonardo_DiCaprio,
+        dbr:Matt_Damon,
+        dbr:Robert_Zemeckis,
+        dbr:Robin_Wright,
+        dbr:Steven_Spielberg,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Tom_Hanks .
+
+dbr:Leonardo_DiCaprio a _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Leonardo DiCaprio"@en ;
+    ext:actsIn dbr:Catch_Me_If_You_Can,
+        dbr:Inception,
+        dbr:The_Wolf_of_Wall_Street,
+        dbr:Titanic ;
+    ext:hasCollaboratedWith dbr:Christopher_Nolan,
+        dbr:Elliot_Page,
+        dbr:James_Cameron,
+        dbr:Jonah_Hill,
+        dbr:Kate_Winslet,
+        dbr:Leonardo_DiCaprio,
+        dbr:Martin_Scorsese,
+        dbr:Steven_Spielberg,
+        dbr:Tom_Hanks ;
+    owl:sameAs dbr:Leonardo_DiCaprio .
+
+rdfs:Class a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        owl:Class ;
+    owl:equivalentClass rdfs:Class,
+        owl:Class ;
+    owl:sameAs rdfs:Class .
+
+owl:Class a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Class,
+        owl:Class ;
+    owl:equivalentClass rdfs:Class,
+        owl:Class ;
+    owl:sameAs owl:Class .
+
+schema:Comedy a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Comedy .
+
+dbr:Christopher_Nolan a _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0,
+        dbo:Person,
+        ext:Director,
+        ext:Person,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Christopher Nolan"@en ;
+    ext:directs dbr:Dunkirk,
+        dbr:Inception,
+        dbr:Interstellar,
+        dbr:The_Dark_Knight,
+        dbr:The_Prestige ;
+    ext:hasCollaboratedWith dbr:Anne_Hathaway,
+        dbr:Christian_Bale,
+        dbr:Elliot_Page,
+        dbr:Heath_Ledger,
+        dbr:Hugh_Jackman,
+        dbr:Kenneth_Branagh,
+        dbr:Leonardo_DiCaprio,
+        dbr:Mark_Rylance,
+        dbr:Matthew_McConaughey,
+        dbr:Scarlett_Johansson,
+        dbr:Tom_Hardy ;
+    owl:sameAs dbr:Christopher_Nolan .
+
+owl:AnnotationProperty a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:AnnotationProperty .
+
+dbr:Drama a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    rdfs:label "Drama"@en ;
+    owl:sameAs dbr:Drama .
+
+rdf:Property owl:sameAs rdf:Property .
+
+rdfs:Datatype a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Datatype,
+        owl:DataRange ;
+    owl:equivalentClass rdfs:Datatype,
+        owl:DataRange ;
+    owl:sameAs rdfs:Datatype .
+
+owl:DataRange a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Datatype,
+        owl:DataRange ;
+    owl:equivalentClass rdfs:Datatype,
+        owl:DataRange ;
+    owl:sameAs owl:DataRange .
+
+xsd:decimal a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:decimal .
+
+xsd:integer a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:integer .
+
+xsd:date a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:sameAs xsd:date .
+
+schema:Drama a ext:Genre,
+        schema1:Genre,
+        rdfs:Resource,
+        owl:NamedIndividual,
+        owl:Thing ;
+    owl:sameAs schema:Drama .
+
+rdfs:Literal a rdfs:Datatype,
+        rdfs:Resource,
+        owl:DataRange,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Literal ;
+    owl:equivalentClass rdfs:Literal ;
+    owl:sameAs rdfs:Literal .
+
+owl:NamedIndividual a rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs owl:NamedIndividual .
+
+rdfs:Resource a rdfs:Resource,
+        owl:Thing ;
+    rdfs:subClassOf rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass rdfs:Resource,
+        owl:Thing ;
+    owl:sameAs rdfs:Resource .
+
+_:N497cab5308874512b16192a0cbe65393 a rdfs:Resource,
+        owl:Thing ;
+    rdf:first _:N0c1d81f1c2db4183b5c3a3b7f38afb14 ;
+    rdf:rest () ;
+    owl:sameAs _:N497cab5308874512b16192a0cbe65393 .
+
+_:N98f0a6f3fde14c0d9afa9f8e3c76392c a rdfs:Resource,
+        owl:Thing ;
+    rdf:first _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    rdf:rest _:N497cab5308874512b16192a0cbe65393 ;
+    owl:sameAs _:N98f0a6f3fde14c0d9afa9f8e3c76392c .
+
+_:Na336d48ceb8a4e6f875971f09c81472e a rdfs:Resource,
+        owl:Thing ;
+    rdf:first ext:hasActor ;
+    rdf:rest () ;
+    owl:sameAs _:Na336d48ceb8a4e6f875971f09c81472e .
+
+_:Naf5f6fa53b3c4786b13435a09277f531 a rdfs:Resource,
+        owl:Thing ;
+    rdf:first ext:actsIn ;
+    rdf:rest _:Na336d48ceb8a4e6f875971f09c81472e ;
+    owl:sameAs _:Naf5f6fa53b3c4786b13435a09277f531 .
+
+_:Nc54ba02f372142ada878410c97586ba0 a rdfs:Resource,
+        owl:Thing ;
+    rdf:first _:N60eae88c9d334887b58d08449db0aec5 ;
+    rdf:rest _:Nc637a4e727594f78ad956b2d274eaf52 ;
+    owl:sameAs _:Nc54ba02f372142ada878410c97586ba0 .
+
+_:Nc637a4e727594f78ad956b2d274eaf52 a rdfs:Resource,
+        owl:Thing ;
+    rdf:first _:N0be2a4714bbf4dd392364591dc9265c2 ;
+    rdf:rest () ;
+    owl:sameAs _:Nc637a4e727594f78ad956b2d274eaf52 .
+
+_:Nd9dd4db3bf264072a97aad5474d2c688 a rdfs:Resource,
+        owl:Thing ;
+    rdf:first ext:directs ;
+    rdf:rest _:Ne8ddf77819ec4cd8848ee0bca4ca5529 ;
+    owl:sameAs _:Nd9dd4db3bf264072a97aad5474d2c688 .
+
+_:Ne8ddf77819ec4cd8848ee0bca4ca5529 a rdfs:Resource,
+        owl:Thing ;
+    rdf:first ext:hasActor ;
+    rdf:rest () ;
+    owl:sameAs _:Ne8ddf77819ec4cd8848ee0bca4ca5529 .
+
+_:N3fc16c772ff04a1e9a2b300a692f5d79 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N3fc16c772ff04a1e9a2b300a692f5d79,
+        dbo:Person,
+        ext:Actor,
+        ext:Person,
+        ext:Star,
+        rdfs:Resource,
+        owl:Thing ;
+    owl:equivalentClass _:N3fc16c772ff04a1e9a2b300a692f5d79,
+        ext:Star ;
+    owl:minCardinality "2"^^xsd:nonNegativeInteger ;
+    owl:onProperty ext:actsIn ;
+    owl:sameAs _:N3fc16c772ff04a1e9a2b300a692f5d79 .
+
+_:N8fe27822202047d0b2953d4883ede3b0 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:equivalentClass _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:onProperty ext:directs ;
+    owl:sameAs _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:someValuesFrom owl:Thing .
+
+_:N0be2a4714bbf4dd392364591dc9265c2 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:equivalentClass _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:onProperty ext:directs ;
+    owl:sameAs _:N0be2a4714bbf4dd392364591dc9265c2 ;
+    owl:someValuesFrom owl:Thing .
+
+_:N0c1d81f1c2db4183b5c3a3b7f38afb14 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:equivalentClass _:N0be2a4714bbf4dd392364591dc9265c2,
+        _:N0c1d81f1c2db4183b5c3a3b7f38afb14,
+        _:N8fe27822202047d0b2953d4883ede3b0 ;
+    owl:onProperty ext:directs ;
+    owl:sameAs _:N0c1d81f1c2db4183b5c3a3b7f38afb14 ;
+    owl:someValuesFrom owl:Thing .
+
+_:N20d00866c1f54bbb97dd74e942add076 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:equivalentClass _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:onProperty ext:actsIn ;
+    owl:sameAs _:N20d00866c1f54bbb97dd74e942add076 ;
+    owl:someValuesFrom owl:Thing .
+
+_:N60eae88c9d334887b58d08449db0aec5 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:equivalentClass _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:onProperty ext:actsIn ;
+    owl:sameAs _:N60eae88c9d334887b58d08449db0aec5 ;
+    owl:someValuesFrom owl:Thing .
+
+_:Nbba0717e0dfb438bbd4b4a7863b277c2 a rdfs:Resource,
+        owl:Restriction,
+        owl:Thing ;
+    rdfs:subClassOf _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:equivalentClass _:N20d00866c1f54bbb97dd74e942add076,
+        _:N60eae88c9d334887b58d08449db0aec5,
+        _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:onProperty ext:actsIn ;
+    owl:sameAs _:Nbba0717e0dfb438bbd4b4a7863b277c2 ;
+    owl:someValuesFrom owl:Thing .
+

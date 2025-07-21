@@ -10,7 +10,7 @@
 
 <http://example.org/abox> rdf:type owl:Ontology ;
                            owl:imports <http://example.org/alignment> ,
-                                       <http://example.org/tbox> .
+                                       <http://example.org/tbox/0.1> .
 
 #################################################################
 #    Annotation properties
@@ -26,6 +26,38 @@ onto:genre rdf:type owl:AnnotationProperty .
 
 ###  http://dbpedia.org/ontology/starring
 onto:starring rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#actsIn
+tbox:actsIn rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#directs
+tbox:directs rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#hasActor
+tbox:hasActor rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#hasCollaboratedWith
+tbox:hasCollaboratedWith rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#hasGenre
+tbox:hasGenre rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#isSequel
+tbox:isSequel rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#releaseDate
+tbox:releaseDate rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#runtime
+tbox:runtime rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -94,6 +126,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/A_Beautiful_Mind> rdf:type owl:NamedIndividual ,
                                                         onto:Film ,
                                                         tbox:Movie ;
+                                               tbox:hasDirector <http://dbpedia.org/resource/Ron_Howard> ;
+                                               onto:releaseDate "2001-12-21"^^xsd:date ;
+                                               onto:runtime 135 ;
                                                onto:director <http://dbpedia.org/resource/Ron_Howard> ;
                                                onto:genre <http://dbpedia.org/resource/Biography> ,
                                                           <http://dbpedia.org/resource/Drama> ;
@@ -101,11 +136,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                              <http://dbpedia.org/resource/Russell_Crowe> ;
                                                tbox:hasActor <http://dbpedia.org/resource/Jennifer_Connelly> ,
                                                              <http://dbpedia.org/resource/Russell_Crowe> ;
-                                               tbox:hasDirector <http://dbpedia.org/resource/Ron_Howard> ;
                                                tbox:hasGenre <http://dbpedia.org/resource/Biography> ,
                                                              <http://dbpedia.org/resource/Drama> ;
-                                               onto:releaseDate "2001-12-21"^^xsd:date ;
-                                               onto:runtime 135 ;
                                                tbox:releaseDate "2001-12-21"^^xsd:date ;
                                                tbox:runtime 135 ;
                                                rdfs:label "A Beautiful Mind"@en .
@@ -151,6 +183,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Avatar> rdf:type owl:NamedIndividual ,
                                               onto:Film ,
                                               tbox:Movie ;
+                                     tbox:hasDirector <http://dbpedia.org/resource/James_Cameron> ;
+                                     onto:releaseDate "2009-12-18"^^xsd:date ;
+                                     onto:runtime 162 ;
                                      onto:director <http://dbpedia.org/resource/James_Cameron> ;
                                      onto:genre <http://dbpedia.org/resource/Action> ,
                                                 <http://dbpedia.org/resource/Adventure> ,
@@ -159,12 +194,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                    <http://dbpedia.org/resource/Zoe_Saldana> ;
                                      tbox:hasActor <http://dbpedia.org/resource/Sam_Worthington> ,
                                                    <http://dbpedia.org/resource/Zoe_Saldana> ;
-                                     tbox:hasDirector <http://dbpedia.org/resource/James_Cameron> ;
                                      tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                    <http://dbpedia.org/resource/Adventure> ,
                                                    <http://dbpedia.org/resource/Science_Fiction> ;
-                                     onto:releaseDate "2009-12-18"^^xsd:date ;
-                                     onto:runtime 162 ;
                                      tbox:releaseDate "2009-12-18"^^xsd:date ;
                                      tbox:runtime 162 ;
                                      rdfs:label "Avatar"@en .
@@ -181,6 +213,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Blade_Runner_2049> rdf:type owl:NamedIndividual ,
                                                          onto:Film ,
                                                          tbox:Movie ;
+                                                tbox:hasDirector <http://dbpedia.org/resource/Denis_Villeneuve> ;
+                                                onto:releaseDate "2017-10-06"^^xsd:date ;
+                                                onto:runtime 164 ;
                                                 onto:director <http://dbpedia.org/resource/Denis_Villeneuve> ;
                                                 onto:genre <http://dbpedia.org/resource/Drama> ,
                                                            <http://dbpedia.org/resource/Science_Fiction> ;
@@ -188,11 +223,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                               <http://dbpedia.org/resource/Ryan_Gosling> ;
                                                 tbox:hasActor <http://dbpedia.org/resource/Harrison_Ford> ,
                                                               <http://dbpedia.org/resource/Ryan_Gosling> ;
-                                                tbox:hasDirector <http://dbpedia.org/resource/Denis_Villeneuve> ;
                                                 tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                               <http://dbpedia.org/resource/Science_Fiction> ;
-                                                onto:releaseDate "2017-10-06"^^xsd:date ;
-                                                onto:runtime 164 ;
                                                 tbox:releaseDate "2017-10-06"^^xsd:date ;
                                                 tbox:runtime 164 ;
                                                 rdfs:label "Blade Runner 2049"@en .
@@ -224,6 +256,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Catch_Me_If_You_Can> rdf:type owl:NamedIndividual ,
                                                            onto:Film ,
                                                            tbox:Movie ;
+                                                  tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                                  onto:releaseDate "2002-12-25"^^xsd:date ;
+                                                  onto:runtime 141 ;
                                                   onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
                                                   onto:genre <http://dbpedia.org/resource/Drama> ,
                                                              <http://dbpedia.org/resource/Thriller> ;
@@ -231,11 +266,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                                 <http://dbpedia.org/resource/Tom_Hanks> ;
                                                   tbox:hasActor <http://dbpedia.org/resource/Leonardo_DiCaprio> ,
                                                                 <http://dbpedia.org/resource/Tom_Hanks> ;
-                                                  tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
                                                   tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                                 <http://dbpedia.org/resource/Thriller> ;
-                                                  onto:releaseDate "2002-12-25"^^xsd:date ;
-                                                  onto:runtime 141 ;
                                                   tbox:releaseDate "2002-12-25"^^xsd:date ;
                                                   tbox:runtime 141 ;
                                                   rdfs:label "Catch Me If You Can"@en .
@@ -348,6 +380,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Dunkirk> rdf:type owl:NamedIndividual ,
                                                onto:Film ,
                                                tbox:Movie ;
+                                      tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                      onto:releaseDate "2017-07-21"^^xsd:date ;
+                                      onto:runtime 106 ;
                                       onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
                                       onto:genre <http://dbpedia.org/resource/Action> ,
                                                  <http://dbpedia.org/resource/Drama> ,
@@ -358,12 +393,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                       tbox:hasActor <http://dbpedia.org/resource/Kenneth_Branagh> ,
                                                     <http://dbpedia.org/resource/Mark_Rylance> ,
                                                     <http://dbpedia.org/resource/Tom_Hardy> ;
-                                      tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
                                       tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                     <http://dbpedia.org/resource/Drama> ,
                                                     <http://dbpedia.org/resource/War> ;
-                                      onto:releaseDate "2017-07-21"^^xsd:date ;
-                                      onto:runtime 106 ;
                                       tbox:releaseDate "2017-07-21"^^xsd:date ;
                                       tbox:runtime 106 ;
                                       rdfs:label "Dunkirk"@en .
@@ -384,6 +416,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Forrest_Gump> rdf:type owl:NamedIndividual ,
                                                     onto:Film ,
                                                     tbox:Movie ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Robert_Zemeckis> ;
+                                           onto:releaseDate "1994-07-06"^^xsd:date ;
+                                           onto:runtime 142 ;
                                            onto:director <http://dbpedia.org/resource/Robert_Zemeckis> ;
                                            onto:genre <http://dbpedia.org/resource/Drama> ,
                                                       <http://dbpedia.org/resource/Romance> ;
@@ -393,11 +428,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                            tbox:hasActor <http://dbpedia.org/resource/Gary_Sinise> ,
                                                          <http://dbpedia.org/resource/Robin_Wright> ,
                                                          <http://dbpedia.org/resource/Tom_Hanks> ;
-                                           tbox:hasDirector <http://dbpedia.org/resource/Robert_Zemeckis> ;
                                            tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                          <http://dbpedia.org/resource/Romance> ;
-                                           onto:releaseDate "1994-07-06"^^xsd:date ;
-                                           onto:runtime 142 ;
                                            tbox:releaseDate "1994-07-06"^^xsd:date ;
                                            tbox:runtime 142 ;
                                            rdfs:label "Forrest Gump"@en .
@@ -429,6 +461,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Gladiator> rdf:type owl:NamedIndividual ,
                                                  onto:Film ,
                                                  tbox:Movie ;
+                                        tbox:hasDirector <http://dbpedia.org/resource/Ridley_Scott> ;
+                                        onto:releaseDate "2000-05-05"^^xsd:date ;
+                                        onto:runtime 155 ;
                                         onto:director <http://dbpedia.org/resource/Ridley_Scott> ;
                                         onto:genre <http://dbpedia.org/resource/Action> ,
                                                    <http://dbpedia.org/resource/Adventure> ,
@@ -437,12 +472,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                       <http://dbpedia.org/resource/Russell_Crowe> ;
                                         tbox:hasActor <http://dbpedia.org/resource/Joaquin_Phoenix> ,
                                                       <http://dbpedia.org/resource/Russell_Crowe> ;
-                                        tbox:hasDirector <http://dbpedia.org/resource/Ridley_Scott> ;
                                         tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                       <http://dbpedia.org/resource/Adventure> ,
                                                       <http://dbpedia.org/resource/Drama> ;
-                                        onto:releaseDate "2000-05-05"^^xsd:date ;
-                                        onto:runtime 155 ;
                                         tbox:releaseDate "2000-05-05"^^xsd:date ;
                                         tbox:runtime 155 ;
                                         rdfs:label "Gladiator"@en .
@@ -486,6 +518,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Inception> rdf:type owl:NamedIndividual ,
                                                  onto:Film ,
                                                  tbox:Movie ;
+                                        tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                        onto:releaseDate "2010-07-16"^^xsd:date ;
+                                        onto:runtime 148 ;
                                         onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
                                         onto:genre <http://dbpedia.org/resource/Science_Fiction> ,
                                                    <http://dbpedia.org/resource/Thriller> ;
@@ -493,11 +528,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                       <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
                                         tbox:hasActor <http://dbpedia.org/resource/Elliot_Page> ,
                                                       <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
-                                        tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
                                         tbox:hasGenre <http://dbpedia.org/resource/Science_Fiction> ,
                                                       <http://dbpedia.org/resource/Thriller> ;
-                                        onto:releaseDate "2010-07-16"^^xsd:date ;
-                                        onto:runtime 148 ;
                                         tbox:releaseDate "2010-07-16"^^xsd:date ;
                                         tbox:runtime 148 ;
                                         rdfs:label "Inception"@en .
@@ -507,6 +539,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Inglourious_Basterds> rdf:type owl:NamedIndividual ,
                                                             onto:Film ,
                                                             tbox:Movie ;
+                                                   tbox:hasDirector <http://dbpedia.org/resource/Quentin_Tarantino> ;
+                                                   onto:releaseDate "2009-08-21"^^xsd:date ;
+                                                   onto:runtime 153 ;
                                                    onto:director <http://dbpedia.org/resource/Quentin_Tarantino> ;
                                                    onto:genre <http://dbpedia.org/resource/Action> ,
                                                               <http://dbpedia.org/resource/Drama> ,
@@ -515,12 +550,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                                  <http://dbpedia.org/resource/Christoph_Waltz> ;
                                                    tbox:hasActor <http://dbpedia.org/resource/Brad_Pitt> ,
                                                                  <http://dbpedia.org/resource/Christoph_Waltz> ;
-                                                   tbox:hasDirector <http://dbpedia.org/resource/Quentin_Tarantino> ;
                                                    tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                                  <http://dbpedia.org/resource/Drama> ,
                                                                  <http://dbpedia.org/resource/War> ;
-                                                   onto:releaseDate "2009-08-21"^^xsd:date ;
-                                                   onto:runtime 153 ;
                                                    tbox:releaseDate "2009-08-21"^^xsd:date ;
                                                    tbox:runtime 153 ;
                                                    rdfs:label "Inglourious Basterds"@en .
@@ -530,6 +562,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Interstellar> rdf:type owl:NamedIndividual ,
                                                     onto:Film ,
                                                     tbox:Movie ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                           onto:releaseDate "2014-11-07"^^xsd:date ;
+                                           onto:runtime 169 ;
                                            onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
                                            onto:genre <http://dbpedia.org/resource/Drama> ,
                                                       <http://dbpedia.org/resource/Science_Fiction> ;
@@ -537,11 +572,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                          <http://dbpedia.org/resource/Matthew_McConaughey> ;
                                            tbox:hasActor <http://dbpedia.org/resource/Anne_Hathaway> ,
                                                          <http://dbpedia.org/resource/Matthew_McConaughey> ;
-                                           tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
                                            tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                          <http://dbpedia.org/resource/Science_Fiction> ;
-                                           onto:releaseDate "2014-11-07"^^xsd:date ;
-                                           onto:runtime 169 ;
                                            tbox:releaseDate "2014-11-07"^^xsd:date ;
                                            tbox:runtime 169 ;
                                            rdfs:label "Interstellar"@en .
@@ -620,6 +652,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Jurassic_Park> rdf:type owl:NamedIndividual ,
                                                      onto:Film ,
                                                      tbox:Movie ;
+                                            tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                            onto:releaseDate "1993-06-11"^^xsd:date ;
+                                            onto:runtime 127 ;
                                             onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
                                             onto:genre <http://dbpedia.org/resource/Adventure> ,
                                                        <http://dbpedia.org/resource/Science_Fiction> ;
@@ -629,11 +664,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                             tbox:hasActor <http://dbpedia.org/resource/Jeff_Goldblum> ,
                                                           <http://dbpedia.org/resource/Laura_Dern> ,
                                                           <http://dbpedia.org/resource/Sam_Neill> ;
-                                            tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
                                             tbox:hasGenre <http://dbpedia.org/resource/Adventure> ,
                                                           <http://dbpedia.org/resource/Science_Fiction> ;
-                                            onto:releaseDate "1993-06-11"^^xsd:date ;
-                                            onto:runtime 127 ;
                                             tbox:releaseDate "1993-06-11"^^xsd:date ;
                                             tbox:runtime 127 ;
                                             rdfs:label "Jurassic Park"@en .
@@ -738,6 +770,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Mad_Max_Fury_Road> rdf:type owl:NamedIndividual ,
                                                          onto:Film ,
                                                          tbox:Movie ;
+                                                tbox:hasDirector <http://dbpedia.org/resource/George_Miller> ;
+                                                onto:releaseDate "2015-05-15"^^xsd:date ;
+                                                onto:runtime 120 ;
                                                 onto:director <http://dbpedia.org/resource/George_Miller> ;
                                                 onto:genre <http://dbpedia.org/resource/Action> ,
                                                            <http://dbpedia.org/resource/Adventure> ,
@@ -746,12 +781,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                               <http://dbpedia.org/resource/Tom_Hardy> ;
                                                 tbox:hasActor <http://dbpedia.org/resource/Charlize_Theron> ,
                                                               <http://dbpedia.org/resource/Tom_Hardy> ;
-                                                tbox:hasDirector <http://dbpedia.org/resource/George_Miller> ;
                                                 tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                               <http://dbpedia.org/resource/Adventure> ,
                                                               <http://dbpedia.org/resource/Science_Fiction> ;
-                                                onto:releaseDate "2015-05-15"^^xsd:date ;
-                                                onto:runtime 120 ;
                                                 tbox:releaseDate "2015-05-15"^^xsd:date ;
                                                 tbox:runtime 120 ;
                                                 rdfs:label "Mad Max: Fury Road"@en .
@@ -913,6 +945,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Saving_Private_Ryan> rdf:type owl:NamedIndividual ,
                                                            onto:Film ,
                                                            tbox:Movie ;
+                                                  tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                                  onto:releaseDate "1998-07-24"^^xsd:date ;
+                                                  onto:runtime 169 ;
                                                   onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
                                                   onto:genre <http://dbpedia.org/resource/Drama> ,
                                                              <http://dbpedia.org/resource/War> ;
@@ -920,11 +955,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                                 <http://dbpedia.org/resource/Tom_Hanks> ;
                                                   tbox:hasActor <http://dbpedia.org/resource/Matt_Damon> ,
                                                                 <http://dbpedia.org/resource/Tom_Hanks> ;
-                                                  tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
                                                   tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                                 <http://dbpedia.org/resource/War> ;
-                                                  onto:releaseDate "1998-07-24"^^xsd:date ;
-                                                  onto:runtime 169 ;
                                                   tbox:releaseDate "1998-07-24"^^xsd:date ;
                                                   tbox:runtime 169 ;
                                                   rdfs:label "Saving Private Ryan"@en .
@@ -970,6 +1002,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/The_Dark_Knight> rdf:type owl:NamedIndividual ,
                                                        onto:Film ,
                                                        tbox:Movie ;
+                                              tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                              onto:releaseDate "2008-07-18"^^xsd:date ;
+                                              onto:runtime 152 ;
                                               onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
                                               onto:genre <http://dbpedia.org/resource/Action> ,
                                                          <http://dbpedia.org/resource/Thriller> ;
@@ -977,11 +1012,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                             <http://dbpedia.org/resource/Heath_Ledger> ;
                                               tbox:hasActor <http://dbpedia.org/resource/Christian_Bale> ,
                                                             <http://dbpedia.org/resource/Heath_Ledger> ;
-                                              tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
                                               tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                             <http://dbpedia.org/resource/Thriller> ;
-                                              onto:releaseDate "2008-07-18"^^xsd:date ;
-                                              onto:runtime 152 ;
                                               tbox:releaseDate "2008-07-18"^^xsd:date ;
                                               tbox:runtime 152 ;
                                               rdfs:label "The Dark Knight"@en .
@@ -991,6 +1023,10 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/The_Matrix_Reloaded> rdf:type owl:NamedIndividual ,
                                                            onto:Film ,
                                                            tbox:Movie ;
+                                                  tbox:hasDirector <http://dbpedia.org/resource/Lana_Wachowski> ,
+                                                                   <http://dbpedia.org/resource/Lilly_Wachowski> ;
+                                                  onto:releaseDate "2003-05-15"^^xsd:date ;
+                                                  onto:runtime 138 ;
                                                   onto:director <http://dbpedia.org/resource/Lana_Wachowski> ,
                                                                 <http://dbpedia.org/resource/Lilly_Wachowski> ;
                                                   onto:genre <http://dbpedia.org/resource/Action> ,
@@ -1001,12 +1037,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                   tbox:hasActor <http://dbpedia.org/resource/Carrie-Anne_Moss> ,
                                                                 <http://dbpedia.org/resource/Keanu_Reeves> ,
                                                                 <http://dbpedia.org/resource/Laurence_Fishburne> ;
-                                                  tbox:hasDirector <http://dbpedia.org/resource/Lana_Wachowski> ,
-                                                                   <http://dbpedia.org/resource/Lilly_Wachowski> ;
                                                   tbox:hasGenre <http://dbpedia.org/resource/Action> ,
                                                                 <http://dbpedia.org/resource/Science_Fiction> ;
-                                                  onto:releaseDate "2003-05-15"^^xsd:date ;
-                                                  onto:runtime 138 ;
                                                   tbox:releaseDate "2003-05-15"^^xsd:date ;
                                                   tbox:runtime 138 ;
                                                   rdfs:label "The Matrix Reloaded"@en .
@@ -1016,6 +1048,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/The_Prestige> rdf:type owl:NamedIndividual ,
                                                     onto:Film ,
                                                     tbox:Movie ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
+                                           onto:releaseDate "2006-10-20"^^xsd:date ;
+                                           onto:runtime 130 ;
                                            onto:director <http://dbpedia.org/resource/Christopher_Nolan> ;
                                            onto:genre <http://dbpedia.org/resource/Drama> ,
                                                       <http://dbpedia.org/resource/Thriller> ;
@@ -1025,11 +1060,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                            tbox:hasActor <http://dbpedia.org/resource/Christian_Bale> ,
                                                          <http://dbpedia.org/resource/Hugh_Jackman> ,
                                                          <http://dbpedia.org/resource/Scarlett_Johansson> ;
-                                           tbox:hasDirector <http://dbpedia.org/resource/Christopher_Nolan> ;
                                            tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                          <http://dbpedia.org/resource/Thriller> ;
-                                           onto:releaseDate "2006-10-20"^^xsd:date ;
-                                           onto:runtime 130 ;
                                            tbox:releaseDate "2006-10-20"^^xsd:date ;
                                            tbox:runtime 130 ;
                                            rdfs:label "The Prestige"@en .
@@ -1039,6 +1071,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/The_Social_Network> rdf:type owl:NamedIndividual ,
                                                           onto:Film ,
                                                           tbox:Movie ;
+                                                 tbox:hasDirector <http://dbpedia.org/resource/David_Fincher> ;
+                                                 onto:releaseDate "2010-10-01"^^xsd:date ;
+                                                 onto:runtime 120 ;
                                                  onto:director <http://dbpedia.org/resource/David_Fincher> ;
                                                  onto:genre <http://dbpedia.org/resource/Biography> ,
                                                             <http://dbpedia.org/resource/Drama> ;
@@ -1046,11 +1081,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                                <http://dbpedia.org/resource/Jesse_Eisenberg> ;
                                                  tbox:hasActor <http://dbpedia.org/resource/Andrew_Garfield> ,
                                                                <http://dbpedia.org/resource/Jesse_Eisenberg> ;
-                                                 tbox:hasDirector <http://dbpedia.org/resource/David_Fincher> ;
                                                  tbox:hasGenre <http://dbpedia.org/resource/Biography> ,
                                                                <http://dbpedia.org/resource/Drama> ;
-                                                 onto:releaseDate "2010-10-01"^^xsd:date ;
-                                                 onto:runtime 120 ;
                                                  tbox:releaseDate "2010-10-01"^^xsd:date ;
                                                  tbox:runtime 120 ;
                                                  rdfs:label "The Social Network"@en .
@@ -1060,6 +1092,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/The_Terminal> rdf:type owl:NamedIndividual ,
                                                     onto:Film ,
                                                     tbox:Movie ;
+                                           tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
+                                           onto:releaseDate "2004-06-18"^^xsd:date ;
+                                           onto:runtime 128 ;
                                            onto:director <http://dbpedia.org/resource/Steven_Spielberg> ;
                                            onto:genre <http://dbpedia.org/resource/Comedy> ,
                                                       <http://dbpedia.org/resource/Drama> ;
@@ -1067,11 +1102,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                          <http://dbpedia.org/resource/Tom_Hanks> ;
                                            tbox:hasActor <http://dbpedia.org/resource/Catherine_Zeta_Jones> ,
                                                          <http://dbpedia.org/resource/Tom_Hanks> ;
-                                           tbox:hasDirector <http://dbpedia.org/resource/Steven_Spielberg> ;
                                            tbox:hasGenre <http://dbpedia.org/resource/Comedy> ,
                                                          <http://dbpedia.org/resource/Drama> ;
-                                           onto:releaseDate "2004-06-18"^^xsd:date ;
-                                           onto:runtime 128 ;
                                            tbox:releaseDate "2004-06-18"^^xsd:date ;
                                            tbox:runtime 128 ;
                                            rdfs:label "The Terminal"@en .
@@ -1081,6 +1113,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/The_Wolf_of_Wall_Street> rdf:type owl:NamedIndividual ,
                                                                onto:Film ,
                                                                tbox:Movie ;
+                                                      tbox:hasDirector <http://dbpedia.org/resource/Martin_Scorsese> ;
+                                                      onto:releaseDate "2013-12-25"^^xsd:date ;
+                                                      onto:runtime 180 ;
                                                       onto:director <http://dbpedia.org/resource/Martin_Scorsese> ;
                                                       onto:genre <http://dbpedia.org/resource/Biography> ,
                                                                  <http://dbpedia.org/resource/Comedy> ,
@@ -1089,12 +1124,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                                     <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
                                                       tbox:hasActor <http://dbpedia.org/resource/Jonah_Hill> ,
                                                                     <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
-                                                      tbox:hasDirector <http://dbpedia.org/resource/Martin_Scorsese> ;
                                                       tbox:hasGenre <http://dbpedia.org/resource/Biography> ,
                                                                     <http://dbpedia.org/resource/Comedy> ,
                                                                     <http://dbpedia.org/resource/Drama> ;
-                                                      onto:releaseDate "2013-12-25"^^xsd:date ;
-                                                      onto:runtime 180 ;
                                                       tbox:releaseDate "2013-12-25"^^xsd:date ;
                                                       tbox:runtime 180 ;
                                                       rdfs:label "The Wolf of Wall Street"@en .
@@ -1111,6 +1143,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://dbpedia.org/resource/Titanic> rdf:type owl:NamedIndividual ,
                                                onto:Film ,
                                                tbox:Movie ;
+                                      tbox:hasDirector <http://dbpedia.org/resource/James_Cameron> ;
+                                      onto:releaseDate "1997-12-19"^^xsd:date ;
+                                      onto:runtime 195 ;
                                       onto:director <http://dbpedia.org/resource/James_Cameron> ;
                                       onto:genre <http://dbpedia.org/resource/Drama> ,
                                                  <http://dbpedia.org/resource/Romance> ;
@@ -1118,11 +1153,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                     <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
                                       tbox:hasActor <http://dbpedia.org/resource/Kate_Winslet> ,
                                                     <http://dbpedia.org/resource/Leonardo_DiCaprio> ;
-                                      tbox:hasDirector <http://dbpedia.org/resource/James_Cameron> ;
                                       tbox:hasGenre <http://dbpedia.org/resource/Drama> ,
                                                     <http://dbpedia.org/resource/Romance> ;
-                                      onto:releaseDate "1997-12-19"^^xsd:date ;
-                                      onto:runtime 195 ;
                                       tbox:releaseDate "1997-12-19"^^xsd:date ;
                                       tbox:runtime 195 ;
                                       rdfs:label "Titanic"@en .
@@ -1255,14 +1287,17 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Argo rdf:type owl:NamedIndividual ,
                onto:Film ,
                tbox:Movie ;
-      onto:director :Ben_Affleck ;
-      tbox:hasDirector :Ben_Affleck .
+      tbox:hasDirector :Ben_Affleck ;
+      onto:director :Ben_Affleck .
 
 
 ###  http://example.org/abox#Arrival
 :Arrival rdf:type owl:NamedIndividual ,
                   onto:Film ,
                   tbox:Movie ;
+         tbox:hasDirector :Denis_Villeneuve ;
+         onto:releaseDate "2016-11-11"^^xsd:date ;
+         onto:runtime 116 ;
          onto:director :Denis_Villeneuve ;
          onto:genre <https://schema.org/Drama> ,
                     <https://schema.org/Mystery> ,
@@ -1271,12 +1306,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                        :Jeremy_Renner ;
          tbox:hasActor :Amy_Adams ,
                        :Jeremy_Renner ;
-         tbox:hasDirector :Denis_Villeneuve ;
          tbox:hasGenre <https://schema.org/Drama> ,
                        <https://schema.org/Mystery> ,
                        <https://schema.org/Sci-Fi> ;
-         onto:releaseDate "2016-11-11"^^xsd:date ;
-         onto:runtime 116 ;
          tbox:releaseDate "2016-11-11"^^xsd:date ;
          tbox:runtime 116 ;
          rdfs:label "Arrival"@en .
@@ -1330,6 +1362,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Birdman rdf:type owl:NamedIndividual ,
                   onto:Film ,
                   tbox:Movie ;
+         tbox:hasDirector :Alejandro_G._Inarritu ;
+         onto:releaseDate "2014-10-17"^^xsd:date ;
+         onto:runtime 119 ;
          onto:director :Alejandro_G._Inarritu ;
          onto:genre <https://schema.org/Comedy> ,
                     <https://schema.org/Drama> ;
@@ -1337,11 +1372,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                        :Michael_Keaton ;
          tbox:hasActor :Edward_Norton ,
                        :Michael_Keaton ;
-         tbox:hasDirector :Alejandro_G._Inarritu ;
          tbox:hasGenre <https://schema.org/Comedy> ,
                        <https://schema.org/Drama> ;
-         onto:releaseDate "2014-10-17"^^xsd:date ;
-         onto:runtime 119 ;
          tbox:releaseDate "2014-10-17"^^xsd:date ;
          tbox:runtime 119 ;
          rdfs:label "Birdman"@en .
@@ -1351,6 +1383,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Blade_Runner_2049 rdf:type owl:NamedIndividual ,
                             onto:Film ,
                             tbox:Movie ;
+                   tbox:hasDirector :Denis_Villeneuve ;
+                   onto:releaseDate "2017-10-06"^^xsd:date ;
+                   onto:runtime 164 ;
                    onto:director :Denis_Villeneuve ;
                    onto:genre <https://schema.org/Action> ,
                               <https://schema.org/Drama> ,
@@ -1359,12 +1394,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                  :Ryan_Gosling ;
                    tbox:hasActor :Harrison_Ford ,
                                  :Ryan_Gosling ;
-                   tbox:hasDirector :Denis_Villeneuve ;
                    tbox:hasGenre <https://schema.org/Action> ,
                                  <https://schema.org/Drama> ,
                                  <https://schema.org/Mystery> ;
-                   onto:releaseDate "2017-10-06"^^xsd:date ;
-                   onto:runtime 164 ;
                    tbox:releaseDate "2017-10-06"^^xsd:date ;
                    tbox:runtime 164 ;
                    rdfs:label "Blade Runner 2049"@en .
@@ -1382,16 +1414,16 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Boyhood rdf:type owl:NamedIndividual ,
                   onto:Film ,
                   tbox:Movie ;
+         tbox:hasDirector :Richard_Linklater ;
+         onto:releaseDate "2014-07-11"^^xsd:date ;
+         onto:runtime 165 ;
          onto:director :Richard_Linklater ;
          onto:genre <https://schema.org/Drama> ;
          onto:starring :Ellar_Coltrane ,
                        :Patricia_Arquette ;
          tbox:hasActor :Ellar_Coltrane ,
                        :Patricia_Arquette ;
-         tbox:hasDirector :Richard_Linklater ;
          tbox:hasGenre <https://schema.org/Drama> ;
-         onto:releaseDate "2014-07-11"^^xsd:date ;
-         onto:runtime 165 ;
          tbox:releaseDate "2014-07-11"^^xsd:date ;
          tbox:runtime 165 ;
          rdfs:label "Boyhood"@en .
@@ -1463,6 +1495,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Dallas_Buyers_Club rdf:type owl:NamedIndividual ,
                              onto:Film ,
                              tbox:Movie ;
+                    tbox:hasDirector :Jean-Marc_Vallee ;
+                    onto:releaseDate "2013-11-01"^^xsd:date ;
+                    onto:runtime 117 ;
                     onto:director :Jean-Marc_Vallee ;
                     onto:genre <https://schema.org/Biography> ,
                                <https://schema.org/Drama> ;
@@ -1470,11 +1505,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                   :Matthew_McConaughey ;
                     tbox:hasActor :Jennifer_Garner ,
                                   :Matthew_McConaughey ;
-                    tbox:hasDirector :Jean-Marc_Vallee ;
                     tbox:hasGenre <https://schema.org/Biography> ,
                                   <https://schema.org/Drama> ;
-                    onto:releaseDate "2013-11-01"^^xsd:date ;
-                    onto:runtime 117 ;
                     tbox:releaseDate "2013-11-01"^^xsd:date ;
                     tbox:runtime 117 ;
                     rdfs:label "Dallas Buyers Club"@en .
@@ -1532,6 +1564,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Dunkirk rdf:type owl:NamedIndividual ,
                   onto:Film ,
                   tbox:Movie ;
+         tbox:hasDirector :Christopher_Nolan ;
+         onto:releaseDate "2017-07-21"^^xsd:date ;
+         onto:runtime 106 ;
          onto:director :Christopher_Nolan ;
          onto:genre <https://schema.org/Action> ,
                     <https://schema.org/Drama> ,
@@ -1540,12 +1575,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                        :Fionn_Whitehead ;
          tbox:hasActor :Barry_Keoghan ,
                        :Fionn_Whitehead ;
-         tbox:hasDirector :Christopher_Nolan ;
          tbox:hasGenre <https://schema.org/Action> ,
                        <https://schema.org/Drama> ,
                        <https://schema.org/History> ;
-         onto:releaseDate "2017-07-21"^^xsd:date ;
-         onto:runtime 106 ;
          tbox:releaseDate "2017-07-21"^^xsd:date ;
          tbox:runtime 106 ;
          rdfs:label "Dunkirk"@en .
@@ -1582,6 +1614,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Ex_Machina rdf:type owl:NamedIndividual ,
                      onto:Film ,
                      tbox:Movie ;
+            tbox:hasDirector :Alex_Garland ;
+            onto:releaseDate "2014-12-16"^^xsd:date ;
+            onto:runtime 108 ;
             onto:director :Alex_Garland ;
             onto:genre <https://schema.org/Drama> ,
                        <https://schema.org/Sci-Fi> ,
@@ -1590,12 +1625,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                           :Domhnall_Gleeson ;
             tbox:hasActor :Alicia_Vikander ,
                           :Domhnall_Gleeson ;
-            tbox:hasDirector :Alex_Garland ;
             tbox:hasGenre <https://schema.org/Drama> ,
                           <https://schema.org/Sci-Fi> ,
                           <https://schema.org/Thriller> ;
-            onto:releaseDate "2014-12-16"^^xsd:date ;
-            onto:runtime 108 ;
             tbox:releaseDate "2014-12-16"^^xsd:date ;
             tbox:runtime 108 ;
             rdfs:label "Ex Machina"@en .
@@ -1640,6 +1672,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Get_Out rdf:type owl:NamedIndividual ,
                   onto:Film ,
                   tbox:Movie ;
+         tbox:hasDirector :Jordan_Peele ;
+         onto:releaseDate "2017-02-24"^^xsd:date ;
+         onto:runtime 104 ;
          onto:director :Jordan_Peele ;
          onto:genre <https://schema.org/Horror> ,
                     <https://schema.org/Mystery> ,
@@ -1648,12 +1683,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                        :Daniel_Kaluuya ;
          tbox:hasActor :Allison_Williams ,
                        :Daniel_Kaluuya ;
-         tbox:hasDirector :Jordan_Peele ;
          tbox:hasGenre <https://schema.org/Horror> ,
                        <https://schema.org/Mystery> ,
                        <https://schema.org/Thriller> ;
-         onto:releaseDate "2017-02-24"^^xsd:date ;
-         onto:runtime 104 ;
          tbox:releaseDate "2017-02-24"^^xsd:date ;
          tbox:runtime 104 ;
          rdfs:label "Get Out"@en .
@@ -1663,6 +1695,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Gone_Girl rdf:type owl:NamedIndividual ,
                     onto:Film ,
                     tbox:Movie ;
+           tbox:hasDirector :David_Fincher ;
+           onto:releaseDate "2014-10-03"^^xsd:date ;
+           onto:runtime 149 ;
            onto:director :David_Fincher ;
            onto:genre <https://schema.org/Drama> ,
                       <https://schema.org/Mystery> ,
@@ -1671,12 +1706,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                          :Rosamund_Pike ;
            tbox:hasActor :Ben_Affleck ,
                          :Rosamund_Pike ;
-           tbox:hasDirector :David_Fincher ;
            tbox:hasGenre <https://schema.org/Drama> ,
                          <https://schema.org/Mystery> ,
                          <https://schema.org/Thriller> ;
-           onto:releaseDate "2014-10-03"^^xsd:date ;
-           onto:runtime 149 ;
            tbox:releaseDate "2014-10-03"^^xsd:date ;
            tbox:runtime 149 ;
            rdfs:label "Gone Girl"@en .
@@ -1686,6 +1718,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Gravity rdf:type owl:NamedIndividual ,
                   onto:Film ,
                   tbox:Movie ;
+         tbox:hasDirector :Alfonso_Cuaron ;
+         onto:releaseDate "2013-10-04"^^xsd:date ;
+         onto:runtime 91 ;
          onto:director :Alfonso_Cuaron ;
          onto:genre <https://schema.org/Drama> ,
                     <https://schema.org/Sci-Fi> ,
@@ -1694,12 +1729,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                        :Sandra_Bullock ;
          tbox:hasActor :George_Clooney ,
                        :Sandra_Bullock ;
-         tbox:hasDirector :Alfonso_Cuaron ;
          tbox:hasGenre <https://schema.org/Drama> ,
                        <https://schema.org/Sci-Fi> ,
                        <https://schema.org/Thriller> ;
-         onto:releaseDate "2013-10-04"^^xsd:date ;
-         onto:runtime 91 ;
          tbox:releaseDate "2013-10-04"^^xsd:date ;
          tbox:runtime 91 ;
          rdfs:label "Gravity"@en .
@@ -1734,6 +1766,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Her rdf:type owl:NamedIndividual ,
               onto:Film ,
               tbox:Movie ;
+     tbox:hasDirector :Spike_Jonze ;
+     onto:releaseDate "2013-12-18"^^xsd:date ;
+     onto:runtime 126 ;
      onto:director :Spike_Jonze ;
      onto:genre <https://schema.org/Drama> ,
                 <https://schema.org/Romance> ,
@@ -1742,12 +1777,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                    :Scarlett_Johansson ;
      tbox:hasActor :Joaquin_Phoenix ,
                    :Scarlett_Johansson ;
-     tbox:hasDirector :Spike_Jonze ;
      tbox:hasGenre <https://schema.org/Drama> ,
                    <https://schema.org/Romance> ,
                    <https://schema.org/Sci-Fi> ;
-     onto:releaseDate "2013-12-18"^^xsd:date ;
-     onto:runtime 126 ;
      tbox:releaseDate "2013-12-18"^^xsd:date ;
      tbox:runtime 126 ;
      rdfs:label "Her"@en .
@@ -1757,6 +1789,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Inside_Out rdf:type owl:NamedIndividual ,
                      onto:Film ,
                      tbox:Movie ;
+            tbox:hasDirector :Pete_Docter ;
+            onto:releaseDate "2015-06-19"^^xsd:date ;
+            onto:runtime 95 ;
             onto:director :Pete_Docter ;
             onto:genre <https://schema.org/Adventure> ,
                        <https://schema.org/Animation> ,
@@ -1765,12 +1800,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                           :Phyllis_Smith ;
             tbox:hasActor :Amy_Poehler ,
                           :Phyllis_Smith ;
-            tbox:hasDirector :Pete_Docter ;
             tbox:hasGenre <https://schema.org/Adventure> ,
                           <https://schema.org/Animation> ,
                           <https://schema.org/Comedy> ;
-            onto:releaseDate "2015-06-19"^^xsd:date ;
-            onto:runtime 95 ;
             tbox:releaseDate "2015-06-19"^^xsd:date ;
             tbox:runtime 95 ;
             rdfs:label "Inside Out"@en .
@@ -1859,6 +1891,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :La_La_Land rdf:type owl:NamedIndividual ,
                      onto:Film ,
                      tbox:Movie ;
+            tbox:hasDirector :Damien_Chazelle ;
+            onto:releaseDate "2016-12-09"^^xsd:date ;
+            onto:runtime 128 ;
             onto:director :Damien_Chazelle ;
             onto:genre <https://schema.org/Comedy> ,
                        <https://schema.org/Drama> ,
@@ -1867,12 +1902,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                           :Ryan_Gosling ;
             tbox:hasActor :Emma_Stone ,
                           :Ryan_Gosling ;
-            tbox:hasDirector :Damien_Chazelle ;
             tbox:hasGenre <https://schema.org/Comedy> ,
                           <https://schema.org/Drama> ,
                           <https://schema.org/Music> ;
-            onto:releaseDate "2016-12-09"^^xsd:date ;
-            onto:runtime 128 ;
             tbox:releaseDate "2016-12-09"^^xsd:date ;
             tbox:runtime 128 ;
             rdfs:label "La La Land"@en .
@@ -1882,6 +1914,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Lady_Bird rdf:type owl:NamedIndividual ,
                     onto:Film ,
                     tbox:Movie ;
+           tbox:hasDirector :Greta_Gerwig ;
+           onto:releaseDate "2017-11-03"^^xsd:date ;
+           onto:runtime 94 ;
            onto:director :Greta_Gerwig ;
            onto:genre <https://schema.org/Comedy> ,
                       <https://schema.org/Drama> ;
@@ -1889,11 +1924,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                          :Saoirse_Ronan ;
            tbox:hasActor :Laurie_Metcalf ,
                          :Saoirse_Ronan ;
-           tbox:hasDirector :Greta_Gerwig ;
            tbox:hasGenre <https://schema.org/Comedy> ,
                          <https://schema.org/Drama> ;
-           onto:releaseDate "2017-11-03"^^xsd:date ;
-           onto:runtime 94 ;
            tbox:releaseDate "2017-11-03"^^xsd:date ;
            tbox:runtime 94 ;
            rdfs:label "Lady Bird"@en .
@@ -1941,6 +1973,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Mad_Max_Fury_Road rdf:type owl:NamedIndividual ,
                             onto:Film ,
                             tbox:Movie ;
+                   tbox:hasDirector :George_Miller ;
+                   onto:releaseDate "2015-05-15"^^xsd:date ;
+                   onto:runtime 120 ;
                    onto:director :George_Miller ;
                    onto:genre <https://schema.org/Action> ,
                               <https://schema.org/Adventure> ,
@@ -1949,12 +1984,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                  :Tom_Hardy ;
                    tbox:hasActor :Charlize_Theron ,
                                  :Tom_Hardy ;
-                   tbox:hasDirector :George_Miller ;
                    tbox:hasGenre <https://schema.org/Action> ,
                                  <https://schema.org/Adventure> ,
                                  <https://schema.org/Sci-Fi> ;
-                   onto:releaseDate "2015-05-15"^^xsd:date ;
-                   onto:runtime 120 ;
                    tbox:releaseDate "2015-05-15"^^xsd:date ;
                    tbox:runtime 120 ;
                    rdfs:label "Mad Max Fury Road"@en .
@@ -2046,16 +2078,16 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Moonlight rdf:type owl:NamedIndividual ,
                     onto:Film ,
                     tbox:Movie ;
+           tbox:hasDirector :Barry_Jenkins ;
+           onto:releaseDate "2016-10-21"^^xsd:date ;
+           onto:runtime 111 ;
            onto:director :Barry_Jenkins ;
            onto:genre <https://schema.org/Drama> ;
            onto:starring :Mahershala_Ali ,
                          :Naomie_Harris ;
            tbox:hasActor :Mahershala_Ali ,
                          :Naomie_Harris ;
-           tbox:hasDirector :Barry_Jenkins ;
            tbox:hasGenre <https://schema.org/Drama> ;
-           onto:releaseDate "2016-10-21"^^xsd:date ;
-           onto:runtime 111 ;
            tbox:releaseDate "2016-10-21"^^xsd:date ;
            tbox:runtime 111 ;
            rdfs:label "Moonlight"@en .
@@ -2082,6 +2114,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Parasite rdf:type owl:NamedIndividual ,
                    onto:Film ,
                    tbox:Movie ;
+          tbox:hasDirector :Bong_Joon-ho ;
+          onto:releaseDate "2019-05-30"^^xsd:date ;
+          onto:runtime 132 ;
           onto:director :Bong_Joon-ho ;
           onto:genre <https://schema.org/Comedy> ,
                      <https://schema.org/Drama> ,
@@ -2090,12 +2125,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                         :Song_Kang-ho ;
           tbox:hasActor :Lee_Sun-kyun ,
                         :Song_Kang-ho ;
-          tbox:hasDirector :Bong_Joon-ho ;
           tbox:hasGenre <https://schema.org/Comedy> ,
                         <https://schema.org/Drama> ,
                         <https://schema.org/Thriller> ;
-          onto:releaseDate "2019-05-30"^^xsd:date ;
-          onto:runtime 132 ;
           tbox:releaseDate "2019-05-30"^^xsd:date ;
           tbox:runtime 132 ;
           rdfs:label "Parasite"@en .
@@ -2157,6 +2189,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Room rdf:type owl:NamedIndividual ,
                onto:Film ,
                tbox:Movie ;
+      tbox:hasDirector :Lenny_Abrahamson ;
+      onto:releaseDate "2015-10-16"^^xsd:date ;
+      onto:runtime 118 ;
       onto:director :Lenny_Abrahamson ;
       onto:genre <https://schema.org/Drama> ,
                  <https://schema.org/Thriller> ;
@@ -2164,11 +2199,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                     :Jacob_Tremblay ;
       tbox:hasActor :Brie_Larson ,
                     :Jacob_Tremblay ;
-      tbox:hasDirector :Lenny_Abrahamson ;
       tbox:hasGenre <https://schema.org/Drama> ,
                     <https://schema.org/Thriller> ;
-      onto:releaseDate "2015-10-16"^^xsd:date ;
-      onto:runtime 118 ;
       tbox:releaseDate "2015-10-16"^^xsd:date ;
       tbox:runtime 118 ;
       rdfs:label "Room"@en .
@@ -2260,6 +2292,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Spotlight rdf:type owl:NamedIndividual ,
                     onto:Film ,
                     tbox:Movie ;
+           tbox:hasDirector :Tom_McCarthy ;
+           onto:releaseDate "2015-11-06"^^xsd:date ;
+           onto:runtime 129 ;
            onto:director :Tom_McCarthy ;
            onto:genre <https://schema.org/Biography> ,
                       <https://schema.org/Crime> ,
@@ -2268,12 +2303,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                          :Michael_Keaton ;
            tbox:hasActor :Mark_Ruffalo ,
                          :Michael_Keaton ;
-           tbox:hasDirector :Tom_McCarthy ;
            tbox:hasGenre <https://schema.org/Biography> ,
                          <https://schema.org/Crime> ,
                          <https://schema.org/Drama> ;
-           onto:releaseDate "2015-11-06"^^xsd:date ;
-           onto:runtime 129 ;
            tbox:releaseDate "2015-11-06"^^xsd:date ;
            tbox:runtime 129 ;
            rdfs:label "Spotlight"@en .
@@ -2300,6 +2332,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Big_Short rdf:type owl:NamedIndividual ,
                         onto:Film ,
                         tbox:Movie ;
+               tbox:hasDirector :Adam_McKay ;
+               onto:releaseDate "2015-12-11"^^xsd:date ;
+               onto:runtime 130 ;
                onto:director :Adam_McKay ;
                onto:genre <https://schema.org/Biography> ,
                           <https://schema.org/Comedy> ,
@@ -2308,12 +2343,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                              :Steve_Carell ;
                tbox:hasActor :Christian_Bale ,
                              :Steve_Carell ;
-               tbox:hasDirector :Adam_McKay ;
                tbox:hasGenre <https://schema.org/Biography> ,
                              <https://schema.org/Comedy> ,
                              <https://schema.org/Drama> ;
-               onto:releaseDate "2015-12-11"^^xsd:date ;
-               onto:runtime 130 ;
                tbox:releaseDate "2015-12-11"^^xsd:date ;
                tbox:runtime 130 ;
                rdfs:label "The Big Short"@en .
@@ -2337,16 +2369,16 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Florida_Project rdf:type owl:NamedIndividual ,
                               onto:Film ,
                               tbox:Movie ;
+                     tbox:hasDirector :Sean_Baker ;
+                     onto:releaseDate "2017-10-06"^^xsd:date ;
+                     onto:runtime 111 ;
                      onto:director :Sean_Baker ;
                      onto:genre <https://schema.org/Drama> ;
                      onto:starring :Brooklynn_Prince ,
                                    :Willem_Dafoe ;
                      tbox:hasActor :Brooklynn_Prince ,
                                    :Willem_Dafoe ;
-                     tbox:hasDirector :Sean_Baker ;
                      tbox:hasGenre <https://schema.org/Drama> ;
-                     onto:releaseDate "2017-10-06"^^xsd:date ;
-                     onto:runtime 111 ;
                      tbox:releaseDate "2017-10-06"^^xsd:date ;
                      tbox:runtime 111 ;
                      rdfs:label "The Florida Project"@en .
@@ -2356,6 +2388,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Grand_Budapest_Hotel rdf:type owl:NamedIndividual ,
                                    onto:Film ,
                                    tbox:Movie ;
+                          tbox:hasDirector :Wes_Anderson ;
+                          onto:releaseDate "2014-03-07"^^xsd:date ;
+                          onto:runtime 99 ;
                           onto:director :Wes_Anderson ;
                           onto:genre <https://schema.org/Adventure> ,
                                      <https://schema.org/Comedy> ,
@@ -2364,12 +2399,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                         :Tony_Revolori ;
                           tbox:hasActor :Ralph_Fiennes ,
                                         :Tony_Revolori ;
-                          tbox:hasDirector :Wes_Anderson ;
                           tbox:hasGenre <https://schema.org/Adventure> ,
                                         <https://schema.org/Comedy> ,
                                         <https://schema.org/Crime> ;
-                          onto:releaseDate "2014-03-07"^^xsd:date ;
-                          onto:runtime 99 ;
                           tbox:releaseDate "2014-03-07"^^xsd:date ;
                           tbox:runtime 99 ;
                           rdfs:label "The Grand Budapest Hotel"@en .
@@ -2379,6 +2411,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Imitation_Game rdf:type owl:NamedIndividual ,
                              onto:Film ,
                              tbox:Movie ;
+                    tbox:hasDirector :Morten_Tyldum ;
+                    onto:releaseDate "2014-11-28"^^xsd:date ;
+                    onto:runtime 114 ;
                     onto:director :Morten_Tyldum ;
                     onto:genre <https://schema.org/Biography> ,
                                <https://schema.org/Drama> ,
@@ -2387,12 +2422,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                   :Keira_Knightley ;
                     tbox:hasActor :Benedict_Cumberbatch ,
                                   :Keira_Knightley ;
-                    tbox:hasDirector :Morten_Tyldum ;
                     tbox:hasGenre <https://schema.org/Biography> ,
                                   <https://schema.org/Drama> ,
                                   <https://schema.org/Thriller> ;
-                    onto:releaseDate "2014-11-28"^^xsd:date ;
-                    onto:runtime 114 ;
                     tbox:releaseDate "2014-11-28"^^xsd:date ;
                     tbox:runtime 114 ;
                     rdfs:label "The Imitation Game"@en .
@@ -2402,6 +2434,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Lobster rdf:type owl:NamedIndividual ,
                       onto:Film ,
                       tbox:Movie ;
+             tbox:hasDirector :Yorgos_Lanthimos ;
+             onto:releaseDate "2015-10-16"^^xsd:date ;
+             onto:runtime 119 ;
              onto:director :Yorgos_Lanthimos ;
              onto:genre <https://schema.org/Comedy> ,
                         <https://schema.org/Drama> ,
@@ -2410,12 +2445,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                            :Rachel_Weisz ;
              tbox:hasActor :Colin_Farrell ,
                            :Rachel_Weisz ;
-             tbox:hasDirector :Yorgos_Lanthimos ;
              tbox:hasGenre <https://schema.org/Comedy> ,
                            <https://schema.org/Drama> ,
                            <https://schema.org/Romance> ;
-             onto:releaseDate "2015-10-16"^^xsd:date ;
-             onto:runtime 119 ;
              tbox:releaseDate "2015-10-16"^^xsd:date ;
              tbox:runtime 119 ;
              rdfs:label "The Lobster"@en .
@@ -2425,6 +2457,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Revenant rdf:type owl:NamedIndividual ,
                        onto:Film ,
                        tbox:Movie ;
+              tbox:hasDirector :Alejandro_G._Inarritu ;
+              onto:releaseDate "2015-12-25"^^xsd:date ;
+              onto:runtime 156 ;
               onto:director :Alejandro_G._Inarritu ;
               onto:genre <https://schema.org/Action> ,
                          <https://schema.org/Adventure> ,
@@ -2433,12 +2468,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                             :Tom_Hardy ;
               tbox:hasActor :Leonardo_DiCaprio ,
                             :Tom_Hardy ;
-              tbox:hasDirector :Alejandro_G._Inarritu ;
               tbox:hasGenre <https://schema.org/Action> ,
                             <https://schema.org/Adventure> ,
                             <https://schema.org/Drama> ;
-              onto:releaseDate "2015-12-25"^^xsd:date ;
-              onto:runtime 156 ;
               tbox:releaseDate "2015-12-25"^^xsd:date ;
               tbox:runtime 156 ;
               rdfs:label "The Revenant"@en .
@@ -2448,6 +2480,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Shape_of_Water rdf:type owl:NamedIndividual ,
                              onto:Film ,
                              tbox:Movie ;
+                    tbox:hasDirector :Guillermo_del_Toro ;
+                    onto:releaseDate "2017-12-01"^^xsd:date ;
+                    onto:runtime 123 ;
                     onto:director :Guillermo_del_Toro ;
                     onto:genre <https://schema.org/Adventure> ,
                                <https://schema.org/Drama> ,
@@ -2456,12 +2491,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                   :Sally_Hawkins ;
                     tbox:hasActor :Michael_Shannon ,
                                   :Sally_Hawkins ;
-                    tbox:hasDirector :Guillermo_del_Toro ;
                     tbox:hasGenre <https://schema.org/Adventure> ,
                                   <https://schema.org/Drama> ,
                                   <https://schema.org/Fantasy> ;
-                    onto:releaseDate "2017-12-01"^^xsd:date ;
-                    onto:runtime 123 ;
                     tbox:releaseDate "2017-12-01"^^xsd:date ;
                     tbox:runtime 123 ;
                     rdfs:label "The Shape of Water"@en .
@@ -2471,6 +2503,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :The_Wolf_of_Wall_Street rdf:type owl:NamedIndividual ,
                                   onto:Film ,
                                   tbox:Movie ;
+                         tbox:hasDirector :Martin_Scorsese ;
+                         onto:releaseDate "2013-12-25"^^xsd:date ;
+                         onto:runtime 180 ;
                          onto:director :Martin_Scorsese ;
                          onto:genre <https://schema.org/Biography> ,
                                     <https://schema.org/Comedy> ,
@@ -2479,12 +2514,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                        :Leonardo_DiCaprio ;
                          tbox:hasActor :Jonah_Hill ,
                                        :Leonardo_DiCaprio ;
-                         tbox:hasDirector :Martin_Scorsese ;
                          tbox:hasGenre <https://schema.org/Biography> ,
                                        <https://schema.org/Comedy> ,
                                        <https://schema.org/Crime> ;
-                         onto:releaseDate "2013-12-25"^^xsd:date ;
-                         onto:runtime 180 ;
                          tbox:releaseDate "2013-12-25"^^xsd:date ;
                          tbox:runtime 180 ;
                          rdfs:label "The Wolf of Wall Street"@en .
@@ -2494,6 +2526,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Three_Billboards_Outside_Ebbing_Missouri rdf:type owl:NamedIndividual ,
                                                    onto:Film ,
                                                    tbox:Movie ;
+                                          tbox:hasDirector :Martin_McDonagh ;
+                                          onto:releaseDate "2017-11-10"^^xsd:date ;
+                                          onto:runtime 115 ;
                                           onto:director :Martin_McDonagh ;
                                           onto:genre <https://schema.org/Comedy> ,
                                                      <https://schema.org/Crime> ,
@@ -2502,12 +2537,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                         :Woody_Harrelson ;
                                           tbox:hasActor :Frances_McDormand ,
                                                         :Woody_Harrelson ;
-                                          tbox:hasDirector :Martin_McDonagh ;
                                           tbox:hasGenre <https://schema.org/Comedy> ,
                                                         <https://schema.org/Crime> ,
                                                         <https://schema.org/Drama> ;
-                                          onto:releaseDate "2017-11-10"^^xsd:date ;
-                                          onto:runtime 115 ;
                                           tbox:releaseDate "2017-11-10"^^xsd:date ;
                                           tbox:runtime 115 ;
                                           rdfs:label "Three Billboards Outside Ebbing Missouri"@en .
@@ -2554,6 +2586,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 :Whiplash rdf:type owl:NamedIndividual ,
                    onto:Film ,
                    tbox:Movie ;
+          tbox:hasDirector :Damien_Chazelle ;
+          onto:releaseDate "2014-10-10"^^xsd:date ;
+          onto:runtime 106 ;
           onto:director :Damien_Chazelle ;
           onto:genre <https://schema.org/Drama> ,
                      <https://schema.org/Music> ;
@@ -2561,11 +2596,8 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                         :Miles_Teller ;
           tbox:hasActor :J.K._Simmons ,
                         :Miles_Teller ;
-          tbox:hasDirector :Damien_Chazelle ;
           tbox:hasGenre <https://schema.org/Drama> ,
                         <https://schema.org/Music> ;
-          onto:releaseDate "2014-10-10"^^xsd:date ;
-          onto:runtime 106 ;
           tbox:releaseDate "2014-10-10"^^xsd:date ;
           tbox:runtime 106 ;
           rdfs:label "Whiplash"@en .
@@ -2601,6 +2633,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
 <http://example.org/abox#12_Years_a_Slave> rdf:type owl:NamedIndividual ,
                                                     onto:Film ,
                                                     tbox:Movie ;
+                                           tbox:hasDirector :Steve_McQueen ;
+                                           onto:releaseDate "2013-10-18"^^xsd:date ;
+                                           onto:runtime 136 ;
                                            onto:director :Steve_McQueen ;
                                            onto:genre <https://schema.org/Biography> ,
                                                       <https://schema.org/Drama> ,
@@ -2609,12 +2644,9 @@ tbox:Genre owl:equivalentClass <http://schema.org/Genre> .
                                                          :Michael_Fassbender ;
                                            tbox:hasActor :Chiwetel_Ejiofor ,
                                                          :Michael_Fassbender ;
-                                           tbox:hasDirector :Steve_McQueen ;
                                            tbox:hasGenre <https://schema.org/Biography> ,
                                                          <https://schema.org/Drama> ,
                                                          <https://schema.org/History> ;
-                                           onto:releaseDate "2013-10-18"^^xsd:date ;
-                                           onto:runtime 136 ;
                                            tbox:releaseDate "2013-10-18"^^xsd:date ;
                                            tbox:runtime 136 ;
                                            rdfs:label "12 Years a Slave"@en .

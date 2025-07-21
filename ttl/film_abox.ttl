@@ -12,8 +12,7 @@
 @base <http://example.org/abox#> .
 
 <http://example.org/abox> rdf:type owl:Ontology ;
-                           owl:imports <http://example.org/rules> ,
-                                       <http://example.org/tbox> .
+                           owl:imports <http://example.org/tbox/0.1> .
 
 #################################################################
 #    Annotation properties
@@ -27,8 +26,24 @@ dbo:director rdf:type owl:AnnotationProperty .
 dbo:genre rdf:type owl:AnnotationProperty .
 
 
+###  http://dbpedia.org/ontology/releaseDate
+dbo:releaseDate rdf:type owl:AnnotationProperty .
+
+
+###  http://dbpedia.org/ontology/runtime
+dbo:runtime rdf:type owl:AnnotationProperty .
+
+
 ###  http://dbpedia.org/ontology/starring
 dbo:starring rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#hasDirector
+ext:hasDirector rdf:type owl:AnnotationProperty .
+
+
+###  http://example.org/tbox#isPrequel
+ext:isPrequel rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -37,6 +52,22 @@ dbo:starring rdf:type owl:AnnotationProperty .
 
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://dbpedia.org/ontology/Film
+dbo:Film rdf:type owl:Class .
+
+
+###  http://dbpedia.org/ontology/Person
+dbo:Person rdf:type owl:Class .
+
+
+###  http://schema.org/Genre
+schema:Genre rdf:type owl:Class .
 
 
 #################################################################

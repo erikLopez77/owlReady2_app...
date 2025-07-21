@@ -151,6 +151,9 @@ ext:runtime rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain ext:Movie .
 
+ext:totalRuntime a owl:DatatypeProperty ;
+    rdfs:domain ext:Actor ;
+    rdfs:range xsd:integer .
 
 #################################################################
 #    Classes
